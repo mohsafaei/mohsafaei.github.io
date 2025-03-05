@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
@@ -29,4 +29,4 @@ latest_posts:
 
 I am a dedicated researcher with a strong academic background in Non-linear Solid Mechanics. I completed my M.Sc. at the University of Tehran (2021–2024), where I focused on the electromechanical performance of dielectric elastomer actuators.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
