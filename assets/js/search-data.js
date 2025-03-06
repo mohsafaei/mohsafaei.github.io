@@ -422,8 +422,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-great-news-i-got-admitted-to-michigan-state-university",
-          title: 'Great news! 🎉 I got admitted to Michigan State University! 🚀🎓',
+            },},{id: "news-great-news-my-first-first-author-research-article-is-accepted-in-the-european-journal-of-mechanics-a-solids",
+          title: 'Great news! My first first-author research article is accepted in the European Journal...',
+          description: "",
+          section: "News",},{id: "news-great-news-i-got-admitted-to-michigan-state-university-sparkles-smile",
+          title: 'Great news! I got admitted to Michigan State University! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
