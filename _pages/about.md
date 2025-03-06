@@ -2,8 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
+subtitle: <a href='https://orcid.org/0009-0002-4917-6464'>Affiliations</a>.
 profile:
   align: right
   image: prof_pic.jpg
@@ -27,6 +26,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a dedicated researcher with a strong academic background in Non-linear Solid Mechanics. I completed my M.Sc. at the University of Tehran (2021–2024), where I focused on the electromechanical performance of dielectric elastomer actuators.
+I am a dedicated researcher with a strong academic background in Nonlinear Solid Mechanics. I completed my M.Sc. at the University of Tehran (2021–2024) with a high GPA of 3.88. My research focused on the multiphysics behavior of smart materials, including shape memory polymers, pH-sensitive hydrogels, and dielectric elastomers.
 
-
+I have a strong background in various topics, including nonlinear constitutive modeling, finite element analysis, continuum mechanics, and multiscale modeling. Additionally, I am familiar with machine learning and deep learning algorithms and am eager to explore their applications in mechanical engineering.
