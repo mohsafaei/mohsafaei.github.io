@@ -5,4 +5,11 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Great news! 🎉 I got admitted to Michigan State University! 🚀🎓
+
+
+
+
+
+
+
