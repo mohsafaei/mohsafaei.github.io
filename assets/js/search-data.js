@@ -498,13 +498,6 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/mohsafaei", "_blank");
         },
       },{
-        id: 'social-orcid',
-        title: 'ORCID',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://orcid.org/0009-0002-4917-6464", "_blank");
-        },
-      },{
         id: 'social-researchgate',
         title: 'ResearchGate',
         section: 'Socials',
