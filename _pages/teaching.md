@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /teaching/
 title: Teaching
+permalink: /teaching/
 description: Materials for courses I've been a teaching assistant.
 nav: true
 nav_order: 6

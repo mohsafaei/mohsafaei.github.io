@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 2
+title: FEM
 description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+img: 
 importance: 2
-category: work
+category: 
 giscus_comments: true
 ---
 
