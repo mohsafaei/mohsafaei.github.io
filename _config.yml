@@ -201,7 +201,7 @@ exclude:
   - _news/announcement_2.md
   - readme_preview/
   - vendor
-  - _teaching
+  
 keep_files:
   - CNAME
   - .nojekyll
