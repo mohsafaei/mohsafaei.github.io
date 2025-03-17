@@ -481,6 +481,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "teaching-nlsm-1",
+          title: 'NLSM 1',
+          description: "with background image",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/1_teaching/";
+            },},{id: "teaching-fem",
+          title: 'FEM',
+          description: "a project with a background image and giscus comments",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/2_teaching/";
+            },},{id: "teaching-non-linear-solid-mechanics",
+          title: 'Non-linear Solid Mechanics',
+          description: "course materials",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/3_teaching/";
             },},{
         id: 'social-email',
         title: 'email',
