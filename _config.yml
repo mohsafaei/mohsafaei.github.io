@@ -152,7 +152,11 @@ collections:
     output: true
   projects:
     output: true
+  learnings:
+    output: true
   teaching:
+    defaults:
+      layout: page
     output: true
 
 # -----------------------------------------------------------------------------
@@ -197,6 +201,7 @@ exclude:
   - _news/announcement_2.md
   - readme_preview/
   - vendor
+  - _teaching
 keep_files:
   - CNAME
   - .nojekyll
