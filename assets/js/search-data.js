@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-learnings",
+          title: "Learnings",
+          description: "A bunch of learnings I&#39;ve done so far.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/learnings/";
+          },
         },{id: "nav-projects",
           title: "Projects",
           description: "A bunch of projects I&#39;ve done so far.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
-          },
-        },{id: "nav-repositories",
-          title: "Repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
           title: "CV",
@@ -422,6 +422,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "learnings-learning-1",
+          title: 'learning 1',
+          description: "with background image",
+          section: "Learnings",handler: () => {
+              window.location.href = "/learnings/1_learning/";
             },},{id: "news-i-got-my-academic-ielts-certificate-sparkles-sparkles",
           title: 'I got my Academic IELTS certificate :sparkles: :sparkles:',
           description: "",
