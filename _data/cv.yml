@@ -12,86 +12,98 @@
   type: time_table
   contents:
     - title: PhD
-      institution: Michigan State University, Michigan, USA
-      year: 2025
+      institution: Michigan State University, Michigan, USA.
+      year: 2025 - Now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Non-linear Solid Mechanics
+    - title: Master of Science
+      institution: University of Tehran, Tehran, Iran.
+      year: 2021 - 2024
+      description:
+        - title: Thesis Title
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Distinctive Electromechanical Performance of Metamaterial Dielectric Elastomer Actuators with TPMS Geometries.
+        - GPA of 3.89/4.00
+    - title: Bachelor of Science
+      institution: Bu-Ali Sina University, Hamedan, Iran.
+      year: 2016 - 2021
       description:
-        - Description 1.
-        - Description 2.
+        - GPA of 3.12/4.00.
+
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant 
+      institution: Smart Materials & Structures (SMS) Laboratory, University of Tehran
+      year: 2022 - 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Worked on
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+            - Dielectric Elastomer Actuators (DEAs)
+            - Stimuli-Responsive Hydrogels
+            - Shape Memory Polymers (SMPs)
+    - title: Teaching Assistant
+      institution: College of Engineering, University of Tehran
+      year: 2022 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - title: Worked on
+          contents:
+            - Finite Element Method.
+            - Non-linear Solid Mechanics.
+            - Research Methodology.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: skills
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Programming
+      items:
+        - Python
+        - MATLAB
+        - FORTRAN
+        - MAPLE
+    - title: Software
+      items:
+        - MS Office
+        - ABAQUS
+        - COMSOL Multiphysics
+        - LS-DYNA
+        - Simplify3D
+        - SOLIDWORKS
+        - CATIA
 
-- title: Honors and Awards
+- title: Hands-on Experience
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Gravity Casting (Aluminum).
+    - title: Welding.
+    - title: Turning, Milling, Machining.
+    - title: Nondestructive testing (NDT).    
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Architected Materials.
+      items:
+        - Triply Periodic Minimal Surfaces (TPMS)
+        - Auxetic Materials
+    - title: Constitutive Modelling.
       items:
         - Description 1.
         - Description 2.
-    - title: Topic 2.
+    - title: Additive Manufacturing
       items:
-        - Description 1.
-        - Description 2.
+        - Stereolithography (SLA)
+        - Fused Deposition Modeling (FDM)
+    - title: Micromechanics
+    - title: Artificial Intelligence
+      items:
+        - Machine Learning
+        - Deep Learning
+        - Reinforcement Learning
+    - title: Multi-scale Modelling
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Hiking, Camping, etc.
