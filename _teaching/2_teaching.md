@@ -2,7 +2,7 @@
 layout: page
 title: FEM
 description: a project with a background image and giscus comments
-img: 
+img: assets/img/FEM.jpg
 importance: 2
 category: 
 giscus_comments: true

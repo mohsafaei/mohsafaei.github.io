@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Non-linear Solid Mechanics
+title: Research Methodology
 description: course materials
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+img: assets/img/RM.jpg
 importance: 3
 category: work
 ---

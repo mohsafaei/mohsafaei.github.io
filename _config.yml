@@ -201,6 +201,7 @@ exclude:
   - _news/announcement_2.md
   - readme_preview/
   - vendor
+  - _learnings
   
 keep_files:
   - CNAME
