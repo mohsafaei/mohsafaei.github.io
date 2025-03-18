@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-learnings",
-          title: "Learnings",
-          description: "A bunch of learnings I&#39;ve done so far.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/learnings/";
-          },
         },{id: "nav-projects",
           title: "Projects",
           description: "A bunch of projects I&#39;ve done so far.",
@@ -422,11 +415,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "learnings-learning-1",
-          title: 'learning 1',
-          description: "with background image",
-          section: "Learnings",handler: () => {
-              window.location.href = "/learnings/1_learning/";
             },},{id: "news-i-got-my-academic-ielts-certificate-sparkles-sparkles",
           title: 'I got my Academic IELTS certificate :sparkles: :sparkles:',
           description: "",
@@ -481,8 +469,8 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "teaching-nlsm-1",
-          title: 'NLSM 1',
+            },},{id: "teaching-non-linear-solid-mechanics",
+          title: 'Non-linear Solid Mechanics',
           description: "with background image",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/1_teaching/";
@@ -491,8 +479,8 @@ ninja.data = [{
           description: "a project with a background image and giscus comments",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/2_teaching/";
-            },},{id: "teaching-non-linear-solid-mechanics",
-          title: 'Non-linear Solid Mechanics',
+            },},{id: "teaching-research-methodology",
+          title: 'Research Methodology',
           description: "course materials",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/3_teaching/";
