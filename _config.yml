@@ -198,9 +198,9 @@ exclude:
   - README.md
   - _pages/profiles.md
   - _pages/repositories.md
-  - _pages/books.md
   - _pages/blog.md
   - _news/announcement_2.md
+  - _books/the_godfather.md
   - readme_preview/
   - vendor
   - _learnings
