@@ -4,10 +4,7 @@ title: Polymer Physics (Chemistry)
 author: M. Rubinstein, Ralph H. Colby 
 cover: assets/img/book_covers/polymerph.jpg
 isbn: 019852059X # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories: classics crime historical-fiction mystery novels thriller
-buy_link: https://www.amazon.com/Polymer-Physics-Chemistry-M-Rubinstein/dp/019852059X
-started: 2024-08-23
-finished: 2024-09-07
+categories: Science & Engineering
 released: 2003
 ---
 
