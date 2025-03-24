@@ -5,7 +5,6 @@ author: J. N. Reddy
 cover: assets/img/book_covers/ConM.jpg
 isbn: 1107025435 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: Professional 
-buy_link: https://www.amazon.com/Introduction-Continuum-Mechanics-J-Reddy/dp/1107025435
 released: 2013
 ---
 

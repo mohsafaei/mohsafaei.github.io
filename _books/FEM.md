@@ -5,7 +5,6 @@ author: J. N. Reddy
 cover: assets/img/book_covers/polymerph.jpg
 isbn: 019852059X # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: Professional 
-buy_link: https://www.amazon.com/Introduction-Element-McGraw-Hill-Mechanical-Engineering/dp/0072466855
 released: 2005
 ---
 
