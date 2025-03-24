@@ -413,8 +413,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/FEM/";
-            },},{id: "books-",
-          title: '',
+            },},{id: "books-nonlinear-solid-mechanics-a-continuum-approach-for-engineering",
+          title: 'Nonlinear Solid Mechanics A Continuum Approach for Engineering',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Nonlinear_Solid_Mechanics/";
