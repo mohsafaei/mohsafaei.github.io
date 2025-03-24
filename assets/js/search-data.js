@@ -403,7 +403,22 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "books-polymer-physics-chemistry",
+    },{id: "books-an-introduction-to-continuum-mechanics",
+          title: 'An Introduction to Continuum Mechanics',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Continuum_Mechanics/";
+            },},{id: "books-an-introduction-to-the-finite-element-method",
+          title: 'An Introduction to the Finite Element Method',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/FEM/";
+            },},{id: "books-",
+          title: '',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Nonlinear_Solid_Mechanics/";
+            },},{id: "books-polymer-physics-chemistry",
           title: 'Polymer Physics (Chemistry)',
           description: "",
           section: "Books",handler: () => {
