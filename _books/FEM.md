@@ -2,7 +2,7 @@
 layout: book-review
 title: An Introduction to the Finite Element Method 
 author: J. N. Reddy
-cover: assets/img/book_covers/polymerph.jpg
+cover: assets/img/book_covers/FEM.jpg
 isbn: 019852059X # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: Professional 
 released: 2005

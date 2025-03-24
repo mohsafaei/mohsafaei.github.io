@@ -1,6 +1,6 @@
 ---
 layout: book-review
-title: Nonlinear Solid Mechanics: A Continuum Approach for Engineering
+title: Nonlinear Solid Mechanics A Continuum Approach for Engineering
 author: Gerhard A. Holzapfel  
 cover: assets/img/book_covers/NLSM.jpg
 isbn: 0471823198 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
