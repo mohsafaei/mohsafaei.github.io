@@ -1,14 +1,13 @@
 ---
 layout: page
 title: Reinforcement Learning
-description: Monte Carlo, Q-Learning, DQNs
+description: 
 img: assets/img/RL.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-# Reinforcement Learning
 
 Reinforcement Learning (RL) is a branch of machine learning where an agent learns to make decisions by interacting with an environment. Through trial and error, the agent refines its strategies by receiving rewards for good actions and penalties for undesirable ones. The objective is to maximize cumulative rewards over time, leading to intelligent and adaptive behavior. RL has numerous applications, including robotics, game playing, autonomous systems, and optimization problems, making it a powerful tool for developing self-learning models.
 
@@ -19,14 +18,19 @@ Reinforcement learning differs from supervised and unsupervised learning in its 
 
 The diagram below illustrates the core RL framework, where an **agent** interacts with its **environment** by taking **actions** in different **states**, receiving **rewards** as feedback. Through repeated interactions, the agent refines its strategy to maximize cumulative rewards.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+
+
+<div class="row justify-content-center">
+    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/Agent.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Reinforcement Learning framework: an agent interacts with the environment, takes actions, and learns from rewards.
+<div class="text-center">
+    <div class="caption">
+        Reinforcement Learning framework: an agent interacts with the environment, takes actions, and learns from rewards.
+    </div>
 </div>
+
 
 
 ### Key Advantages of RL Over Other Learning Methods
