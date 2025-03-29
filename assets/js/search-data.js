@@ -434,7 +434,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-reinforcement-learning",
           title: 'Reinforcement Learning',
-          description: "Monte Carlo, Q-Learning, DQNs",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-deep-learning",
