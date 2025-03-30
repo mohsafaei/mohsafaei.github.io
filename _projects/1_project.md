@@ -8,8 +8,14 @@ category: work
 related_publications: true
 ---
 
-
 Reinforcement Learning (RL) is a branch of machine learning where an agent learns to make decisions by interacting with an environment. Through trial and error, the agent refines its strategies by receiving rewards for good actions and penalties for undesirable ones. The objective is to maximize cumulative rewards over time, leading to intelligent and adaptive behavior. RL has numerous applications, including robotics, game playing, autonomous systems, and optimization problems, making it a powerful tool for developing self-learning models.
+
+<div class="row justify-content-center">
+    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/cartpole_cmp.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 
 ## RL Approach and Advantages
 
@@ -54,6 +60,19 @@ The Taxi Problem is a well-known example of reinforcement learning, designed to 
 
 At each step, the agent receives rewards for successful pickups and drop-offs and penalties for illegal moves or inefficient navigation. Over multiple episodes, the agent learns an optimal policy for completing the task efficiently.
 
+
+<div class="row justify-content-center">
+    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/taxi.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="text-center">
+    <div class="caption">
+        The agent training process for the taxi problem. 
+    </div>
+</div>
+
+
 ## Implemented RL Algorithms
 
 This project addresses the Taxi Problem using two fundamental RL algorithms: Monte Carlo and Q-Learning.
@@ -93,4 +112,8 @@ pip install numpy pandas matplotlib gymnasium IPython
 ```
 
 
+## Useful References
 
+**[First Reinforcement Learning Program](https://opendilab.github.io/DI-engine/01_quickstart/first_rl_program.html)**
+
+**[Visual Imitation with Reinforcement Learning](https://www-labs.iro.umontreal.ca/~gberseth/visual-imitation-with-reinforcement-learning-using-recurrent-siamese-networks.html)**
