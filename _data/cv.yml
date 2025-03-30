@@ -75,19 +75,19 @@
 - title: Hands-on Experience
   type: time_table
   contents:
-    - title: Gravity Casting (Aluminum).
-    - title: Welding.
-    - title: Turning, Milling, Machining.
-    - title: Nondestructive testing (NDT).    
+    - title: Gravity Casting (Aluminum)
+    - title: Welding
+    - title: Turning, Milling, Machining
+    - title: Nondestructive testing (NDT)   
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Architected Materials.
+    - title: Architected Materials
       items:
         - Triply Periodic Minimal Surfaces (TPMS)
         - Auxetic Materials
-    - title: Constitutive Modelling.
+    - title: Constitutive Modelling
       items:
         - Description 1.
         - Description 2.

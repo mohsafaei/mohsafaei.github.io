@@ -203,7 +203,6 @@ exclude:
   - _books/the_godfather.md
   - readme_preview/
   - vendor
-  - _learnings
   
 keep_files:
   - CNAME

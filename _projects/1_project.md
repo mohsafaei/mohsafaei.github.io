@@ -18,7 +18,6 @@ Reinforcement Learning (RL) is a branch of machine learning where an agent learn
 
 
 
-
 ## RL Approach and Advantages
 
 

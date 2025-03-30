@@ -8,6 +8,21 @@ category: work
 related_publications: true
 ---
 
+<figure>
+  <audio 
+    src="assets/audio/Convs-on-the-paper.wav" 
+    class="custom-audio" 
+    controls 
+    loop 
+    muted 
+    title="Sample Audio">
+  </audio>
+
+  <figcaption class="caption">The podcast devoted to DEAs.</figcaption>
+</figure>
+
+
+
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
