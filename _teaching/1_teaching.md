@@ -10,9 +10,10 @@ related_publications: true
 
 <figure>
   <audio 
-    src="assets/audio/Convs-on-the-paper.wav" 
+    src="assets/audio/Podcast.mp3" 
     class="custom-audio" 
     controls 
+    autoplay 
     loop 
     muted 
     title="Sample Audio">
