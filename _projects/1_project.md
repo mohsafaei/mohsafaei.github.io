@@ -11,7 +11,7 @@ related_publications: true
 Reinforcement Learning (RL) is a branch of machine learning where an agent learns to make decisions by interacting with an environment. Through trial and error, the agent refines its strategies by receiving rewards for good actions and penalties for undesirable ones. The objective is to maximize cumulative rewards over time, leading to intelligent and adaptive behavior. RL has numerous applications, including robotics, game playing, autonomous systems, and optimization problems, making it a powerful tool for developing self-learning models.
 
 <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.liquid loading="eager" path="assets/img/cartpole_cmp.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -28,7 +28,7 @@ The diagram below illustrates the core RL framework, where an **agent** interact
 
 
 <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.liquid loading="eager" path="assets/img/Agent.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -63,7 +63,7 @@ At each step, the agent receives rewards for successful pickups and drop-offs an
 
 
 <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.liquid loading="eager" path="assets/img/taxi.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>

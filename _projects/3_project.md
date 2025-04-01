@@ -1,14 +1,13 @@
 ---
 layout: page
 title: Machine Learning
-description: KNNs, Logistic Regression, SVM
+description: 
 img: assets/img/ML.jpg
 importance: 3
 category: work
 ---
 
-
-### Origin of Machine Learning
+### Origin
 Machine Learning (ML) is a subset of artificial intelligence (AI) that enables computers to learn from data and make predictions without explicit programming. The roots of ML can be traced back to early statistical modeling and pattern recognition in the 1950s. Over time, advancements in computational power and data availability have significantly shaped its evolution:
 
 - **1950s–1970s**: Early ML models emerged from statistical theories, with foundational work in linear regression and decision trees.
@@ -42,10 +41,10 @@ Machine Learning (ML) is a subset of artificial intelligence (AI) that enables c
 
 ## Required Libraries for Machine Learning 
 
-- [![numpy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://numpy.org/doc/stable/user/index.html)
-- [![pandas](https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/getting_started/index.html)
-- [![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
-- [![scikit-learn](https://img.shields.io/badge/TensorFlow-FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
+[![numpy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://numpy.org/doc/stable/user/index.html)
+[![pandas](https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/getting_started/index.html)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
+[![scikit-learn](https://img.shields.io/badge/scikitlearn-F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
 
 
 ### Advantages and Disadvantages

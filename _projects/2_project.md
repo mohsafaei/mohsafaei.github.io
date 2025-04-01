@@ -5,7 +5,7 @@ description:
 img: assets/img/DL.jpg
 importance: 2
 category: work
-giscus_comments: true
+giscus_comments: false
 ---
 
 **Deep Learning** is a subset of machine learning that utilizes artificial neural networks with multiple layers to model and process complex patterns in data. Inspired by the structure and function of the human brain, deep learning algorithms are particularly effective in tasks such as image recognition, natural language processing, and autonomous decision-making.
@@ -39,7 +39,7 @@ The network learns by adjusting **weights and biases** through **gradient descen
 MLPs serve as the foundation for **modern deep learning architectures**, enabling **complex data transformations and predictive modeling**. However, unlike more complex architectures like **CNNs (Convolutional Neural Networks)** and **RNNs (Recurrent Neural Networks)**, MLPs treat inputs as **simple vectors** and lack built-in mechanisms for capturing **spatial hierarchies** or **temporal dependencies**.
 
 <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/MLP.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -81,7 +81,7 @@ Unlike fully connected networks like **MLPs (Multilayer Perceptrons)**, which tr
 These features allow CNNs to efficiently process **high-dimensional structured data like images**, reducing computational complexity while enhancing generalization.
 
 <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.liquid loading="eager" path="assets/img/CNN_demo.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
