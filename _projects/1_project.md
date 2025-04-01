@@ -2,7 +2,7 @@
 layout: page
 title: Reinforcement Learning
 description: 
-img: assets/img/RL.jpg
+img: /assets/img/RL.jpg
 importance: 1
 category: work
 related_publications: true

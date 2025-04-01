@@ -7,74 +7,71 @@ importance: 3
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### Origin of Machine Learning
+Machine Learning (ML) is a subset of artificial intelligence (AI) that enables computers to learn from data and make predictions without explicit programming. The roots of ML can be traced back to early statistical modeling and pattern recognition in the 1950s. Over time, advancements in computational power and data availability have significantly shaped its evolution:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+- **1950s–1970s**: Early ML models emerged from statistical theories, with foundational work in linear regression and decision trees.
+- **1980s–1990s**: The introduction of artificial neural networks and support vector machines (SVMs) expanded ML capabilities.
+- **2000s–2010s**: The rise of big data and cloud computing enabled large-scale ML applications, leading to breakthroughs in deep learning.
+- **2020s–Present**: ML is now widely used in fields such as healthcare, finance, automation, and scientific research, with growing integration into AI-driven decision-making systems.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+
+<div class="row justify-content-center">
+    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/ML_tmln.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="text-center">
+    <div class="caption">
+        A timeline showcasing the evolution of Machine Learning from its statistical origins to modern AI-driven applications.
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center">
+    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/ML_type.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+<div class="text-center">
+    <div class="caption">
+       Types of Machine Learning—This diagram depicts the three main categories: supervised, unsupervised, and reinforcement learning.
+    </div>
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
 
-{% raw %}
+## Required Libraries for Machine Learning 
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+- [![numpy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://numpy.org/doc/stable/user/index.html)
+- [![pandas](https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/getting_started/index.html)
+- [![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
+- [![scikit-learn](https://img.shields.io/badge/TensorFlow-FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
 
-{% endraw %}
+
+### Advantages and Disadvantages
+
+#### Advantages:
+- **Automated Learning**: ML models improve automatically with more data.
+- **Scalability**: Capable of handling large datasets efficiently.
+- **Broad Applications**: Used in healthcare, finance, automation, and more.
+
+#### Disadvantages:
+- **Data Dependency**: Requires large, high-quality datasets for accuracy.
+- **Interpretability**: Many ML models, especially deep learning models, function as black boxes.
+- **Computational Resources**: Requires high computational power for training complex models.
+
+### Comparison with Deep Learning and Reinforcement Learning
+
+| Feature | Machine Learning | Deep Learning | Reinforcement Learning |
+|---------|----------------|--------------|----------------------|
+| **Approach** | Uses statistical models and algorithms | Uses neural networks for hierarchical feature learning | Uses reward-based learning to optimize decisions |
+| **Data Requirement** | Works well with structured, small datasets | Requires large amounts of unstructured data | Works well in dynamic environments |
+| **Interpretability** | Easier to interpret | Difficult to interpret due to complex layers | Highly dependent on the environment |
+
+
+
+
+
+
+
+
