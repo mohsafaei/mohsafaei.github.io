@@ -65,7 +65,6 @@ A practical example of housing price prediction using an MLP is included in this
 
 ### Dataset & Resources
 This example demonstrates essential steps in predicting housing prices, showing how MLPs can be applied to real-world regression problems.
-**Dataset Link:** [Housing Prices Dataset](https://github.com/mohsafaei/Deep_Learning/blob/main/MLP/houses_1.csv)
 
 
 ### Convolutional Neural Network (CNN)
@@ -99,8 +98,6 @@ AI-driven self-driving cars enhance road safety by reducing human error, adaptin
 
 ### Implementation
 A practical example of traffic sign recognition using CNNs is included in this repository. This example serves as a valuable exercise for undergraduates and researchers working on applied AI projects.
-
-**Dataset Link:** [Traffic Sign Dataset](https://drive.google.com/drive/folders/1daZ80k22FkJbLv48WqJ1dQpk37NyRzLh)
 
 
 
