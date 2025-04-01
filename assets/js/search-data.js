@@ -444,7 +444,7 @@ ninja.data = [{
               window.location.href = "/projects/2_project/";
             },},{id: "projects-machine-learning",
           title: 'Machine Learning',
-          description: "KNNs, Logistic Regression, SVM",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "teaching-non-linear-solid-mechanics",
