@@ -3,6 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 description: A bunch of projects I've done so far.
+img: /assets/img/synapse.jpg
 nav: true
 nav_order: 3
 display_categories: [work, fun]
