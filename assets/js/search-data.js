@@ -467,7 +467,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%6D%6F%68%61%6D%6D%61%64%73%66%31%39%39%38@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("mailto:%6D%61.%73%61%66%61%65%69@%75%74.%61%63.%69%72", "_blank");
         },
       },{
         id: 'social-linkedin',
@@ -496,6 +496,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.researchgate.net/profile/Mohammad-Safaei-10/", "_blank");
+        },
+      },{
+        id: 'social-custom_social',
+        title: 'Custom_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:mohammadsf1998@gmail.com", "_blank");
         },
       },{
       id: 'light-theme',
