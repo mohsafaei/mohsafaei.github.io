@@ -4,7 +4,7 @@ title: Reinforcement Learning
 description: 
 img: /assets/img/RL.jpg
 importance: 1
-category: work
+category: 
 related_publications: true
 ---
 

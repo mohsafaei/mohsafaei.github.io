@@ -4,7 +4,7 @@ title: Machine Learning
 description: 
 img: assets/img/ML.jpg
 importance: 3
-category: work
+category: 
 ---
 
 ### Origin
@@ -17,7 +17,7 @@ Machine Learning (ML) is a subset of artificial intelligence (AI) that enables c
 
 
 <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.liquid loading="eager" path="assets/img/ML_tmln.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -28,7 +28,7 @@ Machine Learning (ML) is a subset of artificial intelligence (AI) that enables c
 </div>
 
 <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-8 mt-3 mt-md-0 text-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.liquid loading="eager" path="assets/img/ML_type.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -44,7 +44,7 @@ Machine Learning (ML) is a subset of artificial intelligence (AI) that enables c
 [![numpy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://numpy.org/doc/stable/user/index.html)
 [![pandas](https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/getting_started/index.html)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
-[![scikit-learn](https://img.shields.io/badge/scikitlearn-F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
+[![scikit-learn](https://img.shields.io/badge/scikitlearn-F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=black)](https://scikit-learn.org/stable/user_guide.html)
 
 
 ### Advantages and Disadvantages

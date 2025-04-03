@@ -4,11 +4,11 @@ title: Deep Learning
 description: 
 img: assets/img/DL.jpg
 importance: 2
-category: work
+category: 
 giscus_comments: false
 ---
 
-**Deep Learning** is a subset of machine learning that utilizes artificial neural networks with multiple layers to model and process complex patterns in data. Inspired by the structure and function of the human brain, deep learning algorithms are particularly effective in tasks such as image recognition, natural language processing, and autonomous decision-making.
+**Deep Learning** is a subset of machine learning that utilizes artificial neural networks with multiple layers to model and process complex patterns in data. Inspired by the structure and function of biological neural networks, these architectures mimic the way neurons communicate and adapt, enabling deep learning algorithms to excel in tasks such as image recognition, natural language processing, and autonomous decision-making.
 
 
 ## Why Deep Learning?
@@ -25,29 +25,37 @@ To run the provided examples, ensure you have the following libraries installed:
 [![numpy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://numpy.org/doc/stable/user/index.html)
 [![pandas](https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/getting_started/index.html)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
-[![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00.svg?style=for-the-badge&logo=Google-Colab&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
-[![scikit-learn](https://img.shields.io/badge/TensorFlow-FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
-[![TensorFlow](https://img.shields.io/badge/scikitlearn-F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=black)](https://matplotlib.org/3.5.3/users/index.html)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=black)](https://www.tensorflow.org/)
+[![scikit-learn](https://img.shields.io/badge/scikitlearn-F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=black)](https://scikit-learn.org/stable/user_guide.html)
 
 
 ## Implemented Architectures
-This repository covers different types of deep learning architectures:
 
 ### Multilayer Perceptron (MLP)
-A **Multilayer Perceptron (MLP)** is a type of artificial neural network with an **input layer, one or more hidden layers, and an output layer**, used for **pattern recognition** and **function approximation**. Originating from early neural network research, MLPs gained practical significance in **1986** with the introduction of **backpropagation** by *Rumelhart, Hinton, and Williams*. 
-The network learns by adjusting **weights and biases** through **gradient descent** while applying **activation functions** (e.g., *ReLU, Sigmoid*) to introduce non-linearity. 
-MLPs serve as the foundation for **modern deep learning architectures**, enabling **complex data transformations and predictive modeling**. However, unlike more complex architectures like **CNNs (Convolutional Neural Networks)** and **RNNs (Recurrent Neural Networks)**, MLPs treat inputs as **simple vectors** and lack built-in mechanisms for capturing **spatial hierarchies** or **temporal dependencies**.
+
+A **Multilayer Perceptron (MLP)** is a type of artificial neural network with an *input layer, one or more hidden layers, and an output layer*, used for *pattern recognition* and *function approximation*. Originating from early neural network research, MLPs gained practical significance in 1986 with the introduction of **backpropagation** by *Rumelhart, Hinton, and Williams*.  
+The network learns by adjusting *weights and biases* through **gradient descent** while applying *activation functions* (e.g., *ReLU, Sigmoid*) to introduce non-linearity.  
+MLPs serve as the foundation for **modern deep learning architectures**, enabling *complex data transformations and predictive modeling*. However, unlike more complex architectures like **CNNs (Convolutional Neural Networks)** and **RNNs (Recurrent Neural Networks)**, MLPs treat inputs as *simple vectors* and lack built-in mechanisms for capturing *spatial hierarchies* or *temporal dependencies*.  
+
+
 
 <div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/MLP.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/synapse.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="text-center">
     <div class="caption">
-        A simple example of a multilayer perceptron.
+        Illustration of a Multilayer Perceptron (MLP) network architecture and how its design is inspired by biological synapse networks and their communication mechanisms.
     </div>
 </div>
+
 
 ## MLP Example: Housing Prices Prediction
 ### Problem Description
