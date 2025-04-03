@@ -502,7 +502,7 @@ ninja.data = [{
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("mohammadsf1998@gmail.com", "_blank");
+          window.open("mailto:mohammadsf1998@gmail.com", "_blank");
         },
       },{
       id: 'light-theme',
