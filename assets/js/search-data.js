@@ -470,11 +470,11 @@ ninja.data = [{
           window.open("mailto:%6D%61.%73%61%66%61%65%69@%75%74.%61%63.%69%72", "_blank");
         },
       },{
-        id: 'social-github',
-        title: 'GitHub',
+        id: 'social-custom_social',
+        title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/mohsafaei", "_blank");
+          window.open("https://scholar.google.com/citations?user=jD_-4JcAAAAJ&hl", "_blank");
         },
       },{
         id: 'social-linkedin',
@@ -484,25 +484,18 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/mohsafaei", "_blank");
         },
       },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/mohsafaei", "_blank");
+        },
+      },{
         id: 'social-researchgate',
         title: 'ResearchGate',
         section: 'Socials',
         handler: () => {
           window.open("https://www.researchgate.net/profile/Mohammad-Safaei-10/", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=jD_-4JcAAAAJ&hl", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:mohammadsf1998@gmail.com", "_blank");
         },
       },{
       id: 'light-theme',
