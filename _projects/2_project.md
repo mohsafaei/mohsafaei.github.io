@@ -4,7 +4,6 @@ title: Deep Learning
 description: 
 img: assets/img/DL.jpg
 importance: 2
-category: 
 giscus_comments: false
 ---
 

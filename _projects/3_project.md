@@ -4,7 +4,6 @@ title: Machine Learning
 description: 
 img: assets/img/ML.jpg
 importance: 3
-category: 
 ---
 
 ### Origin
