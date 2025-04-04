@@ -7,19 +7,27 @@ importance: 2
 category: 
 giscus_comments: false
 ---
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/FEM_screw.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 The **Finite Element Method (FEM)** is a numerical technique for solving complex engineering and physics problems by dividing a continuous domain into smaller, simpler parts called **finite elements**, which are then analyzed using mathematical equations to approximate the behavior of the entire system.
+
 
 ## **1. Emergence of the Finite Element Method**
 The **Finite Element Method (FEM)** emerged in the mid-20th century as a powerful numerical technique for solving complex engineering and physics problems. It was first developed in the aerospace industry to analyze stress in aircraft structures but later expanded to various fields, including **mechanical, civil, and biomedical engineering**.
 
 ### **Historical Milestones**
+
 | Year | Development |
 |------|------------|
-| 1943 | Courant introduces FEM principles. |
-| 1956 | Turner et al. formalize FEM in engineering. |
-| 1960s | Expansion into heat transfer and fluid dynamics. |
-| 1970s | FEM becomes widely used in commercial software. |
+| **1943** | Courant introduces FEM principles |
+| **1956** | Turner et al. formalize FEM in engineering |
+| **1960s** | Expansion into heat transfer and fluid dynamics |
+| **1970s** | FEM becomes widely used in commercial software |
+
 
 ---
 
@@ -79,10 +87,12 @@ A typical **FEM analysis** follows these key steps:
 - **3D Elements**: Tetrahedral, hexahedral  
 
 ### **Solution Schemes**
+
 | Scheme | Description |
 |--------|------------|
-| Direct Methods | Solve system equations directly (e.g., Gauss elimination). |
-| Iterative Methods | Approximate solutions (e.g., Conjugate Gradient, Multigrid). |
+| **Direct Methods** | Solve system equations directly (e.g., Gauss elimination) |
+| **Iterative Methods** | Approximate solutions (e.g., Conjugate Gradient, Multigrid) |
+
 
 ---
 
@@ -96,11 +106,13 @@ FEM is widely used across multiple disciplines:
 - **Electromagnetics** 🔌 – Analysis of wave propagation in electronic circuits.  
 
 ### **Application-wise FEM Usage**
-```mermaid
-pie
-  title FEM Application Distribution
-  "Structural Analysis": 35
-  "Thermal Analysis": 20
-  "Fluid Dynamics": 15
-  "Electromagnetics": 10
-  "Other Fields": 20
+
+<div class="mermaid">
+  pie
+    title FEM Application Distribution
+    "Structural Analysis": 35
+    "Thermal Analysis": 20
+    "Fluid Dynamics": 15
+    "Electromagnetics": 10
+    "Other Fields": 20
+</div>

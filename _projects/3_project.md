@@ -70,6 +70,12 @@ Machine Learning (ML) is a subset of artificial intelligence (AI) that enables c
 
 
 
+## Further Reading
+
+For a deeper understanding of Machine Learning, refer to: 
+
+- [Deep Learning: A Comprehensive Overview](https://link.springer.com/article/10.1007/s42979-021-00815-1)
+
 
 
 
