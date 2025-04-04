@@ -1,81 +1,106 @@
 ---
 layout: page
 title: FEM
-description: a project with a background image and giscus comments
+description: introduction
 img: assets/img/FEM.jpg
 importance: 2
 category: 
-giscus_comments: true
+giscus_comments: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The **Finite Element Method (FEM)** is a numerical technique for solving complex engineering and physics problems by dividing a continuous domain into smaller, simpler parts called **finite elements**, which are then analyzed using mathematical equations to approximate the behavior of the entire system.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## **1. Emergence of the Finite Element Method**
+The **Finite Element Method (FEM)** emerged in the mid-20th century as a powerful numerical technique for solving complex engineering and physics problems. It was first developed in the aerospace industry to analyze stress in aircraft structures but later expanded to various fields, including **mechanical, civil, and biomedical engineering**.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### **Historical Milestones**
+| Year | Development |
+|------|------------|
+| 1943 | Courant introduces FEM principles. |
+| 1956 | Turner et al. formalize FEM in engineering. |
+| 1960s | Expansion into heat transfer and fluid dynamics. |
+| 1970s | FEM becomes widely used in commercial software. |
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+---
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## **2. Definition of FEM**
+The **Finite Element Method (FEM)** is a computational technique used to approximate solutions to complex boundary value problems by dividing a large system into smaller, simpler parts called **finite elements**. These elements are then solved using **variational or weighted residual methods**, such as the Galerkin method.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### **Key Features of FEM**
+- **Discretization**: Converts a continuous domain into finite elements.
+- **Approximation**: Uses interpolation functions to estimate unknown values.
+- **Systematic Approach**: Solves partial differential equations numerically.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## **3. Why Use FEM?**
+### **Advantages Over Other Methods**
+✔ **Handles Complex Geometries**  
+✔ **Applicable to Various Physics Problems**  
+✔ **Efficient for Large-Scale Problems**  
+✔ **Supports Multi-Physics Coupling**  
+✔ **Flexibility in Material Modeling**  
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+---
 
-{% endraw %}
+## **4. Steps in a Finite Element Analysis**
+A typical **FEM analysis** follows these key steps:
+
+1. **Preprocessing**  
+   - Define the **geometry** of the problem.  
+   - Discretize the domain into **finite elements** (e.g., quadrilateral, triangular, tetrahedral).  
+   - Assign **material properties**.  
+
+2. **Formulation**  
+   - Develop the **element equations** using governing equations (e.g., elasticity, heat conduction).  
+   - Assemble **global stiffness matrix**.  
+   - Apply **boundary conditions** and external forces.  
+
+3. **Solving the System**  
+   - Solve the matrix equation:  
+     \[
+     [K] \{u\} = \{F\}
+     \]
+     where:
+     - \( [K] \) is the stiffness matrix,
+     - \( \{u\} \) is the nodal displacement vector,
+     - \( \{F\} \) is the force vector.
+
+4. **Postprocessing**  
+   - Visualize **deformations, stress distributions, and temperature gradients**.  
+   - Interpret results and validate with experimental data.
+
+---
+
+## **5. FEM Elements and Methods**
+### **Types of Elements**
+- **1D Elements**: Beams, rods, trusses  
+- **2D Elements**: Triangular, quadrilateral  
+- **3D Elements**: Tetrahedral, hexahedral  
+
+### **Solution Schemes**
+| Scheme | Description |
+|--------|------------|
+| Direct Methods | Solve system equations directly (e.g., Gauss elimination). |
+| Iterative Methods | Approximate solutions (e.g., Conjugate Gradient, Multigrid). |
+
+---
+
+## **6. Applications of FEM**
+FEM is widely used across multiple disciplines:
+
+- **Structural Engineering** 🏗️ – Stress analysis of buildings, bridges.  
+- **Mechanical Engineering** ⚙️ – Vibration and fatigue analysis of machine components.  
+- **Aerospace Engineering** ✈️ – Aircraft structural integrity, thermal effects.  
+- **Biomedical Engineering** 🏥 – Bone stress analysis, prosthetic design.  
+- **Electromagnetics** 🔌 – Analysis of wave propagation in electronic circuits.  
+
+### **Application-wise FEM Usage**
+```mermaid
+pie
+  title FEM Application Distribution
+  "Structural Analysis": 35
+  "Thermal Analysis": 20
+  "Fluid Dynamics": 15
+  "Electromagnetics": 10
+  "Other Fields": 20
