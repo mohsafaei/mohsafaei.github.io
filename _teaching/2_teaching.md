@@ -9,7 +9,7 @@ giscus_comments: false
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FEM_screw.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Rim.png" title="example image" class="img-fluid rounded" %}
     </div>
 </div>
 
@@ -23,11 +23,40 @@ The **Finite Element Method (FEM)** emerged in the mid-20th century as a powerfu
 
 | Year | Development |
 |------|------------|
-| **1943** | Courant introduces FEM principles |
-| **1956** | Turner et al. formalize FEM in engineering |
+| **1943**  | Courant introduces FEM principles |
+| **1956**  | Turner et al. formalize FEM in engineering |
 | **1960s** | Expansion into heat transfer and fluid dynamics |
 | **1970s** | FEM becomes widely used in commercial software |
 
+
+---
+
+<table>
+  <thead>
+    <tr>
+      <th>📅 <b>Year</b></th>
+      <th>🚀 <b>Development</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>1943</b></td>
+      <td>Courant introduces <i>FEM</i> principles</td>
+    </tr>
+    <tr>
+      <td><b>1956</b></td>
+      <td>Turner <i>et al.</i> formalize <b>FEM</b> in engineering</td>
+    </tr>
+    <tr>
+      <td><b>1960s</b></td>
+      <td>Expansion into <b>heat transfer</b> and <b>fluid dynamics</b></td>
+    </tr>
+    <tr>
+      <td><b>1970s</b></td>
+      <td><b>FEM</b> becomes widely used in <b>commercial software</b></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -105,14 +134,9 @@ FEM is widely used across multiple disciplines:
 - **Biomedical Engineering** 🏥 – Bone stress analysis, prosthetic design.  
 - **Electromagnetics** 🔌 – Analysis of wave propagation in electronic circuits.  
 
-### **Application-wise FEM Usage**
 
-<div class="mermaid">
-  pie
-    title FEM Application Distribution
-    "Structural Analysis": 35
-    "Thermal Analysis": 20
-    "Fluid Dynamics": 15
-    "Electromagnetics": 10
-    "Other Fields": 20
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/FEM_App.png" title="example image" class="img-fluid rounded" %}
+    </div>
 </div>
