@@ -21,13 +21,14 @@
       year: 2021 - 2024
       description:
         - title: Thesis Title
-          contents:
-            - Distinctive Electromechanical Performance of Metamaterial Dielectric Elastomer Actuators with TPMS Geometries.
+          contents: Distinctive Electromechanical Performance of Metamaterial Dielectric Elastomer Actuators with TPMS Geometries.
         - GPA of 3.89/4.00
     - title: Bachelor of Science
       institution: Bu-Ali Sina University, Hamedan, Iran.
       year: 2016 - 2021
       description:
+        - title: Thesis Title
+          contents: Optimization of Energy Absorption in Empty and Foam-Filled Circular Thin-Walled Sandwich Structures.
         - GPA of 3.12/4.00.
 
 
@@ -43,6 +44,7 @@
             - Dielectric Elastomer Actuators (DEAs)
             - Stimuli-Responsive Hydrogels
             - Shape Memory Polymers (SMPs)
+        - title: Authored Section 1.3 of the book “Computational Modeling of Intelligent Soft Matter”.
     - title: Teaching Assistant
       institution: College of Engineering, University of Tehran
       year: 2022 - 2024
@@ -52,6 +54,15 @@
             - Finite Element Method.
             - Non-linear Solid Mechanics.
             - Research Methodology.
+    - title: Assistant Reviewer
+      institution: Remote
+      year: 2022 - 2024
+      description:
+        - title: Reviewed over 25 submissions for journals such as Chemical Engineering Journal, Additive Manufacturing, Advanced Engineering Materials, and Polymers.
+    - title: General English ateacher
+      institution: Emamat High School, Tehran, Iran
+      year: 2022 - 2024
+
 
 - title: skills
   type: time_table
@@ -80,6 +91,21 @@
     - title: Turning, Milling, Machining
     - title: Nondestructive testing (NDT)   
 
+- title: Honors & Awards
+  type: list
+  contents:
+    - Top 1%, out of more than 10,000 applicants in the M.Sc. Nation-wide University Entrance Exam (Full scholarship).
+    - Top 5%, out of more than 190,000 applicants in the B.Sc. Nation-wide University Entrance Exam (Full scholarship).
+    - Awarded within the top state candidates in the National Kharazmi Elite Youth Festival. (Poetry-Literature)
+    - Performed as a Santur player in the talented students orchestra during elementary and secondary school.
+
+- title: Selected Publication
+  type: nested_list
+  contents:
+    - title: In Silico Actuation Performance Investigation of Dielectric Elastomers with TPMS Geometries.
+    - title: Towards Responsive Polymer Actuators Based on Novel Composite Structures (Submitted).
+    - title: Optimization of Electromechanical Performance in TPMS-Based Dielectric Elastomers Using Genetic Algorithm (Inpreparation)
+
 - title: Academic Interests
   type: nested_list
   contents:
@@ -106,4 +132,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hiking, Camping, etc.
+    - <u>Hobbies</u> Hiking, Camping, etc.
