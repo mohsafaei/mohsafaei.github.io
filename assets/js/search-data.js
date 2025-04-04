@@ -454,7 +454,7 @@ ninja.data = [{
               window.location.href = "/teaching/1_teaching/";
             },},{id: "teaching-fem",
           title: 'FEM',
-          description: "a project with a background image and giscus comments",
+          description: "introduction",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/2_teaching/";
             },},{id: "teaching-research-methodology",
