@@ -71,11 +71,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/polymer_physics/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-i-got-my-academic-ielts-certificate-sparkles-sparkles",
+          title: 'I got my Academic IELTS certificate :sparkles: :sparkles:',
           description: "",
-          section: "News",},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-great-news-my-first-first-author-research-article-is-accepted-in-the-european-journal-of-mechanics-a-solids",
+          title: 'Great news! My first first-author research article is accepted in the European Journal...',
+          description: "",
+          section: "News",},{id: "news-great-news-i-got-admitted-to-michigan-state-university-sparkles-smile",
+          title: 'Great news! I got admitted to Michigan State University! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-i-ranked-12-among-many-in-the-nation-wide-university-entrance-exam-konkur-for-phd-studies-yeay",
+          title: 'I ranked 🏆 12 among many 🌍 in the nation-wide university entrance exam...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -127,35 +133,42 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%6D%61.%73%61%66%61%65%69@%75%74.%61%63.%69%72", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("https://www.linkedin.com/in/mohsafaei", "_blank");
         },
       },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://scholar.google.com/citations?user=jD_-4JcAAAAJ&hl", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/mohsafaei", "_blank");
+        },
+      },{
+        id: 'social-researchgate',
+        title: 'ResearchGate',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.researchgate.net/profile/Mohammad-Safaei-10/", "_blank");
         },
       },{
         id: 'social-custom_social',
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("mailto:mohammadsf1998@gmail.com", "_blank");
         },
       },{
       id: 'light-theme',
