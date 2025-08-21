@@ -26,8 +26,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a researcher with a strong academic background in Nonlinear Solid Mechanics. I completed my M.Sc. at the University of Tehran (2021–2024) with a high GPA of 3.88. My research focused on the multiphysics behavior of smart materials, including Shape Memory Polymers (SMPs), hydrogels, and Dielectric Elastomer Actuators (DEAs). 📚
 
-I have a strong background in various topics, including nonlinear constitutive modeling, finite element analysis, continuum mechanics, and multiscale modeling. Additionally, I am familiar with Artificial Intellignce (AI) and am eager to explore their applications in mechanical science. 🚀
+I’m a researcher with a strong academic background in **Nonlinear Solid Mechanics** and **Finite Element Analysis** ✨. I completed my **M.Sc. at the University of Tehran** (#340 in QS Ranking) with a **GPA of 3.88**. My research interests include the multiphysics modeling of smart materials—such as **Shape Memory Polymers (SMPs)**, **hydrogels**, and **Dielectric Elastomer Actuators (DEAs)**. 📚💡  
 
-I also like camping, canyoning and reading. ⛺️📚
+I have a solid foundation in **continuum mechanics** and **constitutive modeling**, and I want to use this knowledge to help push the boundaries of science, especially in areas connected to **human health** ❤️🩹. I truly believe that by doing so, we can all move toward a better, healthier life together 🌍✨.  
+
+Oh, and beyond the lab—I love **camping ⛺️, canyoning 🌊, and reading 📖** too 😉.  
+
+
+
