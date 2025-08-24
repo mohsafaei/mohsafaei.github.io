@@ -128,6 +128,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "teaching-non-linear-solid-mechanics",
+          title: 'Non-linear Solid Mechanics',
+          description: "with background image",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/1_teaching/";
+            },},{id: "teaching-fem",
+          title: 'FEM',
+          description: "introduction",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/2_teaching/";
+            },},{id: "teaching-research-methodology",
+          title: 'Research Methodology',
+          description: "",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/3_teaching/";
             },},{
         id: 'social-email',
         title: 'email',
