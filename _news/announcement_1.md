@@ -5,7 +5,9 @@ inline: true
 related_posts: false
 ---
 
-Great news! My first first-author research article is accepted in the European Journal of Mechanics - A / Solids.
+📣 Great news! 🎉 My **first research article** is accepted in a **Q1 journal** 🏆.  
+This is the start of a long journey for me 🚀 (maybe my biggest academic achievement so far ✨).
+
 
 
 

@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-I got my Academic IELTS certificate :sparkles: :sparkles:
+📜 I got my **IELTS Academic certificate** with an overall **7.5 band score**! ✨  
 

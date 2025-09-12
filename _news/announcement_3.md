@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Great news! I got admitted to Michigan State University! :sparkles: :smile:
+💚 I got admitted to **Michigan State University**! 🏛️ :smile: :sparkles: Go **Spartans**! 🟢⚪
 
