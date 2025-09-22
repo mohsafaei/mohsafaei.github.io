@@ -31,18 +31,7 @@ Make your photos 1/3, 2/3, or full width.
 
 ## GitHub Repositories
 
-<figure>
-  <audio 
-    src="assets/audio/Podcast.mp3" 
-    class="custom-audio" 
-    controls 
-    autoplay 
-    loop 
-    muted 
-    title="Sample Audio">
-  </audio>
-  <figcaption class="caption">The podcast devoted to DEAs.</figcaption>
-</figure>
+
 
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
