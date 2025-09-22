@@ -118,14 +118,13 @@ Here’s how you can present visual aids or link to reference materials (like a 
 </div>
 
 
-
 <div class="text-center mt-4">
-    <a class="btn btn-primary" href="Research_Methodology/1.pdf" target="_blank">
-        📄 A good Presentation (PDF)
+    <a class="btn btn-primary" href="_teaching/Research_Methodology/1.pdf" target="_blank">
+        A good Presentation (PDF)
     </a>
 </div>
 <div class="text-center mt-4">
-    <a class="btn btn-primary" href="Research_Methodology/2.pdf" target="_blank">
-        📄 Articles, Journals, and Databases (PDF)
+    <a class="btn btn-primary" href="_teaching/Research_Methodology/2.pdf" target="_blank">
+        Articles, Journals, and Databases (PDF)
     </a>
 </div>
