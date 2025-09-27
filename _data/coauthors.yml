@@ -32,3 +32,24 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"baghani":
+  - firstname: ["Mostafa","M."]
+    url: https://scholar.google.com/citations?user=hbptgRoAAAAJ&hl=en
+
+"baniassadi":
+  - firstname: ["Majid", "M."]
+    url: https://scholar.google.com/citations?user=sVnPip4AAAAJ&hl=en
+
+"bodaghi":
+  - firstname: ["Mahdi", "M."]
+    url: https://scholar.google.com/citations?user=Kgjbp-IAAAAJ&hl=en
+
+"shahsavari":
+  - firstname: ["Hamid", "H."]
+    url: https://scholar.google.com/citations?user=P62xAlkAAAAJ&hl=en
+
+
+"safaei":
+  - firstname: ["Mohammad Ali","Mohammad A.", "M. A."]
+    url: https://scholar.google.com/citations?user=jD_-4JcAAAAJ&hl=en
