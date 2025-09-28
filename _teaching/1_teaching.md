@@ -20,7 +20,7 @@ DEAs are highly efficient soft actuators widely used in **soft robotics** and **
 
 The main theory behind DEAs includes an **electromechanical problem with large strains**, which can be solved using **nonlinear solid mechanics theories**.
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include audio.liquid path="assets/audio/Podcast.mp3" controls=true %}
     </div>
@@ -174,3 +174,20 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+
+
+## Further Reading
+
+You can read the following books:
+
+<div class="row">
+  <div class="col-sm-4 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/book_covers/ConM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/FEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/NLSM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
+  </div>
+</div>
