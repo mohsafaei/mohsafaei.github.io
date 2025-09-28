@@ -1,13 +1,12 @@
 ---
 layout: page
 title: Non-linear Solid Mechanics
-description: with background image
+description: 
 img: assets/img/NLSM.jpg
 importance: 1
-related_publications: true
+related_publications: false
 ---
 
-# Nonlinear Solid Mechanics
 
 Nonlinear solid mechanics is **essential** for understanding how materials and structures behave under **large deformations**, **extreme loads**, and **complex interactions** that cannot be described using simple linear models.
 
@@ -182,12 +181,19 @@ You can read the following books:
 
 <div class="row">
   <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/book_covers/ConM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
+    <a href="https://mohsafaei.github.io/books/Continuum_Mechanics/">
+        {% include figure.liquid path="assets/img/book_covers/ConM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
+    </a>
+  </div>
+
+  <div class="col-sm-4 mt-3 mt-md-0">
+    <a href="https://mohsafaei.github.io/books/FEM/">
+        {% include figure.liquid path="assets/img/book_covers/FEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
+    </a>
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/FEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/NLSM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
+    <a href="https://mohsafaei.github.io/books/Nonlinear_Solid_Mechanics/">
+        {% include figure.liquid path="assets/img/book_covers/NLSM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
+    </a>
   </div>
 </div>
