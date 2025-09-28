@@ -106,11 +106,6 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_RL/";
-            },},{id: "teaching-non-linear-solid-mechanics",
-          title: 'Non-linear Solid Mechanics',
-          description: "with background image",
-          section: "Teaching",handler: () => {
-              window.location.href = "/teaching/1_teaching/";
             },},{id: "teaching-fem",
           title: 'FEM',
           description: "introduction",
@@ -121,6 +116,11 @@ ninja.data = [{
           description: "",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/3_teaching/";
+            },},{id: "teaching-non-linear-solid-mechanics",
+          title: 'Non-linear Solid Mechanics',
+          description: "",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/teaching_NLSM/";
             },},{
         id: 'social-email',
         title: 'email',
