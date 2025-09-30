@@ -54,10 +54,12 @@
       institution: Remote
       year: 2022 - 2024
       description: Reviewed over 30 submissions for journals such as Chemical Engineering Journal, Additive Manufacturing, Advanced Engineering Materials, and Polymers.
-    - title: General English ateacher
+    - title: General English teacher
       institution: Emamat High School, Tehran, Iran
-      year: 2022 - 2024
-
+      year: 2024
+    - title: IELTS teacher & mentor
+      institution: Nogolearn, Tehran, Iran
+      year: 2025
 
 - title: skills
   type: time_table
@@ -78,13 +80,6 @@
         - CATIA
         - MS Office
 
-- title: Hands-on Experience
-  type: time_table
-  contents:
-    - title: Gravity Casting
-    - title: Welding
-    - title: Turning, Milling, Machining
-    - title: Nondestructive testing (NDT)   
 
 - title: Honors & Awards
   type: list
@@ -113,7 +108,6 @@
       items:
         - 3D bioprinting
         - Direct Ink Wrinting (DIW)
-    - title: Micromechanics
     - title: Artificial Intelligence in Healthcare 
       items:
         - Machine Learning
