@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-💚 I got admitted to **Michigan State University**! 🏛️ :smile: :sparkles: Go **Spartans**! 🟢⚪
+💚 I got admitted to [**Michigan State University**](https://msu.edu/)! 🏛️ :smile: :sparkles: Go **Spartans**! 🟢⚪
 
