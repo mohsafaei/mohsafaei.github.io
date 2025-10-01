@@ -11,7 +11,7 @@ Reinforcement Learning (RL) is a branch of machine learning where an agent learn
 
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">
-        {% include figure.liquid loading="eager" path="assets/img/cartpole_cmp.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/taxi.gif" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
