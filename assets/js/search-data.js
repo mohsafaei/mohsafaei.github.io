@@ -93,12 +93,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-ve-officially-started-my-new-role-as-an-ielts-teacher-mentor-at-the-nogolearn-institute-can-t-wait-to-help-my-students-grow",
           title: '📣 I’ve officially started my new role as an IELTS teacher/mentor at the...',
           description: "",
-          section: "News",},{id: "projects-cad-drawings",
-          title: 'CAD drawings',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/project_CAD/";
-            },},{id: "projects-deep-learning",
+          section: "News",},{id: "projects-deep-learning",
           title: 'Deep Learning',
           description: "",
           section: "Projects",handler: () => {
