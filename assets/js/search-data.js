@@ -120,7 +120,7 @@ ninja.data = [{
               window.location.href = "/teaching/3_teaching/";
             },},{id: "teaching-non-linear-solid-mechanics",
           title: 'Non-linear Solid Mechanics',
-          description: "",
+          description: "Advanced Mechanics for Real-world Problems 🌟",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/teaching_NLSM/";
             },},{
