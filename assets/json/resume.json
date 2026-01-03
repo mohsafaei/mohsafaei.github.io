@@ -123,7 +123,7 @@
       "issuer": "Stanford University",
       "url": "https://example.com",
       "icon": "fa-solid fa-clipboard-check"
-    }
+    },
     {
       "name": "Piping principles and design",
       "date": "2018-01-01",
@@ -151,7 +151,7 @@
         "FORTRAN",
         "MAPLE"
       ]
-    }
+    },
     {
       "name": "Software",
       "level": "Master",
@@ -165,7 +165,7 @@
         "SOLIDWORKS",
         "CATIA"
       ]
-    }
+    },
     {
       "name": "Hands-on Experiences",
       "level": "Master",
