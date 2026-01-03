@@ -27,18 +27,18 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
+      "name": "Nogolearn Institute, Tehran , Iran",
+      "position": "English teacher",
       "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
+      "startDate": "2025-06-01",
+      "endDate": "2026-01-01",
       "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
       "highlights": ["Relativity"]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
+      "organization": "Peer-reviewer for Journals",
       "location": "Zurich, Switzerland",
       "position": "Lead Organizer",
       "url": "https://example.com",
@@ -59,7 +59,7 @@
       "endDate": "2024-01-01",
       "score": "10",
       "courses": [ "Non-linear Solid Mechanics" ]
-    }
+    },
     {
       "institution": "Bu-Ali Sina University",
       "location": "Hamedan, Iran",
