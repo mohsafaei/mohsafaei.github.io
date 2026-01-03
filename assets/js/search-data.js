@@ -98,6 +98,11 @@ ninja.data = [{
           description: "The Core of Modern AI",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_DL/";
+            },},{id: "projects-reinforcement-learning",
+          title: 'Reinforcement Learning',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/project_HyperelasticMaterials/";
             },},{id: "projects-machine-learning",
           title: 'Machine Learning',
           description: "",
@@ -112,17 +117,17 @@ ninja.data = [{
           title: 'FEM',
           description: "introduction",
           section: "Teaching",handler: () => {
-              window.location.href = "/teaching/2_teaching/";
-            },},{id: "teaching-research-methodology",
-          title: 'Research Methodology',
-          description: "",
-          section: "Teaching",handler: () => {
-              window.location.href = "/teaching/3_teaching/";
+              window.location.href = "/teaching/teaching_FEM/";
             },},{id: "teaching-non-linear-solid-mechanics",
           title: 'Non-linear Solid Mechanics',
           description: "Advanced Mechanics for Real-world Problems 🌟",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/teaching_NLSM/";
+            },},{id: "teaching-research-methodology",
+          title: 'Research Methodology',
+          description: "",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/teaching_ResearchMethodology/";
             },},{
         id: 'social-email',
         title: 'email',
