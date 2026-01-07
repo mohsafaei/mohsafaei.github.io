@@ -98,8 +98,8 @@ ninja.data = [{
           description: "The Core of Modern AI",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_DL/";
-            },},{id: "projects-reinforcement-learning",
-          title: 'Reinforcement Learning',
+            },},{id: "projects-hyperelastic-materials",
+          title: 'Hyperelastic Materials',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_HyperelasticMaterials/";
