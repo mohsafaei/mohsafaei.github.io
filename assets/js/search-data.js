@@ -98,9 +98,9 @@ ninja.data = [{
           description: "The Core of Modern AI",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_DL/";
-            },},{id: "projects-hyperelastic-materials",
-          title: 'Hyperelastic Materials',
-          description: "",
+            },},{id: "projects-understanding-hyperelastic-materials",
+          title: 'Understanding Hyperelastic Materials',
+          description: "From Soft Robotics to Advanced Modeling",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_HyperelasticMaterials/";
             },},{id: "projects-machine-learning",
