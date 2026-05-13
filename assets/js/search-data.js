@@ -78,7 +78,13 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/polymer_physics/";
-            },},{id: "news-i-got-my-ielts-academic-certificate-with-an-overall-7-5-band-score",
+            },},{id: "news-finally-after-almost-two-years-of-waiting-my-first-book-chapter-titled-towards-responsive-polymer-actuators-based-on-novel-composite-structures-is-going-to-be-published-in-springer-nature-what-a-relief",
+          title: '📣 Finally!! After almost two years of waiting, my first book chapter titled...',
+          description: "",
+          section: "News",},{id: "news-a-preprint-of-my-latest-under-review-article-is-now-available-on-the-research-square-platform-i-ll-keep-you-updated-on-the-review-process",
+          title: 'A preprint of my latest under‑review article is now available on the Research...',
+          description: "",
+          section: "News",},{id: "news-i-got-my-ielts-academic-certificate-with-an-overall-7-5-band-score",
           title: '📜 I got my IELTS Academic certificate with an overall 7.5 band score!...',
           description: "",
           section: "News",},{id: "news-great-news-my-first-research-article-is-accepted-in-a-q1-journal-this-is-the-start-of-a-long-journey-for-me-maybe-my-biggest-academic-achievement-so-far",
