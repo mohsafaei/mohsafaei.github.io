@@ -6,7 +6,8 @@ related_posts: false
 ---
 
 
-📣 Finally!! After almost two years of waiting, my first book chapter titled “Towards Responsive Polymer Actuators Based on Novel Composite Structures” is going to be published in Springer Nature 📚✨ WHAT A RELIEF! 😌🚀
+📣 Finally!! After almost two years of waiting, my first book chapter is going to be published in Springer Nature 📚✨ WHAT A RELIEF! 😌🚀
+Check it here: [**Toward Responsive Polymer Actuators Based on Novel Composite Structures**](https://link.springer.com/book/9783032219763)
 
 
 
