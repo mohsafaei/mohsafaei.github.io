@@ -22,21 +22,26 @@ flowchart TD
     H --> I[Specialize to loading cases<br/>(extension–torsion, inflation, etc.)]
     I --> J[Compute stress response & performance metrics]
 ```
+
+
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.liquid loading="eager" path="assets/img/Hyperelastic_Materials2.png" title="Soft materials in biomedical applications" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-    <div class="text-center">
+</div>
+<div class="text-center">
         <div class="caption">
             Soft materials in biomedical applications.
         </div>
-    </div>
 </div>
+
 **Legend:**
+
 *   **A–C:** Kinematics
 *   **D–E:** Constitutive modeling
 *   **F–H:** Governing equations
 *   **I–J:** Application to specific loadings and performance metrics
+
 ---
 
 ## 2. Step-by-Step Explanation
@@ -49,25 +54,36 @@ To demonstrate these concepts, we consider two classical deformation states:
 2.  **Combined Extension-Torsion of a Cylinder (Curvilinear):** For cylindrical LCE actuators, we map reference coordinates $(R, \Theta, Z)$ to current coordinates $(r, \theta, z)$ via:
     $$ R \to r(R), \quad \Theta \to \theta = \Theta + \phi Z, \quad Z \to z = \lambda_z Z $$
     where $\lambda_z$ represents the axial stretch and $\phi$ is the twist per unit reference length.
+
 ---
+
 ### 2.2. Kinematic Description
+
 The kinematic description maps material points from their reference configuration $\mathbf{X}$ to their current configuration $\mathbf{x}$.
+
 #### 2.2.1. Deformation Mapping and Gradient
+
 Let the reference position be $\mathbf{X} = (X_1, X_2, X_3)$ and the current position be $\mathbf{x} = (x_1, x_2, x_3)$. The deformation mapping is expressed as:
 $$\mathbf{x} = \boldsymbol{\chi}(\mathbf{X}, t)$$
 The **deformation gradient** $\mathbf{F}$ is the spatial gradient of the mapping:
 $$\mathbf{F} = \frac{\partial \boldsymbol{\chi}}{\partial \mathbf{X}}$$
 For the cylindrical combined extension-torsion case, expressing $\mathbf{F}$ in local orthonormal bases yields:
-$$\mathbf{F} = \begin{bmatrix} \frac{dr}{dR} & 0 & 0 \\ 0 & \frac{r}{R} & r \phi \\ 0 & 0 & \lambda_z \end{bmatrix}$$
+
+$$[\mathbf{F} = \begin{bmatrix} \frac{dr}{dR} & 0 & 0 \\ 0 & \frac{r}{R} & r \phi \\ 0 & 0 & \lambda_z \end{bmatrix}]$$
+
 Here, $\mathbf{F}$ simultaneously captures axial stretch, circumferential expansion, and shear strain due to torsion, serving as the kinematic foundation.
+
 #### 2.2.2. Invariants and Strain Measures
+
 To construct frame-indifferent constitutive equations, we introduce the symmetric **Right Cauchy–Green deformation tensor** $\mathbf{C}$:
 $$\mathbf{C} = \mathbf{F}^\mathrm{T} \mathbf{F}$$
 For isotropic materials, the strain energy density is formulated using the three principal invariants of $\mathbf{C}$:
 $$I_1 = \text{tr}\,\mathbf{C}, \quad I_2 = \frac{1}{2}\left[ (\text{tr}\,\mathbf{C})^2 - \text{tr}(\mathbf{C}^2) \right], \quad I_3 = \det \mathbf{C}$$
 *   **Frame Indifference:** $\mathbf{C}$ is objective under rigid-body rotations since $(\mathbf{Q}\mathbf{F})^\mathrm{T}(\mathbf{Q}\mathbf{F}) = \mathbf{F}^\mathrm{T}\mathbf{Q}^\mathrm{T}\mathbf{Q}\mathbf{F} = \mathbf{F}^\mathrm{T}\mathbf{F} = \mathbf{C}$.
 *   **Incompressibility:** Enforced by setting the volume ratio $J = \det \mathbf{F} = 1$, which simplifies the third invariant to $I_3 = \det \mathbf{C} = 1$.
+
 ---
+
 ### 2.3. Choose the Constitutive Model (Strain-Energy Function)
 A hyperelastic material is characterized by a strain-energy function $W = W(I_1, I_2)$ per unit reference volume. We compare three widely used models:
 1.  **Neo-Hookean Model:**
@@ -80,17 +96,30 @@ A hyperelastic material is characterized by a strain-energy function $W = W(I_1,
     $$W = \sum_{i=1}^{3} C_i (I_1 - 3)^i$$
     *Explanation:* A highly robust, first-invariant-based model. It effectively captures the characteristic "S-shaped" stress-strain curves and abrupt strain-hardening at large stretches.
 > **Key Modeling Recommendation:** For complex loading states, using a multi-invariant strain-energy function $W(I_1, I_2)$ is highly recommended. Neglecting the second invariant $I_2$ (i.e., using first-invariant-only models) can lead to discrepancies of up to **39.2%** under multiaxial loading.
+
 ---
+
 ### 2.4. Derive Stress from the Strain-Energy Function
+
 Assuming incompressibility with a Lagrange multiplier $p$ (representing hydrostatic pressure), the **Second Piola–Kirchhoff stress tensor** $\mathbf{S}$ is:
-$$\mathbf{S} = 2 \frac{\partial W}{\partial \mathbf{C}} - p \mathbf{C}^{-1}$$
+$$
+\mathbf{S} = 2 \frac{\partial W}{\partial \mathbf{C}} - p \mathbf{C}^{-1}
+$$
 The **Cauchy stress tensor** $\boldsymbol{\sigma}$ is obtained by push-forward transformation:
-$$\boldsymbol{\sigma} = \mathbf{F} \mathbf{S} \mathbf{F}^\mathrm{T} = -p\mathbf{I} + 2\frac{\partial W}{\partial I_1}\mathbf{B} - 2\frac{\partial W}{\partial I_2}\mathbf{B}^{-1}$$
+$$
+\boldsymbol{\sigma} = \mathbf{F} \mathbf{S} \mathbf{F}^\mathrm{T} = -p\mathbf{I} + 2\frac{\partial W}{\partial I_1}\mathbf{B} - 2\frac{\partial W}{\partial I_2}\mathbf{B}^{-1}
+$$
 where $\mathbf{B} = \mathbf{F}\mathbf{F}^\mathrm{T}$ is the Left Cauchy–Green deformation tensor.
 Using the chain rule, we can express $\mathbf{S}$ analytically in terms of the invariants:
-$$\mathbf{S} = 2 \left( \frac{\partial W}{\partial I_1} \frac{\partial I_1}{\partial \mathbf{C}} + \frac{\partial W}{\partial I_2} \frac{\partial I_2}{\partial \mathbf{C}} \right) - p \mathbf{C}^{-1}$$
+
+$$
+\mathbf{S} = 2 \left( \frac{\partial W}{\partial I_1} \frac{\partial I_1}{\partial \mathbf{C}} + \frac{\partial W}{\partial I_2} \frac{\partial I_2}{\partial \mathbf{C}} \right) - p \mathbf{C}^{-1}
+$$
+
 where:
-$$\frac{\partial I_1}{\partial \mathbf{C}} = \mathbf{I}, \quad \frac{\partial I_2}{\partial \mathbf{C}} = I_1 \mathbf{I} - \mathbf{C}$$
+$$
+\frac{\partial I_1}{\partial \mathbf{C}} = \mathbf{I}, \quad \frac{\partial I_2}{\partial \mathbf{C}} = I_1 \mathbf{I} - \mathbf{C}
+$$
 These stress expressions allow us to calculate axial force, torque, and membrane stresses, which are critical for characterizing soft actuators and balloons.
 ---
 ### 2.5. Apply Balance Laws and Boundary Conditions
@@ -151,12 +180,13 @@ print(f"Uniaxial Cauchy Stress (sigma): {final_sigma}")
     <div class="col-sm mt-3 mt-md-0 text-center">
         {% include figure.liquid loading="eager" path="assets/img/Hyperelastic_Materials.png" title="Continuum mechanics flowchart" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-    <div class="text-center">
-        <div class="caption">
-            Illustration of a continuum mechanics flowchart for soft materials.
-        </div>
+</div>
+<div class="text-center">
+    <div class="caption">
+        Illustration of a continuum mechanics flowchart for soft materials.
     </div>
 </div>
+
 ---
 ### 🐍 Dependencies & Libraries
 To run the symbolic scripts and perform numerical post-processing, make sure you have the following libraries installed:
