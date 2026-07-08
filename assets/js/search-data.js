@@ -104,9 +104,9 @@ ninja.data = [{
           description: "The Core of Modern AI",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_DL/";
-            },},{id: "projects-understanding-hyperelastic-materials",
-          title: 'Understanding Hyperelastic Materials',
-          description: "From Soft Robotics to Advanced Modeling",
+            },},{id: "projects-constitutive-modeling",
+          title: 'Constitutive Modeling',
+          description: "From Continuum mechanics to real-world applications.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_HyperelasticMaterials/";
             },},{id: "projects-machine-learning",
