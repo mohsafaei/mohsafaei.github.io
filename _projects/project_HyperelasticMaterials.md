@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Constitutive Modeling
-description: From Continuum mechanics to real-world applications.
+description: 
 img: /assets/img/Hyperelastic_Materials.png
 importance: 1
 related_publications: true
@@ -48,11 +48,18 @@ flowchart TD
 ### 2.1. Define the Problem and Geometry
 To demonstrate these concepts, we consider two classical deformation states:
 1.  **Equi-biaxial Deformation (Cartesian):** Under an in-plane stretch ratio $\lambda$, the deformation mapping is given by:
-    $$x_1 = \lambda X_1, \quad x_2 = \lambda X_2, \quad x_3 = \lambda_3 X_3$$
+    $$
+    x_1 = \lambda X_1, \quad x_2 = \lambda X_2, \quad x_3 = \lambda_3 X_3.
+    $$
     Enforcing incompressibility ($J = \lambda_1\lambda_2\lambda_3 = 1$) yields the out-of-plane stretch:
-    $$\lambda_3 = \frac{1}{\lambda^2}$$
+    $$
+    \lambda_3 = \frac{1}{\lambda^2}
+    $$
+
 2.  **Combined Extension-Torsion of a Cylinder (Curvilinear):** For cylindrical LCE actuators, we map reference coordinates $(R, \Theta, Z)$ to current coordinates $(r, \theta, z)$ via:
-    $$ R \to r(R), \quad \Theta \to \theta = \Theta + \phi Z, \quad Z \to z = \lambda_z Z $$
+    $$
+    R \to r(R), \quad \Theta \to \theta = \Theta + \phi Z, \quad Z \to z = \lambda_z Z 
+    $$
     where $\lambda_z$ represents the axial stretch and $\phi$ is the twist per unit reference length.
 
 ---
@@ -69,7 +76,9 @@ The **deformation gradient** $\mathbf{F}$ is the spatial gradient of the mapping
 $$\mathbf{F} = \frac{\partial \boldsymbol{\chi}}{\partial \mathbf{X}}$$
 For the cylindrical combined extension-torsion case, expressing $\mathbf{F}$ in local orthonormal bases yields:
 
-$$[\mathbf{F} = \begin{bmatrix} \frac{dr}{dR} & 0 & 0 \\ 0 & \frac{r}{R} & r \phi \\ 0 & 0 & \lambda_z \end{bmatrix}]$$
+$$
+\mathbf{F} = \begin{bmatrix} \frac{dr}{dR} & 0 & 0 \\ 0 & \frac{r}{R} & r \phi \\ 0 & 0 & \lambda_z \end{bmatrix}.
+$$
 
 Here, $\mathbf{F}$ simultaneously captures axial stretch, circumferential expansion, and shear strain due to torsion, serving as the kinematic foundation.
 
@@ -78,7 +87,9 @@ Here, $\mathbf{F}$ simultaneously captures axial stretch, circumferential expans
 To construct frame-indifferent constitutive equations, we introduce the symmetric **Right Cauchy–Green deformation tensor** $\mathbf{C}$:
 $$\mathbf{C} = \mathbf{F}^\mathrm{T} \mathbf{F}$$
 For isotropic materials, the strain energy density is formulated using the three principal invariants of $\mathbf{C}$:
-$$I_1 = \text{tr}\,\mathbf{C}, \quad I_2 = \frac{1}{2}\left[ (\text{tr}\,\mathbf{C})^2 - \text{tr}(\mathbf{C}^2) \right], \quad I_3 = \det \mathbf{C}$$
+$$
+I_1 = \text{tr}\,\mathbf{C}, \quad I_2 = \frac{1}{2}\left[ (\text{tr}\,\mathbf{C})^2 - \text{tr}(\mathbf{C}^2) \right], \quad I_3 = \det \mathbf{C}.
+$$
 *   **Frame Indifference:** $\mathbf{C}$ is objective under rigid-body rotations since $(\mathbf{Q}\mathbf{F})^\mathrm{T}(\mathbf{Q}\mathbf{F}) = \mathbf{F}^\mathrm{T}\mathbf{Q}^\mathrm{T}\mathbf{Q}\mathbf{F} = \mathbf{F}^\mathrm{T}\mathbf{F} = \mathbf{C}$.
 *   **Incompressibility:** Enforced by setting the volume ratio $J = \det \mathbf{F} = 1$, which simplifies the third invariant to $I_3 = \det \mathbf{C} = 1$.
 
@@ -86,16 +97,23 @@ $$I_1 = \text{tr}\,\mathbf{C}, \quad I_2 = \frac{1}{2}\left[ (\text{tr}\,\mathbf
 
 ### 2.3. Choose the Constitutive Model (Strain-Energy Function)
 A hyperelastic material is characterized by a strain-energy function $W = W(I_1, I_2)$ per unit reference volume. We compare three widely used models:
-1.  **Neo-Hookean Model:**
-    $$W = \frac{\mu}{2} (I_1 - 3)$$
-    *Explanation:* Derived from the statistical mechanics of Gaussian polymer chains. It works well for small to moderate strains but fails to capture large strain stiffening.
-2.  **Mooney–Rivlin Model:**
-    $$W = C_1 (I_1 - 3) + C_2 (I_2 - 3)$$
-    *Explanation:* Incorporates the second invariant $I_2$, providing a phenomenological description that significantly improves accuracy for rubber-like materials in shear and biaxial states.
-3.  **Yeoh Model:**
-    $$W = \sum_{i=1}^{3} C_i (I_1 - 3)^i$$
-    *Explanation:* A highly robust, first-invariant-based model. It effectively captures the characteristic "S-shaped" stress-strain curves and abrupt strain-hardening at large stretches.
-> **Key Modeling Recommendation:** For complex loading states, using a multi-invariant strain-energy function $W(I_1, I_2)$ is highly recommended. Neglecting the second invariant $I_2$ (i.e., using first-invariant-only models) can lead to discrepancies of up to **39.2%** under multiaxial loading.
+**Neo-Hookean Model:**
+$$
+W = \frac{\mu}{2} (I_1 - 3).
+$$
+*Explanation:* Derived from the statistical mechanics of Gaussian polymer chains. It works well for small to moderate strains but fails to capture large strain stiffening.
+**Mooney–Rivlin Model:**
+$$
+W = C_1 (I_1 - 3) + C_2 (I_2 - 3).
+$$
+*Explanation:* Incorporates the second invariant $I_2$, providing a phenomenological description that significantly improves accuracy for rubber-like materials in shear and biaxial states.
+**Yeoh Model:**
+$$
+W = \sum_{i=1}^{3} C_i (I_1 - 3)^i.
+$$
+*Explanation:* A highly robust, first-invariant-based model. It effectively captures the characteristic "S-shaped" stress-strain curves and abrupt strain-hardening at large stretches.
+
+> Key Modeling Recommendation: For complex loading states, using a multi-invariant strain-energy function $W(I_1, I_2)$ is highly recommended.
 
 ---
 
@@ -115,23 +133,31 @@ Using the chain rule, we can express $\mathbf{S}$ analytically in terms of the i
 $$
 \mathbf{S} = 2 \left( \frac{\partial W}{\partial I_1} \frac{\partial I_1}{\partial \mathbf{C}} + \frac{\partial W}{\partial I_2} \frac{\partial I_2}{\partial \mathbf{C}} \right) - p \mathbf{C}^{-1}
 $$
-
 where:
 $$
-\frac{\partial I_1}{\partial \mathbf{C}} = \mathbf{I}, \quad \frac{\partial I_2}{\partial \mathbf{C}} = I_1 \mathbf{I} - \mathbf{C}
+\frac{\partial I_1}{\partial \mathbf{C}} = \mathbf{I}, \quad \frac{\partial I_2}{\partial \mathbf{C}} = I_1 \mathbf{I} - \mathbf{C}.
 $$
 These stress expressions allow us to calculate axial force, torque, and membrane stresses, which are critical for characterizing soft actuators and balloons.
+
 ---
+
 ### 2.5. Apply Balance Laws and Boundary Conditions
 Under quasi-static conditions, the Cauchy stress must satisfy the **local balance of linear momentum**:
 $$\nabla \cdot \boldsymbol{\sigma} = \mathbf{0}$$
-*   **Cylindrical Equilibrium:** For a pressurized cylindrical tube, the radial component of the equilibrium equation simplifies to:
-    $$\frac{d\sigma_{rr}}{dr} + \frac{\sigma_{rr} - \sigma_{\theta\theta}}{r} = 0$$
-*   **Boundary Conditions:** These equations are completed by prescribing traction boundary conditions (such as inner pressure $P_i$ on $r = r_i$ and zero outer pressure on $r = r_o$), or kinematic constraints at the boundaries.
+**Cylindrical Equilibrium:** For a pressurized cylindrical tube, the radial component of the equilibrium equation simplifies to:
+$$
+\frac{d\sigma_{rr}}{dr} + \frac{\sigma_{rr} - \sigma_{\theta\theta}}{r} = 0.
+$$
+**Boundary Conditions:** These equations are completed by prescribing traction boundary conditions (such as inner pressure $P_i$ on $r = r_i$ and zero outer pressure on $r = r_o$), or kinematic constraints at the boundaries.
+
 ---
+
 ### 2.6. Obtain Governing Equations (Semi-Analytical Framework)
+
 By coupling kinematics, constitutive laws, and momentum balance, we construct a **semi-analytical framework**. This allows us to express invariants and stresses analytically, reducing the complex non-linear boundary-value problem to a set of algebraic or ordinary differential equations. These equations are then solved numerically using root-finding or finite-difference schemes for specific loading configurations (e.g., pure inflation, extension-torsion, or thermo-mechanical actuation).
+
 ---
+
 ### SymPy Implementation
 Below is a complete, educational Python script using **SymPy** to automate the symbolic derivation of Cauchy stress under uniaxial tension for an incompressible Neo-Hookean material.
 
