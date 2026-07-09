@@ -106,7 +106,7 @@ ninja.data = [{
               window.location.href = "/projects/project_DL/";
             },},{id: "projects-constitutive-modeling",
           title: 'Constitutive Modeling',
-          description: "From Continuum mechanics to real-world applications.",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_HyperelasticMaterials/";
             },},{id: "projects-machine-learning",
