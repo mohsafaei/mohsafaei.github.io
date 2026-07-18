@@ -119,9 +119,9 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_RL/";
-            },},{id: "teaching-fem",
-          title: 'FEM',
-          description: "introduction",
+            },},{id: "teaching-finite-element-method-fem",
+          title: 'Finite Element Method (FEM)',
+          description: "Fundamentals and Applications 🧩",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/teaching_FEM/";
             },},{id: "teaching-non-linear-solid-mechanics",
