@@ -52,14 +52,17 @@ To demonstrate these concepts, we consider two classical deformation states:
     x_1 = \lambda X_1, \quad x_2 = \lambda X_2, \quad x_3 = \lambda_3 X_3.
     $$
     Enforcing incompressibility ($J = \lambda_1\lambda_2\lambda_3 = 1$) yields the out-of-plane stretch:
+    
     $$
     \lambda_3 = \frac{1}{\lambda^2}
     $$
 
 2.  **Combined Extension-Torsion of a Cylinder (Curvilinear):** For cylindrical LCE actuators, we map reference coordinates $(R, \Theta, Z)$ to current coordinates $(r, \theta, z)$ via:
+    
     $$
     R \to r(R), \quad \Theta \to \theta = \Theta + \phi Z, \quad Z \to z = \lambda_z Z 
     $$
+
     where $\lambda_z$ represents the axial stretch and $\phi$ is the twist per unit reference length.
 
 ---
@@ -71,9 +74,13 @@ The kinematic description maps material points from their reference configuratio
 #### 2.2.1. Deformation Mapping and Gradient
 
 Let the reference position be $\mathbf{X} = (X_1, X_2, X_3)$ and the current position be $\mathbf{x} = (x_1, x_2, x_3)$. The deformation mapping is expressed as:
+
 $$\mathbf{x} = \boldsymbol{\chi}(\mathbf{X}, t)$$
+
 The **deformation gradient** $\mathbf{F}$ is the spatial gradient of the mapping:
+
 $$\mathbf{F} = \frac{\partial \boldsymbol{\chi}}{\partial \mathbf{X}}$$
+
 For the cylindrical combined extension-torsion case, expressing $\mathbf{F}$ in local orthonormal bases yields:
 
 $$
@@ -85,11 +92,15 @@ Here, $\mathbf{F}$ simultaneously captures axial stretch, circumferential expans
 #### 2.2.2. Invariants and Strain Measures
 
 To construct frame-indifferent constitutive equations, we introduce the symmetric **Right Cauchy–Green deformation tensor** $\mathbf{C}$:
+
 $$\mathbf{C} = \mathbf{F}^\mathrm{T} \mathbf{F}$$
+
 For isotropic materials, the strain energy density is formulated using the three principal invariants of $\mathbf{C}$:
+
 $$
 I_1 = \text{tr}\,\mathbf{C}, \quad I_2 = \frac{1}{2}\left[ (\text{tr}\,\mathbf{C})^2 - \text{tr}(\mathbf{C}^2) \right], \quad I_3 = \det \mathbf{C}.
 $$
+
 *   **Frame Indifference:** $\mathbf{C}$ is objective under rigid-body rotations since $(\mathbf{Q}\mathbf{F})^\mathrm{T}(\mathbf{Q}\mathbf{F}) = \mathbf{F}^\mathrm{T}\mathbf{Q}^\mathrm{T}\mathbf{Q}\mathbf{F} = \mathbf{F}^\mathrm{T}\mathbf{F} = \mathbf{C}$.
 *   **Incompressibility:** Enforced by setting the volume ratio $J = \det \mathbf{F} = 1$, which simplifies the third invariant to $I_3 = \det \mathbf{C} = 1$.
 
@@ -98,19 +109,27 @@ $$
 ### 2.3. Choose the Constitutive Model (Strain-Energy Function)
 A hyperelastic material is characterized by a strain-energy function $W = W(I_1, I_2)$ per unit reference volume. We compare three widely used models:
 **Neo-Hookean Model:**
+
 $$
 W = \frac{\mu}{2} (I_1 - 3).
 $$
+
 *Explanation:* Derived from the statistical mechanics of Gaussian polymer chains. It works well for small to moderate strains but fails to capture large strain stiffening.
+
 **Mooney–Rivlin Model:**
+
 $$
 W = C_1 (I_1 - 3) + C_2 (I_2 - 3).
 $$
+
 *Explanation:* Incorporates the second invariant $I_2$, providing a phenomenological description that significantly improves accuracy for rubber-like materials in shear and biaxial states.
+
 **Yeoh Model:**
+
 $$
 W = \sum_{i=1}^{3} C_i (I_1 - 3)^i.
 $$
+
 *Explanation:* A highly robust, first-invariant-based model. It effectively captures the characteristic "S-shaped" stress-strain curves and abrupt strain-hardening at large stretches.
 
 > Key Modeling Recommendation: For complex loading states, using a multi-invariant strain-energy function $W(I_1, I_2)$ is highly recommended.
@@ -120,41 +139,54 @@ $$
 ### 2.4. Derive Stress from the Strain-Energy Function
 
 Assuming incompressibility with a Lagrange multiplier $p$ (representing hydrostatic pressure), the **Second Piola–Kirchhoff stress tensor** $\mathbf{S}$ is:
+
 $$
 \mathbf{S} = 2 \frac{\partial W}{\partial \mathbf{C}} - p \mathbf{C}^{-1}
 $$
+
 The **Cauchy stress tensor** $\boldsymbol{\sigma}$ is obtained by push-forward transformation:
+
 $$
 \boldsymbol{\sigma} = \mathbf{F} \mathbf{S} \mathbf{F}^\mathrm{T} = -p\mathbf{I} + 2\frac{\partial W}{\partial I_1}\mathbf{B} - 2\frac{\partial W}{\partial I_2}\mathbf{B}^{-1}
 $$
+
 where $\mathbf{B} = \mathbf{F}\mathbf{F}^\mathrm{T}$ is the Left Cauchy–Green deformation tensor.
 Using the chain rule, we can express $\mathbf{S}$ analytically in terms of the invariants:
 
 $$
 \mathbf{S} = 2 \left( \frac{\partial W}{\partial I_1} \frac{\partial I_1}{\partial \mathbf{C}} + \frac{\partial W}{\partial I_2} \frac{\partial I_2}{\partial \mathbf{C}} \right) - p \mathbf{C}^{-1}
 $$
+
 where:
+
 $$
 \frac{\partial I_1}{\partial \mathbf{C}} = \mathbf{I}, \quad \frac{\partial I_2}{\partial \mathbf{C}} = I_1 \mathbf{I} - \mathbf{C}.
 $$
+
 These stress expressions allow us to calculate axial force, torque, and membrane stresses, which are critical for characterizing soft actuators and balloons.
 
 ---
 
 ### 2.5. Apply Balance Laws and Boundary Conditions
 Under quasi-static conditions, the Cauchy stress must satisfy the **local balance of linear momentum**:
-$$\nabla \cdot \boldsymbol{\sigma} = \mathbf{0}$$
+
+$$
+\nabla \cdot \boldsymbol{\sigma} = \mathbf{0}
+$$
+
 **Cylindrical Equilibrium:** For a pressurized cylindrical tube, the radial component of the equilibrium equation simplifies to:
+
 $$
 \frac{d\sigma_{rr}}{dr} + \frac{\sigma_{rr} - \sigma_{\theta\theta}}{r} = 0.
 $$
+
 **Boundary Conditions:** These equations are completed by prescribing traction boundary conditions (such as inner pressure $P_i$ on $r = r_i$ and zero outer pressure on $r = r_o$), or kinematic constraints at the boundaries.
 
 ---
 
 ### 2.6. Obtain Governing Equations (Semi-Analytical Framework)
 
-By coupling kinematics, constitutive laws, and momentum balance, we construct a **semi-analytical framework**. This allows us to express invariants and stresses analytically, reducing the complex non-linear boundary-value problem to a set of algebraic or ordinary differential equations. These equations are then solved numerically using root-finding or finite-difference schemes for specific loading configurations (e.g., pure inflation, extension-torsion, or thermo-mechanical actuation).
+By coupling kinematics, constitutive laws, and momentum balance, a **semi-analytical framework** is established. This allows one to express invariants and stresses analytically, reducing the complex non-linear boundary-value problem to a set of algebraic or ordinary differential equations. These equations are then solved numerically via Finite Element Analysis for specific loading commditions.
 
 ---
 
@@ -213,12 +245,25 @@ print(f"Uniaxial Cauchy Stress (sigma): {final_sigma}")
     </div>
 </div>
 
----
-### 🐍 Dependencies & Libraries
-To run the symbolic scripts and perform numerical post-processing, make sure you have the following libraries installed:
-*   `numpy`
-*   `pandas`
-*   `matplotlib`
-*   `sympy`
+***
 
+## Further Reading
 
+<div class="row">
+  <div class="col-sm-4 mt-3 mt-md-0">
+    <a href="https://mohsafaei.github.io/books/Continuum_Mechanics/">
+        {% include figure.liquid path="assets/img/book_covers/ConM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" zoomable=true %}
+    </a>
+  </div>
+
+  <div class="col-sm-4 mt-3 mt-md-0">
+    <a href="https://mohsafaei.github.io/books/FEM/">
+        {% include figure.liquid path="assets/img/book_covers/FEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" zoomable=true %}
+    </a>
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    <a href="https://mohsafaei.github.io/books/Nonlinear_Solid_Mechanics/">
+        {% include figure.liquid path="assets/img/book_covers/NLSM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" zoomable=true %}
+    </a>
+  </div>
+</div>
