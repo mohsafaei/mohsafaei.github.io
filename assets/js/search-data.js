@@ -68,6 +68,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/FEM/";
+            },},{id: "books-nonlinear-finite-elements-for-continua-and-structures-2nd-edition",
+          title: 'Nonlinear Finite Elements for Continua and Structures, 2nd Edition',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Nonlinear%20Finite%20Elements/";
             },},{id: "books-nonlinear-solid-mechanics-a-continuum-approach-for-engineering",
           title: 'Nonlinear Solid Mechanics A Continuum Approach for Engineering',
           description: "",
