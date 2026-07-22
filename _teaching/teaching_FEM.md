@@ -507,6 +507,13 @@ Different elements are suitable for different geometries and mechanical assumpti
 
 ---
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/elements.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+
 # 9. FEM in Solid Mechanics 🏗️
 
 Solid mechanics is one of the most important application areas of FEM. The method can predict how solid bodies deform, carry loads, become unstable, and fail.
@@ -619,14 +626,13 @@ However, data-driven predictions should still satisfy physical constraints and b
 
 <div class="row">
   <div class="col-sm-4 mt-3 mt-md-0">
-    <a href="https://mohsafaei.github.io/books/Continuum_Mechanics/">
-        {% include figure.liquid path="assets/img/book_covers/ConM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" zoomable=true %}
-    </a>
-  </div>
-
-  <div class="col-sm-4 mt-3 mt-md-0">
     <a href="https://mohsafaei.github.io/books/FEM/">
         {% include figure.liquid path="assets/img/book_covers/FEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" zoomable=true %}
+    </a>
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    <a href="https://mohsafaei.github.io/books/Nonlinear Finite Elements/">
+        {% include figure.liquid path="assets/img/book_covers/nonlinearFEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" zoomable=true %}
     </a>
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
