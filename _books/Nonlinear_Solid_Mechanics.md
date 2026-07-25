@@ -3,7 +3,7 @@ layout: book-review
 title: Nonlinear Solid Mechanics A Continuum Approach for Engineering
 author: Gerhard A. Holzapfel  
 cover: assets/img/book_covers/NLSM.jpg
-isbn: 0471823198 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
+isbn: 978-0-471-82319-3 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: Professional 
 released: 2000
 ---
@@ -15,3 +15,45 @@ Nonlinear Solid Mechanics a Continuum Approach for Engineering Gerhard A. Holzap
 - selected topics of statistical and continuum thermodynamics.
 
 Furthermore, the principle of virtual work (in both the material and spatial descriptions) is compared with two and three-field variational principles particularly designed to capture kinematic constraints such as incompressibility. All of the features combined result in an essential text for final year undergraduates, postgraduates and researchers in mechanical, civil and aerospace engineering and applied maths and physics.
+
+
+### Key features:
+- Provides many examples and exercises.
+- Comprehensive, modern approach directed towards computational mechanics.
+
+### Table of Contents
+
+| Section No. | Name |
+|---|---|
+| 1 | Introduction to Vectors and Tensors |
+| 2 | Kinematics |
+| 3 | The Concept of Stress |
+| 4 | Balance Principles |
+| 5 | Some Aspects of Objectivity |
+| 6 | Hyperelastic Materials |
+| 7 | Thermodynamics of Materials |
+| 8 | Variational Principles |
+| 9 | References |
+| 10 | Index |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

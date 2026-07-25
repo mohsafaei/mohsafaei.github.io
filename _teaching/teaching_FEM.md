@@ -627,17 +627,17 @@ However, data-driven predictions should still satisfy physical constraints and b
 <div class="row">
   <div class="col-sm-4 mt-3 mt-md-0">
     <a href="https://mohsafaei.github.io/books/FEM/">
-        {% include figure.liquid path="assets/img/book_covers/FEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" zoomable=true %}
+        {% include figure.liquid path="assets/img/book_covers/FEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
     </a>
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
     <a href="https://mohsafaei.github.io/books/Nonlinear Finite Elements/">
-        {% include figure.liquid path="assets/img/book_covers/nonlinearFEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" zoomable=true %}
+        {% include figure.liquid path="assets/img/book_covers/nonlinearFEM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
     </a>
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
     <a href="https://mohsafaei.github.io/books/Nonlinear_Solid_Mechanics/">
-        {% include figure.liquid path="assets/img/book_covers/NLSM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" zoomable=true %}
+        {% include figure.liquid path="assets/img/book_covers/NLSM.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
     </a>
   </div>
 </div>
