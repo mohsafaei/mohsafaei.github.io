@@ -10,8 +10,6 @@ Here is a comprehensive and improved markdown guide on Machine Learning, expandi
 
 ***
 
-# A Comprehensive Guide to Machine Learning
-
 ## 1. What is Machine Learning?
 Machine Learning (ML) is a subfield of artificial intelligence (AI) focused on building systems that learn from data rather than being explicitly programmed. At its core, ML algorithms build mathematical models based on sample data, known as "training data," to make predictions or decisions without human intervention. 
 
@@ -25,7 +23,7 @@ In mathematical terms, if we have a set of inputs $X$ and desired outputs $Y$, t
 </div>
 <div class="text-center">
     <div class="caption">
-        A timeline showcasing the evolution of Machine Learning from its statistical origins to modern AI-driven applications.
+        Evolution of Machine Learning through time.
     </div>
 </div>
 
@@ -51,14 +49,82 @@ The concept of machines learning from data dates back to the mid-20th century.
 
 ---
 
-## 5. Advanced Machine Learning Models
-As the field has matured, researchers have developed highly sophisticated architectures to handle complex data types like images, text, and temporal sequences:
+## Machine Learning Methods: Supervised vs. Unsupervised
 
-*   **Deep Neural Networks (DNNs):** These utilize multiple layers of interconnected nodes (neurons). They are the foundation of modern AI, capable of learning hierarchical representations of data.
-*   **Transformers:** The architecture behind modern Large Language Models (LLMs). Using an "attention mechanism," Transformers can process sequential data (like text) in parallel, understanding the context of words based on their relationship to all other words in a sentence.
-*   **Generative Adversarial Networks (GANs):** Consist of two neural networks—a generator and a discriminator—competing against each other. The generator tries to create realistic synthetic data (like images), while the discriminator tries to tell real from fake. This results in highly realistic generated outputs.
-*   **Reinforcement Learning (RL):** A framework where an "agent" learns to make decisions by performing actions in an environment to maximize a cumulative reward. It is heavily used in robotics and game-playing AI (e.g., AlphaGo).
+Machine learning mmethods divides into **Supervised** and **Unsupervised** learning methods:
 
+
+### 1) Supervised Learning
+**Idea:** Learn a mapping $(f(\mathbf{x}) \rightarrow y )$ from **labeled** examples ($(\mathbf{x}, y)$).  
+Used when you have input data and a known target output.
+
+#### A) Classification
+- **What it does:** Predicts **discrete/categorical labels** (e.g., class A vs. class B).
+- **Typical outputs:** class ID, probabilities over classes.
+- **Example applications:**
+  - Image classification
+  - Fraud detection
+  - Customer retention (churn classification)
+  - Diagnostics (disease / condition classes)
+
+#### B) Regression
+- **What it does:** Predicts **continuous numeric values**.
+- **Typical outputs:** real-valued quantity (e.g., temperature, demand).
+- **Example applications:**
+  - Weather forecasting
+  - Market forecasting
+  - Advertising popularity prediction
+  - Estimating life expectancy
+  - Population growth prediction
+
+---
+
+### 2) Unsupervised Learning
+**Idea:** Discover structure in **unlabeled** data $(\mathbf{x})$ (no explicit target $(y)$).  
+Used for pattern discovery, compression, or exploratory analysis.
+
+#### A) Clustering
+- **What it does:** Groups data into **clusters** so that similar items fall together.
+- **Typical outputs:** cluster assignments, cluster centers, similarity structure.
+- **Example applications:**
+  - Customer segmentation
+  - Targeted marketing
+  - Recommender systems (often as a component, e.g., grouping users/items)
+
+#### B) Dimensionality Reduction
+- **What it does:** Maps high-dimensional data $(\mathbf{x}\in\mathbb{R}^d)$ into a lower-dimensional representation $(\mathbf{z}\in\mathbb{R}^k)$, $(k \ll d)$, while preserving useful structure.
+- **Typical outputs:** reduced features/embeddings, compressed representations.
+- **Example applications:**
+  - Big data visualization
+  - Meaningful compression
+  - Structure discovery
+  - Feature “simplification/selection” (the figure labels this as *Feature Biclactication*, which is commonly interpreted as feature extraction/selection depending on context)
+
+
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/Clustering.png" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="text-center">
+    <div class="caption">
+        A comparison on different Clustering aloghriths as an unsupervised learning method. 
+    </div>
+</div>
+---
+
+## Quick Summary Table
+
+| Paradigm | Method | Target type | Main goal |
+|---|---|---|---|
+| Supervised | Classification | Categorical | Assign a class/label |
+| Supervised | Regression | Continuous | Predict a numeric value |
+| Unsupervised | Clustering | None | Find natural groups |
+| Unsupervised | Dimensionality Reduction | None | Compress/visualize/denoise |
+
+---
+
+If you want, I can add **2–3 canonical algorithms** under each method (e.g., SVM/trees/logistic regression for classification; k-means/hierarchical for clustering; PCA/t-SNE/UMAP for dimensionality reduction) while keeping it lecture-style and brief.
 ---
 
 
@@ -74,9 +140,8 @@ As the field has matured, researchers have developed highly sophisticated archit
 </div>
 
 
-## 6. Real-World Applications & Use in Solid Mechanics Research
+## 6. Real-World Applications
 
-### Broad Real-World Applications
 Machine learning is deeply integrated into modern society:
 *   **Healthcare:** Predicting patient outcomes, discovering new pharmaceutical drugs, and diagnosing diseases from medical imagery (like X-rays and MRIs).
 *   **Finance:** Algorithmic trading, credit scoring, and real-time fraud detection.
@@ -94,7 +159,6 @@ In recent years, ML has revolutionized computational mechanics, materials scienc
 
 
 
-
 ## Required Libraries to Start Machine Learning 
 
 [![numpy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://numpy.org/doc/stable/user/index.html)
@@ -108,7 +172,7 @@ In recent years, ML has revolutionized computational mechanics, materials scienc
 
 For a deeper understanding of Machine Learning, refer to: 
 - [Deep Learning: A Comprehensive Overview](https://link.springer.com/article/10.1007/s42979-021-00815-1)
-
+- [Machine Learning - tutorial](https://github.com/mohsafaei/Machine_Learning)
 
 
 
