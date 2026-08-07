@@ -56,6 +56,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Continuum_Mechanics/";
+            },},{id: "books-deep-learning-in-computational-mechanics",
+          title: 'Deep Learning in Computational Mechanics',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Deep%20Learning_Solid%20mechanics/";
             },},{id: "books-an-introduction-to-the-finite-element-method",
           title: 'An Introduction to the Finite Element Method',
           description: "",
