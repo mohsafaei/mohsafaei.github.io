@@ -150,6 +150,11 @@ For a deeper understanding of deep learning, refer to:
 - [Deep Learning: A Comprehensive Overview](https://link.springer.com/article/10.1007/s42979-021-00815-1)
 - [Convolutional Neural Networks (CNNs) 3](https://developersbreach.com/convolution-neural-network-deep-learning/)
 
+<div class="col-sm-4 mt-3 mt-md-0">
+    <a href="https://mohsafaei.github.io/books/Deep Learning_Solid mechanics/">
+        {% include figure.liquid path="assets/img/book_covers/DeepBook.jpg" title="example image" class="img-fluid rounded-lg z-depth-3" %}
+    </a>
+</div>
 
 
 

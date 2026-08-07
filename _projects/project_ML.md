@@ -124,8 +124,6 @@ Used for pattern discovery, compression, or exploratory analysis.
 
 ---
 
-If you want, I can add **2–3 canonical algorithms** under each method (e.g., SVM/trees/logistic regression for classification; k-means/hierarchical for clustering; PCA/t-SNE/UMAP for dimensionality reduction) while keeping it lecture-style and brief.
----
 
 
 <div class="row justify-content-center">
