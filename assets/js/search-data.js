@@ -51,7 +51,12 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "books-an-introduction-to-continuum-mechanics",
+            },{id: "books-smart-polymers-for-sensing-technologies",
+          title: 'Smart Polymers for Sensing Technologies',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Book%20Chapter/";
+            },},{id: "books-an-introduction-to-continuum-mechanics",
           title: 'An Introduction to Continuum Mechanics',
           description: "",
           section: "Books",handler: () => {
