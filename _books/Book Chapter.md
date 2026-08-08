@@ -9,7 +9,6 @@ released: 2026
 ---
 
 
-## Smart Polymers for Sensing Technologies
 
 ### About this book
 <p style="text-align: justify;">
