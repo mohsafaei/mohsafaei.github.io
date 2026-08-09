@@ -203,10 +203,7 @@ exclude:
   - _books/the_godfather.md
   - readme_preview/
   - vendor
-  - _scripts/cronitor-analytics-setup.js
-  - _scripts/google-analytics-setup.js
-  - _scripts/open-panel-analytics-setup.js
-  - _scripts/photoswipe-setup.js
+
 
   
 keep_files:
