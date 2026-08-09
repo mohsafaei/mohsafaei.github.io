@@ -8,10 +8,12 @@ giscus_comments: false
 ---
 
 
+<p style="text-align: justify;">
 
 🧠 **Deep Learning** is a powerful subset of machine learning that uses **artificial neural networks** with multiple layers to automatically learn and model complex patterns directly from raw data. This approach is inspired by the structure and function of the **biological neural network**—how neurons communicate and adapt in the human brain.
 
 It represents a paradigm shift because it moves beyond traditional machine learning, which often requires manual **feature engineering**, by instead learning the most relevant features autonomously.
+</p>
 
 
 ---
@@ -19,6 +21,7 @@ It represents a paradigm shift because it moves beyond traditional machine learn
 
 ## 💡 The Concept of Artificial Neural Networks (ANNs)
 
+<p style="text-align: justify;">
 Artificial Neural Networks (ANNs), the building blocks of Deep Learning, are computational models structured into layers of interconnected nodes, or **"neurons"**.
 
 * **Structure:** A typical network, like a **Multilayer Perceptron (MLP)**, consists of three main types of layers:
@@ -27,7 +30,7 @@ Artificial Neural Networks (ANNs), the building blocks of Deep Learning, are com
     3.  **Output Layer:** Produces the final result, such as a classification or a numerical prediction.
 
 * **Learning Mechanism:** Each connection between neurons has an associated **weight** and **bias**. The network learns by receiving input, performing calculations (**Forward Propagation**), and then adjusting these weights and biases to minimize prediction errors, a process driven by an algorithm called **Backpropagation**.
-
+</p>
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -75,6 +78,7 @@ The path to modern Deep Learning involved several key milestones and significant
 
 ## 🌟 Importance and Practical Applications
 
+<p style="text-align: justify;">
 Deep Learning has revolutionized various fields by achieving **state-of-the-art performance** across complex tasks.
 
 ### Key Advantages
@@ -91,7 +95,7 @@ Deep Learning has revolutionized various fields by achieving **state-of-the-art 
 | **Natural Language Processing (NLP)** | Virtual Assistants (Siri, Alexa), Chatbots, Language Translation, Document Summarization | Recurrent Neural Networks (RNNs), Transformers |
 | **Healthcare** | Medical Image Analysis (e.g., detecting tumors in X-rays/MRIs), Disease Diagnosis, Drug Discovery | CNNs for image analysis |
 | **Finance** | Fraud Detection (identifying suspicious transaction patterns), Predictive Analytics for stock trading | Clustering algorithms, ANNs |
-
+</p>
 
 
 ---
@@ -105,6 +109,7 @@ The journey into Deep Learning is best approached in three clear stages: buildin
 
 ### Step 1: Build the Foundation 📚
 
+<p style="text-align: justify;">
 First, focus on the fundamentals. You need to **master Python**, which is the primary programming language for AI, along with essential libraries like [![numpy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://numpy.org/doc/stable/user/index.html) for numerical work and [![pandas](https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/getting_started/index.html) for handling data. On the math side, grasp the basics of **Linear Algebra** and **Calculus**—you need them to understand how neural networks represent data and learn through optimization (like **Backpropagation**).
 
 
@@ -122,7 +127,7 @@ Instead of complex steps, focus on the general flow a project follows:
 ### Step 3: Implement with Frameworks 💻
 
 The final stage is practical implementation using specialized software. Start by building basic models (like simple classification) with popular frameworks such as [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=black)](https://www.tensorflow.org/) and **PyTorch**. These tools handle the complex calculations for you, allowing you to focus on the structure and data. The goal here is to gain hands-on experience and build your intuition by practicing on simple open-source datasets.
-
+</p>
 
 
 
@@ -156,6 +161,7 @@ For a deeper understanding of deep learning, refer to:
     </a>
 </div>
 
+{% include repository/repo.liquid repository="mohsafaei/Deep_Learning" %}
 
 
 

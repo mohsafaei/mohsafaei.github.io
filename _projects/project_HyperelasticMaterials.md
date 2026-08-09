@@ -9,7 +9,11 @@ related_publications: true
 
 
 # Continuum Mechanics and Constitutive Modeling of Hyperelastic Materials
+
+<p style="text-align: justify;">
 To model the mechanical behavior of soft materials, such as liquid crystal elastomers (LCEs) and biological tissues, we utilize non-linear solid mechanics theories. Hyperelasticity is defined by a **strain energy density function** $W$, which accounts for the material's changing stiffness and near-total incompressibility during finite deformation.
+</p>
+
 ```mermaid
 flowchart TD
     A[Define problem & geometry] --> B[Choose kinematic description]
@@ -46,6 +50,7 @@ flowchart TD
 
 ## 2. Step-by-Step Explanation
 ### 2.1. Define the Problem and Geometry
+<p style="text-align: justify;">
 To demonstrate these concepts, we consider two classical deformation states:
 1.  **Equi-biaxial Deformation (Cartesian):** Under an in-plane stretch ratio $\lambda$, the deformation mapping is given by:
     $$
@@ -192,6 +197,8 @@ By coupling kinematics, constitutive laws, and momentum balance, a **semi-analyt
 
 ### SymPy Implementation
 Below is a complete, educational Python script using **SymPy** to automate the symbolic derivation of Cauchy stress under uniaxial tension for an incompressible Neo-Hookean material.
+</p>
+
 
 ```python
 import sympy as sp
@@ -267,3 +274,5 @@ print(f"Uniaxial Cauchy Stress (sigma): {final_sigma}")
     </a>
   </div>
 </div>
+
+{% include repository/repo.liquid repository="mohsafaei/Hyperelastic-Materials" %}

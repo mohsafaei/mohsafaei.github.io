@@ -20,19 +20,19 @@ released: 2025
 ---
 ### Table of Contents
 
-| Section No. | Name |
+| Chapter # | Chapter Title |
 |---|---|
-| chapter 1 | Computational Mechanics Meets Artificial Intelligence |
-| chapter 2 | Fundamental Concepts of Machine Learning |
-| chapter 3 | Neural Networks |
-| chapter 4 | Introduction to Physics-Informed Neural Networks |
-| chapter 5 | Advanced Physics-Informed Neural Networks |
-| chapter 6 | Machine Learning in Computational Mechanics |
-| chapter 7 | Material Modeling with Neural Networks |
-| chapter 8 | Generative Artificial Intelligence |
-| chapter 9 | Inverse Problems and Deep Learning |
-| chapter 10 | Methodological Overview of Deep Learning in Computational Mechanics |
-| chapter 11 | The Future of Deep Learning in Computational Mechanics |
+| **1** | Computational Mechanics Meets Artificial Intelligence |
+| **2** | Fundamental Concepts of Machine Learning |
+| **3** | Neural Networks |
+| **4** | Introduction to Physics-Informed Neural Networks |
+| **5** | Advanced Physics-Informed Neural Networks |
+| **6** | Machine Learning in Computational Mechanics |
+| **7** | Material Modeling with Neural Networks |
+| **8** | Generative Artificial Intelligence |
+| **9** | Inverse Problems and Deep Learning |
+| **10** | Methodological Overview of Deep Learning in Computational Mechanics |
+| **11** | The Future of Deep Learning in Computational Mechanics |
 
 
 

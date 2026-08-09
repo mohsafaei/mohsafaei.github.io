@@ -13,11 +13,13 @@ related_publications: false
 
 ## 📜 **1. Introduction**
 
+<p style="text-align: justify;">
 Non-linear solid mechanics is a branch of **continuum mechanics** that deals with solids under conditions where **linear assumptions fail**. It is essential for modeling:
 
 *   **Large deformations** (geometric non-linearity),
 *   **Non-linear material behavior** (plasticity, hyperelasticity),
 *   **Complex boundary conditions** (contact, friction).
+</p>
 
 ***
 
@@ -41,6 +43,7 @@ Non-linear solid mechanics is a branch of **continuum mechanics** that deals wit
 
 ***
 
+<p style="text-align: justify;">
 
 ## 🏗 **2. Origins of Non-linearity**
 
@@ -132,15 +135,8 @@ Examples include:
 The constitutive response may generally be written as
 
 $$
-\boldsymbol{\sigma}
-=
-\boldsymbol{\sigma}
-\left(
-\boldsymbol{\varepsilon},
-\dot{\boldsymbol{\varepsilon}},
-\boldsymbol{\alpha},
-T
-\right),
+\boldsymbol{\sigma} = \boldsymbol{\sigma}
+\left( \boldsymbol{\varepsilon}, \dot{\boldsymbol{\varepsilon}}, \boldsymbol{\alpha}, T \right),
 $$
 
 where $\boldsymbol{\alpha}$ represents internal state variables and $T$ denotes temperature.
@@ -254,61 +250,36 @@ Contact is encountered in:
 Hyperelastic materials are described using a strain-energy density function
 
 $$
-W
-=
-W(\mathbf{F}),
+W = W(\mathbf{F}),
 $$
 
 or, for isotropic materials,
 
 $$
-W
-=
-W(I_1,I_2,J).
+W = W(I_1,I_2,J).
 $$
 
 The strain invariants are commonly defined as
 
-$$
-I_1
-=
-\operatorname{tr}(\mathbf{C}),
+$$ I_1 = \operatorname{tr}(\mathbf{C}),
 $$
 
-$$
-I_2
-=
-\frac{1}{2}
-\left[
-\left(
-\operatorname{tr}\mathbf{C}
-\right)^2
--
-\operatorname{tr}
-\left(
-\mathbf{C}^2
-\right)
-\right],
+$$ 
+I_2 = \frac{1}{2} \left[ \left( \operatorname{tr}\mathbf{C} \right)^2
+- \operatorname{tr} \left( \mathbf{C}^2 \right) \right],
 $$
 
 and
 
 $$
-J
-=
-\det(\mathbf{F}).
+J = \det(\mathbf{F}).
 $$
 
 For an incompressible isotropic hyperelastic material, the second Piola–Kirchhoff stress can be expressed as
 
 $$
-\mathbf{S}
-=
-2
-\frac{\partial W}
-{\partial\mathbf{C}}
--
-p\mathbf{C}^{-1},
+\mathbf{S} = 2 \frac{\partial W} {\partial\mathbf{C}}
+- p\mathbf{C}^{-1},
 $$
 
 where $p$ is a Lagrange multiplier associated with incompressibility.
@@ -319,15 +290,8 @@ $$
 \mathbf{S}
 =
 2
-\left(
-\frac{\partial W}{\partial I_1}
-\frac{\partial I_1}{\partial\mathbf{C}}
-+
-\frac{\partial W}{\partial I_2}
-\frac{\partial I_2}{\partial\mathbf{C}}
-\right)
--
-p\mathbf{C}^{-1}.
+\left(\frac{\partial W}{\partial I_1}\frac{\partial I_1}{\partial\mathbf{C}}+\frac{\partial W}{\partial I_2}\frac{\partial I_2}{\partial\mathbf{C}}
+\right) -p\mathbf{C}^{-1}.
 $$
 
 This formulation is frequently used for:
@@ -341,6 +305,7 @@ This formulation is frequently used for:
 
 ---
 
+</p>
 
 ## Further Reading
 

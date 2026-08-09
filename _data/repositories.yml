@@ -8,8 +8,11 @@ repo_description_lines_max: 2
 github_repos:
   - alshedivat/al-folio
   - mohsafaei/DEAs
-
-
+  - mohsafaei/Hyperelastic-Materials
+  - mohsafaei/Machine_Learning
+  - mohsafaei/Deep_Learning 
+  - mohsafaei/Reinforcement_Learning
+  - mohsafaei/Literature-Analysis
 
 ##   - jekyll/jekyll
 # - twbs/bootstrap

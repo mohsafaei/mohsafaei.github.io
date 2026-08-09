@@ -11,6 +11,8 @@ giscus_comments: false
 
 ## 1. Introduction
 
+<p style="text-align: justify;">
+
 The **Finite Element Method (FEM)** is a numerical technique for obtaining approximate solutions to engineering and mathematical problems governed by **partial differential equations (PDEs)**.
 
 FEM is especially useful when a problem involves:
@@ -23,6 +25,8 @@ FEM is especially useful when a problem involves:
 - Coupled physical phenomena
 
 The central idea of FEM is to divide a continuous body into a finite number of smaller, simpler regions called **finite elements**. The collection of these elements is referred to as the **finite element mesh**.
+</p>
+
 
 ---
 
@@ -39,6 +43,8 @@ The central idea of FEM is to divide a continuous body into a finite number of s
 
 
 ## 2. Historical Origin of FEM 📜
+
+<p style="text-align: justify;">
 
 The development of FEM originated from the need to analyze complex structural systems that could not be solved conveniently using classical analytical methods.
 
@@ -505,14 +511,9 @@ Different elements are suitable for different geometries and mechanical assumpti
 | Contact element | Interacting surfaces | Models sliding and separation |
 | User-defined element | Specialized physics or formulations | High modeling flexibility |
 
+</p>
+
 ---
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/elements.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
 
 # 9. FEM in Solid Mechanics 🏗️
 
@@ -570,15 +571,8 @@ Important verification procedures include:
 
 A mesh-convergence study may monitor an output quantity $Q_h$ as the characteristic element size $h$ decreases:
 
-$$
-Q_h
-\rightarrow
-Q_{\mathrm{converged}}
-\qquad
-\text{as }
-h
-\rightarrow
-0.
+$$ 
+Q_h \rightarrow Q_{\mathrm{converged}} \qquad \text{as } h \rightarrow 0.
 $$
 
 A visually smooth contour plot does not guarantee a physically meaningful result. Engineering judgment is required throughout model development and result interpretation.
@@ -606,21 +600,12 @@ Machine-learning methods can complement FEM by accelerating repeated evaluations
 
 $$
 \mathcal{G}:
-\left(
-\text{geometry},
-\text{material},
-\text{loading}
-\right)
-\longmapsto
-\left(
-\text{displacement},
-\text{stress},
-\text{failure metric}
-\right).
+\left(\text{geometry}, \text{material}, \text{loading} \right) \longmapsto \left( \text{displacement}, \text{stress}, \text{failure metric} \right).
 $$
 
 However, data-driven predictions should still satisfy physical constraints and be evaluated against reliable finite element or experimental results.
 
+</p>
 
 ## Further Reading
 

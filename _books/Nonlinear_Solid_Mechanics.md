@@ -26,18 +26,18 @@ Furthermore, the principle of virtual work (in both the material and spatial des
 
 ### Table of Contents
 
-| Section No. | Name |
+| Chapter # | Chapter Title |
 |---|---|
-| 1 | Introduction to Vectors and Tensors |
-| 2 | Kinematics |
-| 3 | The Concept of Stress |
-| 4 | Balance Principles |
-| 5 | Some Aspects of Objectivity |
-| 6 | Hyperelastic Materials |
-| 7 | Thermodynamics of Materials |
-| 8 | Variational Principles |
-| 9 | References |
-| 10 | Index |
+| **1** | Introduction to Vectors and Tensors |
+| **2** | Kinematics |
+| **3** | The Concept of Stress |
+| **4** | Balance Principles |
+| **5** | Some Aspects of Objectivity |
+| **6** | Hyperelastic Materials |
+| **7** | Thermodynamics of Materials |
+| **8** | Variational Principles |
+| **9** | References |
+| **10** | Index |
 
 
 

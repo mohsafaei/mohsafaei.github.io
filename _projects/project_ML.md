@@ -6,15 +6,16 @@ img: assets/img/ML.jpg
 importance: 3
 ---
 
-Here is a comprehensive and improved markdown guide on Machine Learning, expanding on its foundational concepts and incorporating the new sections on advanced models and applications in solid mechanics.
+Machine learning has evolved from a niche computational field into the primary engine of modern innovation, fundamentally reshaping how we analyze complex datasets and automate decision-making across all scientific and industrial domains.
 
-***
+<p style="text-align: justify;">
 
 ## 1. What is Machine Learning?
 Machine Learning (ML) is a subfield of artificial intelligence (AI) focused on building systems that learn from data rather than being explicitly programmed. At its core, ML algorithms build mathematical models based on sample data, known as "training data," to make predictions or decisions without human intervention. 
 
 In mathematical terms, if we have a set of inputs $X$ and desired outputs $Y$, traditional programming requires a human to define the function $f$ such that $Y = f(X)$. Machine learning, conversely, uses the data pairs $(X, Y)$ to approximate the underlying function $f$ automatically.
 
+</p>
 
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">
@@ -27,6 +28,7 @@ In mathematical terms, if we have a set of inputs $X$ and desired outputs $Y$, t
     </div>
 </div>
 
+<p style="text-align: justify;">
 
 ## 2. Origin and Evolution
 The concept of machines learning from data dates back to the mid-20th century. 
@@ -40,18 +42,11 @@ The concept of machines learning from data dates back to the mid-20th century.
 *   **Handling Multi-dimensional Data:** ML algorithms are exceptionally adept at identifying patterns and trends in massive datasets with thousands of variables, which is practically impossible for humans.
 *   **Adaptability:** Models can adapt to changing environments without needing a complete rewrite of their underlying code.
 
-## 4. Disadvantages and Challenges
-*   **Data Dependency:** ML models require massive amounts of high-quality, labeled data. If the input data is flawed or biased ("garbage in, garbage out"), the model's predictions will be too.
-*   **The "Black Box" Problem:** Many highly accurate models, particularly deep neural networks, are difficult to interpret. It is often unclear *why* the model made a specific decision, which is problematic in high-stakes fields like medicine or law.
-*   **Computational Expense:** Training sophisticated models requires immense computational power and energy, making it expensive and environmentally costly.
-*   **Overfitting:** A model might learn the training data too well, memorizing the noise rather than the underlying pattern, resulting in poor performance on new, unseen data.
-
-
 ---
 
-## Machine Learning Methods: Supervised vs. Unsupervised
+## 3. Machine Learning Methods: Supervised vs. Unsupervised
 
-Machine learning mmethods divides into **Supervised** and **Unsupervised** learning methods:
+Machine learning methods divides into **Supervised** and **Unsupervised** learning methods:
 
 
 ### 1) Supervised Learning
@@ -99,7 +94,7 @@ Used for pattern discovery, compression, or exploratory analysis.
   - Meaningful compression
   - Structure discovery
   - Feature “simplification/selection” (the figure labels this as *Feature Biclactication*, which is commonly interpreted as feature extraction/selection depending on context)
-
+</p>
 
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">
@@ -112,6 +107,7 @@ Used for pattern discovery, compression, or exploratory analysis.
     </div>
 </div>
 ---
+<p style="text-align: justify;">
 
 ## Quick Summary Table
 
@@ -121,7 +117,7 @@ Used for pattern discovery, compression, or exploratory analysis.
 | Supervised | Regression | Continuous | Predict a numeric value |
 | Unsupervised | Clustering | None | Find natural groups |
 | Unsupervised | Dimensionality Reduction | None | Compress/visualize/denoise |
-
+</p>
 ---
 
 
@@ -137,7 +133,7 @@ Used for pattern discovery, compression, or exploratory analysis.
     </div>
 </div>
 
-
+<p style="text-align: justify;">
 ## 6. Real-World Applications
 
 Machine learning is deeply integrated into modern society:
@@ -154,6 +150,16 @@ In recent years, ML has revolutionized computational mechanics, materials scienc
 *   **Fracture Mechanics and Defect Detection:** ML algorithms are used to predict the initiation and propagation of cracks in complex microstructures. By analyzing acoustic emissions or microscopic images, ML models can predict material failure long before it occurs.
 *   **Topology Optimization:** ML is used to design lighter, stronger components by predicting optimal material distribution. Instead of running thousands of slow iterative FEA simulations, a trained ML surrogate model can predict the optimal shape of a mechanical component almost instantly.
 *   **Multiscale Modeling:** Bridging the gap between atomic-level behavior and macroscopic material properties is computationally exhausting. ML serves as a "bridge," taking data from molecular dynamics (MD) simulations and feeding it accurately into macroscopic continuum models.
+</p>
+
+---
+However, there are some limitation on ML as well:
+
+## 4. Disadvantages and Challenges
+*   **Data Dependency:** ML models require massive amounts of high-quality, labeled data. If the input data is flawed or biased ("garbage in, garbage out"), the model's predictions will be too.
+*   **The "Black Box" Problem:** Many highly accurate models, particularly deep neural networks, are difficult to interpret. It is often unclear *why* the model made a specific decision, which is problematic in high-stakes fields like medicine or law.
+*   **Computational Expense:** Training sophisticated models requires immense computational power and energy, making it expensive and environmentally costly.
+*   **Overfitting:** A model might learn the training data too well, memorizing the noise rather than the underlying pattern, resulting in poor performance on new, unseen data.
 
 
 
@@ -172,6 +178,7 @@ For a deeper understanding of Machine Learning, refer to:
 - [Deep Learning: A Comprehensive Overview](https://link.springer.com/article/10.1007/s42979-021-00815-1)
 - [Machine Learning - tutorial](https://github.com/mohsafaei/Machine_Learning)
 
+{% include repository/repo.liquid repository="mohsafaei/Machine_Learning" %}
 
 
 

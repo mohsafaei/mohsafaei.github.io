@@ -8,9 +8,10 @@ categories: Professional
 released: 2013
 ---
 
+<p style="text-align: justify;">
 This updated and expanded edition of the bestselling textbook provides a comprehensive introduction to the methods and theory of nonlinear finite element analysis. New material provides a concise introduction to some of the cutting-edge methods that have evolved in recent years in the field of nonlinear finite element modeling, and includes the eXtended Finite Element Method (XFEM), multiresolution continuum theory for multiscale microstructures, and dislocation- density-based crystalline plasticity.
-
 Nonlinear Finite Elements for Continua and Structures, Second Edition focuses on the formulation and solution of discrete equations for various classes of problems that are of principal interest in applications to solid and structural mechanics. Topics covered include the discretization by finite elements of continua in one dimension and in multi-dimensions; the formulation of constitutive equations for nonlinear materials and large deformations; procedures for the solution of the discrete equations, including considerations of both numerical and multiscale physical instabilities; and the treatment of structural and contact-impact problems.
+</p>
 
 ### Key features:
 
@@ -23,19 +24,19 @@ Nonlinear Finite Elements for Continua and Structures, Second Edition focuses on
 
 ### Table of Contents
 
-| Section No. | Name |
+| Chapter # | Chapter Title |
 |---|---|
-| 1 | Introduction |
-| 2 | Lagrangian and Eulerian Finite Elements in One Dimension |
-| 3 | Continuum Mechanics |
-| 4 | Lagrangian Meshes |
-| 5 | Constitutive Models |
-| 6 | Solution Methods and Stability |
-| 7 | Arbitrary Lagrangian Eulerian Formulations |
-| 8 | Element Technology |
-| 9 | Beams and Shells |
-| 10 | Contact-Impact |
-| 11 | EXtended Finite Element Method (XFEM) |
-| 12 | Introduction to Multiresolution Theory |
-| 13 | Single-Crystal Plasticity |
+| **1** | Introduction |
+| **2** | Lagrangian and Eulerian Finite Elements in One Dimension |
+| **3** | Continuum Mechanics |
+| **4** | Lagrangian Meshes |
+| **5** | Constitutive Models |
+| **6** | Solution Methods and Stability |
+| **7** | Arbitrary Lagrangian Eulerian Formulations |
+| **8** | Element Technology |
+| **9** | Beams and Shells |
+| **10** | Contact-Impact |
+| **11** | EXtended Finite Element Method (XFEM) |
+| **12** | Introduction to Multiresolution Theory |
+| **13** | Single-Crystal Plasticity |
 

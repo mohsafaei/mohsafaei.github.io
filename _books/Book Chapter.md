@@ -17,10 +17,11 @@ This book provides a comprehensive exploration of smart polymers and their role 
 
 
 ### Key features
+<p style="text-align: justify;">
 - Describes how polymers can be engineered to respond to stimuli and explores their unique properties which enable it
 - Surveys many applications such as medical diagnostics, environmental monitoring, and wearable technologies
 - Discusses the future of the field, highlighting ongoing research and emerging technologies
-
+</p>
 
 
 
