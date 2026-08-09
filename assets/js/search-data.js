@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
           title: "Publications",
           description: "",
           section: "Navigation",
@@ -169,6 +176,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/mohsafaei", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0002-4917-6464", "_blank");
         },
       },{
         id: 'social-researchgate',
