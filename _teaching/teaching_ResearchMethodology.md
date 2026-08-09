@@ -89,20 +89,20 @@ In short, literature analysis is not just about collecting papers—it is about 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/RM/DDS_WordCloud.jpg" title="presentation" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/RM/DDS_WordCloud.jpg" title="presentation" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
-<div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/RM/Keyword_Literature.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/RM/SPA_in_Literature.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
+
+<div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/RM/Keyword_Literature.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
+<div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/RM/SPA_in_Literature.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+</div>
+
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/RM/pie_chart.jpg" title="presentation" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/RM/pie_chart.jpg" title="presentation" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 ---
@@ -180,13 +180,5 @@ Here’s how you can present visual aids or link to reference materials (like a 
     </div>
 </div>
 
-<div class="text-center mt-4">
-    <a class="btn btn-primary" href="/teaching/Research_Methodology/1.pdf" target="_blank">
-        A good Presentation (PDF)
-    </a>
-    <a class="btn btn-primary" href="/teaching/Research_Methodology/2.pdf" target="_blank">
-        Articles, Journals, and Databases (PDF)
-    </a>
-</div>
 
 {% include repository/repo.liquid repository="mohsafaei/Literature-Analysis" %}
