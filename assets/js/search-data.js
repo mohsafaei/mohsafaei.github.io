@@ -78,6 +78,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/FEM/";
+            },},{id: "books-smart-polymers-for-sensing-technologies",
+          title: 'Smart Polymers for Sensing Technologies',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/KHayyam/";
             },},{id: "books-nonlinear-finite-elements-for-continua-and-structures-2nd-edition",
           title: 'Nonlinear Finite Elements for Continua and Structures, 2nd Edition',
           description: "",
