@@ -25,7 +25,7 @@ Nonlinear Finite Elements for Continua and Structures, Second Edition focuses on
 ### Table of Contents
 
 | Chapter # | Chapter Title |
-|---|---|
+|:---: | :---: |
 | **1** | Introduction |
 | **2** | Lagrangian and Eulerian Finite Elements in One Dimension |
 | **3** | Continuum Mechanics |

@@ -27,7 +27,7 @@ Furthermore, the principle of virtual work (in both the material and spatial des
 ### Table of Contents
 
 | Chapter # | Chapter Title |
-|---|---|
+|:---:|:---:|
 | **1** | Introduction to Vectors and Tensors |
 | **2** | Kinematics |
 | **3** | The Concept of Stress |

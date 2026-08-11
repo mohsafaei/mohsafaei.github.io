@@ -16,7 +16,7 @@ This best-selling textbook presents the concepts of continuum mechanics in a sim
 Here is the table of contents organized into a markdown table:
 
 | Chapter # | Chapter Title | Page Range |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | **Frontmatter** | Frontmatter | i–vi |
 | **Contents** | Contents | vii–xii |
 | **Preface** | Preface | xiii–xiv |

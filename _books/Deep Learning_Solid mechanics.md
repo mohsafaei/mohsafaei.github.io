@@ -21,7 +21,7 @@ released: 2025
 ### Table of Contents
 
 | Chapter # | Chapter Title |
-|---|---|
+| :---: | :---: |
 | **1** | Computational Mechanics Meets Artificial Intelligence |
 | **2** | Fundamental Concepts of Machine Learning |
 | **3** | Neural Networks |
