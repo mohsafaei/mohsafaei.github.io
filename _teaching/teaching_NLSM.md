@@ -25,10 +25,10 @@ Non-linear solid mechanics is a branch of **continuum mechanics** that deals wit
 
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-4">
         {% include figure.liquid loading="eager" path="assets/img/abaqus-rubber.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-4">
         {% include figure.liquid loading="eager" path="assets/img/rubber-compression.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>

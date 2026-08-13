@@ -91,16 +91,12 @@ In short, literature analysis is not just about collecting papers—it is about 
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/RM/DDS_WordCloud.jpg" title="presentation" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-</div>
-
-<div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/RM/Keyword_Literature.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-</div>
-<div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/RM/SPA_in_Literature.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-</div>
-
-<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/RM/Keyword_Literature.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/RM/SPA_in_Literature.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/RM/pie_chart.jpg" title="presentation" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
