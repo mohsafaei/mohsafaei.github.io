@@ -34,14 +34,25 @@ The central idea of FEM is to divide a continuous body into a finite number of s
 ---
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-6">
         {% include figure.liquid loading="eager" path="assets/img/Elmer-pump.png" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-6">
         {% include figure.liquid loading="eager" path="assets/img/FEM_beam.png" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-4">
+        {% include figure.liquid loading="eager" path="assets/img/1st.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-4">
+        {% include figure.liquid loading="eager" path="assets/img/3rd.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-4">
+        {% include figure.liquid loading="eager" path="assets/img/5th.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 
 ## 2. Historical Origin of FEM 📜

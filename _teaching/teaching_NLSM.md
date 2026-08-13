@@ -23,6 +23,18 @@ Non-linear solid mechanics is a branch of **continuum mechanics** that deals wit
 
 ***
 
+maths-svgrepo-com
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-4">
+        {% include figure.liquid loading="eager" path="assets/img/maths-svgrepo-com.svg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-8">
+        {% include figure.liquid loading="eager" path="assets/img/search.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-4">
