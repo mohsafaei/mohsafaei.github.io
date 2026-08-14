@@ -15,26 +15,14 @@ related_publications: false
 
 <p style="text-align: justify;">
 Non-linear solid mechanics is a branch of **continuum mechanics** that deals with solids under conditions where **linear assumptions fail**. It is essential for modeling:
+</p>
 
 *   **Large deformations** (geometric non-linearity),
 *   **Non-linear material behavior** (plasticity, hyperelasticity),
 *   **Complex boundary conditions** (contact, friction).
-</p>
 
 ***
 
-maths-svgrepo-com
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-4">
-        {% include figure.liquid loading="eager" path="assets/img/maths-svgrepo-com.svg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-8">
-        {% include figure.liquid loading="eager" path="assets/img/search.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-4">
@@ -55,7 +43,6 @@ maths-svgrepo-com
 
 ***
 
-<p style="text-align: justify;">
 
 ## 🏗 **2. Origins of Non-linearity**
 
@@ -70,7 +57,9 @@ maths-svgrepo-com
 
 ### ✅ **3.1 Geometric Non-linearity**
 
+<p style="text-align: justify;">
 Geometric nonlinearity becomes important when a structure experiences:
+</p>
 
 - Large displacements
 - Large rotations
@@ -81,8 +70,9 @@ Geometric nonlinearity becomes important when a structure experiences:
 *   **Tools:** Green-Lagrange strain tensor, updated geometry.
 *   **Examples:** Buckling of beams, shell deformation.
 
-
+<p style="text-align: justify;">
 For finite deformation, the deformation gradient is
+</p>
 
 $$
 \mathbf{F}
@@ -122,7 +112,10 @@ $$
 \right).
 $$
 
+
+<p style="text-align: justify;">
 These quantities are commonly used in nonlinear finite element formulations for rubber, soft biological tissues, elastomers, and liquid crystal elastomers.
+</p>
 
 ---
 
@@ -130,9 +123,11 @@ These quantities are commonly used in nonlinear finite element formulations for 
 
 ### ✅ **3.2 Material Non-linearity**
 
+<p style="text-align: justify;">
 Material nonlinearity occurs when stress is not linearly proportional to strain.
 
 Examples include:
+</p>
 
 - Plasticity
 - Hyperelasticity

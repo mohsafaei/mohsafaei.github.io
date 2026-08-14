@@ -8,13 +8,13 @@ importance: 3
 
 Machine learning has evolved from a niche computational field into the primary engine of modern innovation, fundamentally reshaping how we analyze complex datasets and automate decision-making across all scientific and industrial domains.
 
-<p style="text-align: justify;">
 
 ## 1. What is Machine Learning?
+
+<p style="text-align: justify;">
 Machine Learning (ML) is a subfield of artificial intelligence (AI) focused on building systems that learn from data rather than being explicitly programmed. At its core, ML algorithms build mathematical models based on sample data, known as "training data," to make predictions or decisions without human intervention. 
 
 In mathematical terms, if we have a set of inputs $X$ and desired outputs $Y$, traditional programming requires a human to define the function $f$ such that $Y = f(X)$. Machine learning, conversely, uses the data pairs $(X, Y)$ to approximate the underlying function $f$ automatically.
-
 </p>
 
 <div class="row justify-content-center">
@@ -28,19 +28,28 @@ In mathematical terms, if we have a set of inputs $X$ and desired outputs $Y$, t
     </div>
 </div>
 
-<p style="text-align: justify;">
+
 
 ## 2. Origin and Evolution
+
+<p style="text-align: justify;">
+
 The concept of machines learning from data dates back to the mid-20th century. 
 *   **The 1950s:** Arthur Samuel, an IBM researcher, coined the term "machine learning" in 1959 while developing a program to play checkers that could learn from its past games. Around the same time, Frank Rosenblatt invented the "Perceptron," an early artificial neural network modeled after the human brain.
 *   **The 1990s:** The field shifted its focus from symbolic, logic-based AI to data-driven, statistical approaches. This era saw the rise of Support Vector Machines (SVMs) and advanced clustering algorithms.
 *   **The 2010s to Present:** The explosion of available data ("Big Data") and exponential growth in computational power (GPUs) led to the deep learning revolution, allowing neural networks with many layers to achieve unprecedented accuracy.
+</p>
 
 ## 3. Advantages of Machine Learning
+
+<p style="text-align: justify;">
+
 *   **Automation of Complex Tasks:** ML models can automate decision-making processes in environments too complex for traditional rule-based algorithms.
 *   **Continuous Improvement:** Many ML models are designed to learn continuously; as they are exposed to more data over time, their predictive accuracy improves.
 *   **Handling Multi-dimensional Data:** ML algorithms are exceptionally adept at identifying patterns and trends in massive datasets with thousands of variables, which is practically impossible for humans.
 *   **Adaptability:** Models can adapt to changing environments without needing a complete rewrite of their underlying code.
+
+</p>
 
 ---
 
@@ -87,7 +96,12 @@ Used for pattern discovery, compression, or exploratory analysis.
   - Recommender systems (often as a component, e.g., grouping users/items)
 
 #### B) Dimensionality Reduction
+
+<p style="text-align: justify;">
+
 - **What it does:** Maps high-dimensional data $(\mathbf{x}\in\mathbb{R}^d)$ into a lower-dimensional representation $(\mathbf{z}\in\mathbb{R}^k)$, $(k \ll d)$, while preserving useful structure.
+</p>
+
 - **Typical outputs:** reduced features/embeddings, compressed representations.
 - **Example applications:**
   - Big data visualization
@@ -107,7 +121,7 @@ Used for pattern discovery, compression, or exploratory analysis.
     </div>
 </div>
 ---
-<p style="text-align: justify;">
+
 
 ## Quick Summary Table
 
@@ -117,7 +131,7 @@ Used for pattern discovery, compression, or exploratory analysis.
 | Supervised | Regression | Continuous | Predict a numeric value |
 | Unsupervised | Clustering | None | Find natural groups |
 | Unsupervised | Dimensionality Reduction | None | Compress/visualize/denoise |
-</p>
+
 ---
 
 
@@ -142,6 +156,8 @@ Machine learning is deeply integrated into modern society:
 *   **Autonomous Systems:** Self-driving cars use computer vision (powered by Convolutional Neural Networks) to detect pedestrians, lanes, and traffic signs in real-time.
 
 ### Applications in Solid Mechanics Research
+
+<p style="text-align: justify;">
 In recent years, ML has revolutionized computational mechanics, materials science, and solid mechanics research by accelerating simulations and discovering new physics:
 
 *   **Data-Driven Constitutive Modeling:** Traditionally, material behavior is described by empirical constitutive equations (e.g., Hooke's Law: $\boldsymbol{\sigma} = \mathbb{C} : \boldsymbol{\epsilon}$, where $\boldsymbol{\sigma}$ is stress and $\boldsymbol{\epsilon}$ is strain). ML models can replace these empirical laws by learning complex, non-linear stress-strain relationships directly from experimental or micro-scale simulation data, capturing behaviors that are too complex for traditional math formulations.
@@ -156,12 +172,15 @@ In recent years, ML has revolutionized computational mechanics, materials scienc
 However, there are some limitation on ML as well:
 
 ## 4. Disadvantages and Challenges
+
+<p style="text-align: justify;">
+
 *   **Data Dependency:** ML models require massive amounts of high-quality, labeled data. If the input data is flawed or biased ("garbage in, garbage out"), the model's predictions will be too.
 *   **The "Black Box" Problem:** Many highly accurate models, particularly deep neural networks, are difficult to interpret. It is often unclear *why* the model made a specific decision, which is problematic in high-stakes fields like medicine or law.
 *   **Computational Expense:** Training sophisticated models requires immense computational power and energy, making it expensive and environmentally costly.
 *   **Overfitting:** A model might learn the training data too well, memorizing the noise rather than the underlying pattern, resulting in poor performance on new, unseen data.
 
-
+</p>
 
 ## Required Libraries to Start Machine Learning 
 

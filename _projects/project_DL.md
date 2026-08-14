@@ -23,11 +23,14 @@ It represents a paradigm shift because it moves beyond traditional machine learn
 
 <p style="text-align: justify;">
 Artificial Neural Networks (ANNs), the building blocks of Deep Learning, are computational models structured into layers of interconnected nodes, or **"neurons"**.
+</p>
 
 * **Structure:** A typical network, like a **Multilayer Perceptron (MLP)**, consists of three main types of layers:
     1.  **Input Layer:** Takes the preprocessed data features.
     2.  **Hidden Layers:** One or more layers where the complex computations and feature transformations occur. A "deep" network has multiple hidden layers.
     3.  **Output Layer:** Produces the final result, such as a classification or a numerical prediction.
+
+<p style="text-align: justify;">
 
 * **Learning Mechanism:** Each connection between neurons has an associated **weight** and **bias**. The network learns by receiving input, performing calculations (**Forward Propagation**), and then adjusting these weights and biases to minimize prediction errors, a process driven by an algorithm called **Backpropagation**.
 </p>
@@ -52,7 +55,9 @@ Artificial Neural Networks (ANNs), the building blocks of Deep Learning, are com
 
 ## 📜 A Brief History of Neural Networks
 
+<p style="text-align: justify;">
 The path to modern Deep Learning involved several key milestones and significant setbacks, often referred to as "AI Winters".
+</p>
 
 | Year | Milestone / Researcher(s) | Significance |
 | :--- | :--- | :--- |
@@ -80,6 +85,7 @@ The path to modern Deep Learning involved several key milestones and significant
 
 <p style="text-align: justify;">
 Deep Learning has revolutionized various fields by achieving **state-of-the-art performance** across complex tasks.
+</p>
 
 ### Key Advantages
 
@@ -104,17 +110,21 @@ Deep Learning has revolutionized various fields by achieving **state-of-the-art 
 
 ## 🚀 Roadmap: How to Start Using Neural Networks
 
+<p style="text-align: justify;">
 The journey into Deep Learning is best approached in three clear stages: building your knowledge foundation, understanding the general process, and then practicing with tools.
-
+</p>
 
 ### Step 1: Build the Foundation 📚
 
 <p style="text-align: justify;">
-First, focus on the fundamentals. You need to **master Python**, which is the primary programming language for AI, along with essential libraries like [![numpy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://numpy.org/doc/stable/user/index.html) for numerical work and [![pandas](https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/getting_started/index.html) for handling data. On the math side, grasp the basics of **Linear Algebra** and **Calculus**—you need them to understand how neural networks represent data and learn through optimization (like **Backpropagation**).
 
+First, focus on the fundamentals. You need to **master Python**, which is the primary programming language for AI, along with essential libraries like [![numpy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=NumPy&logoColor=white)](https://numpy.org/doc/stable/user/index.html) for numerical work and [![pandas](https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/getting_started/index.html) for handling data. On the math side, grasp the basics of **Linear Algebra** and **Calculus**—you need them to understand how neural networks represent data and learn through optimization (like **Backpropagation**).
+</p>
 
 
 ### Step 2: Understand the Workflow ⚙️
+
+<p style="text-align: justify;">
 
 Instead of complex steps, focus on the general flow a project follows:
 
@@ -122,10 +132,11 @@ Instead of complex steps, focus on the general flow a project follows:
 2.  **Train the Model:** This is where you select a basic neural network design (**Architecture**), define its layers, and use an **Optimization Algorithm** (like **SGD**) to teach it the patterns in your training data.
 3.  **Tuning & Check:** You'll adjust external settings, called **Hyperparameters**, like the **Learning Rate** and the number of **Epochs** (how many times the model sees the data) to improve performance. The **Testing Set** is used to see if the model works well on new, unseen information.
 
-
+</p>
 
 ### Step 3: Implement with Frameworks 💻
 
+<p style="text-align: justify;">
 The final stage is practical implementation using specialized software. Start by building basic models (like simple classification) with popular frameworks such as [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=black)](https://www.tensorflow.org/) and **PyTorch**. These tools handle the complex calculations for you, allowing you to focus on the structure and data. The goal here is to gain hands-on experience and build your intuition by practicing on simple open-source datasets.
 </p>
 

@@ -53,7 +53,12 @@ The central idea of FEM is to divide a continuous body into a finite number of s
         {% include figure.liquid loading="eager" path="assets/img/5th.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
-
+<div class="text-center">
+    <div class="caption">
+          Modal analysis of a plate using FEM.
+        </a>  
+    </div>
+</div>
 
 ## 2. Historical Origin of FEM 📜
 

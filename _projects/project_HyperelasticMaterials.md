@@ -50,7 +50,9 @@ flowchart TD
 
 ## 2. Step-by-Step Explanation
 ### 2.1. Define the Problem and Geometry
+
 <p style="text-align: justify;">
+
 To demonstrate these concepts, we consider two classical deformation states:
 1.  **Equi-biaxial Deformation (Cartesian):** Under an in-plane stretch ratio $\lambda$, the deformation mapping is given by:
     $$

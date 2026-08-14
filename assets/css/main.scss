@@ -23,3 +23,19 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+.project-media img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  background-color: #f5f5f5;
+  display: block;
+}
+
+
+
+@media (min-width: 768px) {
+  .project-media {
+    height: 320px;
+  }
+}

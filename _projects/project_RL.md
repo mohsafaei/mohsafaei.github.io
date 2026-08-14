@@ -5,6 +5,8 @@ description:
 img: /assets/img/RL.jpg
 importance: 1
 related_publications: true
+toc:
+  sidebar: right
 ---
 
 <p style="text-align: justify;">
@@ -77,7 +79,6 @@ In order to implementing Taxi problem, you can work with `gymnasium` python libr
     </div>
 </div>
 
-<p style="text-align: justify;">
 
 ## 3. RL Algorithms
 
@@ -99,7 +100,6 @@ Q-Learning is an off-policy RL algorithm that iteratively updates Q-values to le
 - It efficiently finds optimal policies even in complex environments.
 - Unlike Monte Carlo methods, Q-learning updates values at each step, making it more sample-efficient.
 
-</p>
 
 
 

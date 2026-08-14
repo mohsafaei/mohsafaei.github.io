@@ -8,9 +8,9 @@ category: work
 ---
 
 
-<p style="text-align: justify;">
-
 **Research is more than just collecting data—it's about discovering insights and sharing them with others.**
+
+<p style="text-align: justify;">
 
 So, it is not only about conducting a study; it's about solving a problem. Many things are involved in solving a problem, and you need essential tools and techniques to conduct an in-depth scientific investigation. These tools empower you to explore questions systematically, analyze data critically, and present your findings impactfully.
 
@@ -66,7 +66,9 @@ All these skills are taught and reviewed in the **Research Methodology** course.
 
 ### 📖 Literature Analysis
 
+<p style="text-align: justify;">
 A crucial part of any research project is **literature analysis**—the process of reviewing, evaluating, and synthesizing existing studies related to your topic. It helps researchers understand what has already been done, identify gaps in knowledge, and position their own work within the broader academic conversation.
+</p>
 
 Literature analysis is important because it:
 - helps you **define your research problem clearly**,
@@ -75,7 +77,9 @@ Literature analysis is important because it:
 - supports the **selection of suitable methods and models**,
 - and strengthens the **credibility and originality** of your study.
 
+<p style="text-align: justify;">
 To conduct literature analysis effectively, you can use academic databases and search tools such as **Scopus**, **Web of Science**, **Google Scholar**, and university library databases. These platforms allow you to search for peer-reviewed journal articles, conference papers, and review studies using keywords, author names, and citation tracking.
+</p>
 
 A good literature analysis usually involves:
 1. **Defining keywords and search terms**
@@ -101,10 +105,16 @@ In short, literature analysis is not just about collecting papers—it is about 
         {% include figure.liquid loading="eager" path="assets/img/RM/pie_chart.jpg" title="presentation" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
+
 ---
 
+### 📖 Journal Metrics
 
 
+
+
+
+---
 
 #### 🎓 **Learning Outcomes**
 
