@@ -5,6 +5,8 @@ description:
 img: /assets/img/Hyperelastic_Materials.png
 importance: 1
 related_publications: true
+toc:
+  sidebar: right
 ---
 
 
@@ -106,9 +108,11 @@ $$\mathbf{C} = \mathbf{F}^\mathrm{T} \mathbf{F}$$
 
 For isotropic materials, the strain energy density is formulated using the three principal invariants of $\mathbf{C}$:
 
-$$
+\begin{equation}
+
 I_1 = \text{tr}\,\mathbf{C}, \quad I_2 = \frac{1}{2}\left[ (\text{tr}\,\mathbf{C})^2 - \text{tr}(\mathbf{C}^2) \right], \quad I_3 = \det \mathbf{C}.
-$$
+\end{equation}
+
 
 *   **Frame Indifference:** $\mathbf{C}$ is objective under rigid-body rotations since $(\mathbf{Q}\mathbf{F})^\mathrm{T}(\mathbf{Q}\mathbf{F}) = \mathbf{F}^\mathrm{T}\mathbf{Q}^\mathrm{T}\mathbf{Q}\mathbf{F} = \mathbf{F}^\mathrm{T}\mathbf{F} = \mathbf{C}$.
 *   **Incompressibility:** Enforced by setting the volume ratio $J = \det \mathbf{F} = 1$, which simplifies the third invariant to $I_3 = \det \mathbf{C} = 1$.
@@ -119,25 +123,26 @@ $$
 A hyperelastic material is characterized by a strain-energy function $W = W(I_1, I_2)$ per unit reference volume. We compare three widely used models:
 **Neo-Hookean Model:**
 
-$$
+\begin{equation}
 W = \frac{\mu}{2} (I_1 - 3).
-$$
+\end{equation}
 
 *Explanation:* Derived from the statistical mechanics of Gaussian polymer chains. It works well for small to moderate strains but fails to capture large strain stiffening.
 
 **Mooney–Rivlin Model:**
 
-$$
+\begin{equation}
 W = C_1 (I_1 - 3) + C_2 (I_2 - 3).
-$$
+\end{equation}
+
 
 *Explanation:* Incorporates the second invariant $I_2$, providing a phenomenological description that significantly improves accuracy for rubber-like materials in shear and biaxial states.
 
 **Yeoh Model:**
 
-$$
+\begin{equation}
 W = \sum_{i=1}^{3} C_i (I_1 - 3)^i.
-$$
+\end{equation}
 
 *Explanation:* A highly robust, first-invariant-based model. It effectively captures the characteristic "S-shaped" stress-strain curves and abrupt strain-hardening at large stretches.
 
@@ -149,28 +154,28 @@ $$
 
 Assuming incompressibility with a Lagrange multiplier $p$ (representing hydrostatic pressure), the **Second Piola–Kirchhoff stress tensor** $\mathbf{S}$ is:
 
-$$
+\begin{equation}
 \mathbf{S} = 2 \frac{\partial W}{\partial \mathbf{C}} - p \mathbf{C}^{-1}
-$$
+\end{equation}
 
 The **Cauchy stress tensor** $\boldsymbol{\sigma}$ is obtained by push-forward transformation:
 
-$$
+\begin{equation}
 \boldsymbol{\sigma} = \mathbf{F} \mathbf{S} \mathbf{F}^\mathrm{T} = -p\mathbf{I} + 2\frac{\partial W}{\partial I_1}\mathbf{B} - 2\frac{\partial W}{\partial I_2}\mathbf{B}^{-1}
-$$
+\end{equation}
 
 where $\mathbf{B} = \mathbf{F}\mathbf{F}^\mathrm{T}$ is the Left Cauchy–Green deformation tensor.
 Using the chain rule, we can express $\mathbf{S}$ analytically in terms of the invariants:
 
-$$
+\begin{equation}
 \mathbf{S} = 2 \left( \frac{\partial W}{\partial I_1} \frac{\partial I_1}{\partial \mathbf{C}} + \frac{\partial W}{\partial I_2} \frac{\partial I_2}{\partial \mathbf{C}} \right) - p \mathbf{C}^{-1}
-$$
+\end{equation}
 
 where:
 
-$$
+\begin{equation}
 \frac{\partial I_1}{\partial \mathbf{C}} = \mathbf{I}, \quad \frac{\partial I_2}{\partial \mathbf{C}} = I_1 \mathbf{I} - \mathbf{C}.
-$$
+\end{equation}
 
 These stress expressions allow us to calculate axial force, torque, and membrane stresses, which are critical for characterizing soft actuators and balloons.
 
@@ -179,15 +184,17 @@ These stress expressions allow us to calculate axial force, torque, and membrane
 ### 2.5. Apply Balance Laws and Boundary Conditions
 Under quasi-static conditions, the Cauchy stress must satisfy the **local balance of linear momentum**:
 
-$$
+\begin{equation}
 \nabla \cdot \boldsymbol{\sigma} = \mathbf{0}
-$$
+\end{equation}
 
 **Cylindrical Equilibrium:** For a pressurized cylindrical tube, the radial component of the equilibrium equation simplifies to:
 
-$$
+\begin{equation}
 \frac{d\sigma_{rr}}{dr} + \frac{\sigma_{rr} - \sigma_{\theta\theta}}{r} = 0.
-$$
+\end{equation}
+
+
 
 **Boundary Conditions:** These equations are completed by prescribing traction boundary conditions (such as inner pressure $P_i$ on $r = r_i$ and zero outer pressure on $r = r_o$), or kinematic constraints at the boundaries.
 
@@ -257,16 +264,6 @@ print(f"Uniaxial Cauchy Stress (sigma): {final_sigma}")
 </div>
 
 ***
-## Jupyter Notebook Example
-
-{::nomarkdown}
-{% assign jupyter_path = "assets/jupyter/Constitutive_Modelling.ipynb" | relative_url %}
-{% capture notebook_exists %}{% file_exists assets/jupyter/Constitutive_Modelling.ipynb %}{% endcapture %}
-{% if notebook_exists == "true" %}
-{% jupyter_notebook jupyter_path %}
-{% else %}
-<p>Sorry, the notebook you are looking for does not exist.</p>
-{% endif %}
 
 
 ## Further Reading

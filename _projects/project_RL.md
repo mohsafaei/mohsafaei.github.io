@@ -9,9 +9,10 @@ toc:
   sidebar: right
 ---
 
-<p style="text-align: justify"; markdown="1">
+<p style="text-align: justify;" markdown="1">
 
 **Reinforcement Learning (RL)** is a branch of machine learning where an agent learns to make decisions by interacting with an environment. Through trial and error, the agent refines its strategies by receiving rewards for good actions and penalties for undesirable ones. The objective is to maximize cumulative rewards over time, leading to intelligent and adaptive behavior. RL has numerous applications, including robotics, game playing, autonomous systems, and optimization problems, making it a powerful tool for developing self-learning models.
+
 </p>
 
 <div class="row justify-content-center">
@@ -24,10 +25,12 @@ toc:
 
 ## 1. RL Approach and Advantages
 
-<p style="text-align: justify"; markdown="1">
+<p style="text-align: justify;" markdown="1">
+
 Reinforcement learning differs from supervised and unsupervised learning in its approach to training models. Instead of relying on labeled datasets, RL enables agents to learn by direct interaction with the environment, improving decision-making capabilities autonomously.
 
 The diagram below illustrates the core RL framework, where an **agent** interacts with its **environment** by taking **actions** in different **states**, receiving **rewards** as feedback. Through repeated interactions, the agent refines its strategy to maximize cumulative rewards.
+
 </p>
 
 
@@ -43,9 +46,9 @@ The diagram below illustrates the core RL framework, where an **agent** interact
 </div>
 
 
-<p style="text-align: justify;">
-
 ## 2. Key Advantages of RL Over Other Learning Methods
+
+<p style="text-align: justify;" markdown="1">
 
 - **Exploration and Exploitation Balance:** RL effectively balances learning from known strategies (exploitation) while discovering new strategies (exploration).
 - **No Need for Labeled Data:** Unlike supervised learning, RL does not require manually labeled datasets, reducing the cost and effort of data annotation.
@@ -53,9 +56,12 @@ The diagram below illustrates the core RL framework, where an **agent** interact
 - **Long-Term Reward Optimization:** RL focuses on long-term gains rather than immediate results, ensuring better decision-making in sequential tasks.
 - **Model-Free Learning:** Many RL algorithms, such as Q-learning, do not require prior knowledge of the environment, making them flexible for different applications.
 
+</p>
 
 
 ## Example: Taxi Problem
+
+<p style="text-align: justify;" markdown="1">
 
 The Taxi Problem is a well-known example of reinforcement learning, designed to illustrate how an RL agent learns to navigate and optimize decision-making in a grid-based environment. The goal is to train a taxi agent to:
 
@@ -66,7 +72,10 @@ The Taxi Problem is a well-known example of reinforcement learning, designed to 
 
 At each step, the agent receives rewards for successful pickups and drop-offs and penalties for illegal moves or inefficient navigation. Over multiple episodes, the agent learns an optimal policy for completing the task efficiently. 
 In order to implementing Taxi problem, you can work with `gymnasium` python library.
+
 </p>
+
+---
 
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">
@@ -79,6 +88,7 @@ In order to implementing Taxi problem, you can work with `gymnasium` python libr
     </div>
 </div>
 
+---
 
 ## 3. RL Algorithms
 
@@ -102,10 +112,8 @@ Q-Learning is an off-policy RL algorithm that iteratively updates Q-values to le
 
 
 
+## Further reading
 
-
-## Useful References
 **[First Reinforcement Learning Program](https://opendilab.github.io/DI-engine/01_quickstart/first_rl_program.html)**
 **[Visual Imitation with Reinforcement Learning](https://www-labs.iro.umontreal.ca/~gberseth/visual-imitation-with-reinforcement-learning-using-recurrent-siamese-networks.html)**
 
-{% include repository/repo.liquid repository="mohsafaei/Reinforcement_Learning" %}

@@ -13,10 +13,12 @@ Machine learning has evolved from a niche computational field into the primary e
 
 ## 1. What is Machine Learning?
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 Machine Learning (ML) is a subfield of artificial intelligence (AI) focused on building systems that learn from data rather than being explicitly programmed. At its core, ML algorithms build mathematical models based on sample data, known as "training data," to make predictions or decisions without human intervention. 
 
 In mathematical terms, if we have a set of inputs $X$ and desired outputs $Y$, traditional programming requires a human to define the function $f$ such that $Y = f(X)$. Machine learning, conversely, uses the data pairs $(X, Y)$ to approximate the underlying function $f$ automatically.
+
 </p>
 
 <div class="row justify-content-center">
@@ -34,17 +36,18 @@ In mathematical terms, if we have a set of inputs $X$ and desired outputs $Y$, t
 
 ## 2. Origin and Evolution
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 The concept of machines learning from data dates back to the mid-20th century. 
 *   **The 1950s:** Arthur Samuel, an IBM researcher, coined the term "machine learning" in 1959 while developing a program to play checkers that could learn from its past games. Around the same time, Frank Rosenblatt invented the "Perceptron," an early artificial neural network modeled after the human brain.
 *   **The 1990s:** The field shifted its focus from symbolic, logic-based AI to data-driven, statistical approaches. This era saw the rise of Support Vector Machines (SVMs) and advanced clustering algorithms.
 *   **The 2010s to Present:** The explosion of available data ("Big Data") and exponential growth in computational power (GPUs) led to the deep learning revolution, allowing neural networks with many layers to achieve unprecedented accuracy.
+
 </p>
 
 ## 3. Advantages of Machine Learning
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 *   **Automation of Complex Tasks:** ML models can automate decision-making processes in environments too complex for traditional rule-based algorithms.
 *   **Continuous Improvement:** Many ML models are designed to learn continuously; as they are exposed to more data over time, their predictive accuracy improves.
@@ -99,17 +102,16 @@ Used for pattern discovery, compression, or exploratory analysis.
 
 #### B) Dimensionality Reduction
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 - **What it does:** Maps high-dimensional data $(\mathbf{x}\in\mathbb{R}^d)$ into a lower-dimensional representation $(\mathbf{z}\in\mathbb{R}^k)$, $(k \ll d)$, while preserving useful structure.
-</p>
-
 - **Typical outputs:** reduced features/embeddings, compressed representations.
 - **Example applications:**
   - Big data visualization
   - Meaningful compression
   - Structure discovery
   - Feature “simplification/selection” (the figure labels this as *Feature Biclactication*, which is commonly interpreted as feature extraction/selection depending on context)
+
 </p>
 
 <div class="row justify-content-center">
@@ -149,16 +151,19 @@ Used for pattern discovery, compression, or exploratory analysis.
 
 ## 6. Real-World Applications
 
-<p style="text-align: justify"; markdown="1">
+<p style="text-align: justify;" markdown="1">
 
 Machine learning is deeply integrated into modern society:
 *   **Healthcare:** Predicting patient outcomes, discovering new pharmaceutical drugs, and diagnosing diseases from medical imagery (like X-rays and MRIs).
 *   **Finance:** Algorithmic trading, credit scoring, and real-time fraud detection.
 *   **Autonomous Systems:** Self-driving cars use computer vision (powered by Convolutional Neural Networks) to detect pedestrians, lanes, and traffic signs in real-time.
 
+</p>
+
 ### Applications in Solid Mechanics Research
 
-<p style="text-align: justify"; markdown="1">
+<p style="text-align: justify;" markdown="1">
+
 In recent years, ML has revolutionized computational mechanics, materials science, and solid mechanics research by accelerating simulations and discovering new physics:
 
 *   **Data-Driven Constitutive Modeling:** Traditionally, material behavior is described by empirical constitutive equations (e.g., Hooke's Law: $\boldsymbol{\sigma} = \mathbb{C} : \boldsymbol{\epsilon}$, where $\boldsymbol{\sigma}$ is stress and $\boldsymbol{\epsilon}$ is strain). ML models can replace these empirical laws by learning complex, non-linear stress-strain relationships directly from experimental or micro-scale simulation data, capturing behaviors that are too complex for traditional math formulations.
@@ -167,6 +172,7 @@ In recent years, ML has revolutionized computational mechanics, materials scienc
 *   **Fracture Mechanics and Defect Detection:** ML algorithms are used to predict the initiation and propagation of cracks in complex microstructures. By analyzing acoustic emissions or microscopic images, ML models can predict material failure long before it occurs.
 *   **Topology Optimization:** ML is used to design lighter, stronger components by predicting optimal material distribution. Instead of running thousands of slow iterative FEA simulations, a trained ML surrogate model can predict the optimal shape of a mechanical component almost instantly.
 *   **Multiscale Modeling:** Bridging the gap between atomic-level behavior and macroscopic material properties is computationally exhausting. ML serves as a "bridge," taking data from molecular dynamics (MD) simulations and feeding it accurately into macroscopic continuum models.
+
 </p>
 
 ---
@@ -174,7 +180,7 @@ However, there are some limitation on ML as well:
 
 ## 4. Disadvantages and Challenges
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 *   **Data Dependency:** ML models require massive amounts of high-quality, labeled data. If the input data is flawed or biased ("garbage in, garbage out"), the model's predictions will be too.
 *   **The "Black Box" Problem:** Many highly accurate models, particularly deep neural networks, are difficult to interpret. It is often unclear *why* the model made a specific decision, which is problematic in high-stakes fields like medicine or law.
