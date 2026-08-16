@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Deep Learning
-description: The Core of Modern AI
+description: 
 img: assets/img/CNN.jpg
 importance: 2
 giscus_comments: false
+toc:
+  sidebar: right
 ---
 
 
@@ -68,6 +70,46 @@ The path to modern Deep Learning involved several key milestones and significant
 | **1997** | Long Short-Term Memory (LSTM) | Breakthrough for handling **temporal dependencies** in data, crucial for sequences like text. |
 | **2012** | **AlexNet** (Krizhevsky, Sutskever, Hinton) | First major success of a **Deep Convolutional Network** in the ImageNet competition, ushering in the modern Deep Learning era. |
 
+---
+
+## Example: Rosenblatt's Perceptron
+
+> Architecture
+The perceptron is a single-layer feedforward network that performs a binary linear mapping. Given an input vector $\mathbf{x} \in \mathbb{R}^n$, the architecture is defined by:
+
+*   **Affine Transformation:**
+    \begin{equation}
+    z = \sum_{i=1}^{n} w_i x_i + b = \mathbf{w}^T \mathbf{x} + b
+    \end{equation}
+    where $\mathbf{w} \in \mathbb{R}^n$ is the weight vector and $b \in \mathbb{R}$ is the bias.
+
+*   **Non-linear Activation:**
+    The output $\hat{y}$ is obtained via the Heaviside step function $\sigma(\cdot)$:
+    \begin{equation}
+    \hat{y} = \sigma(z) = \begin{cases} +1 & \text{if } z \geq 0 \\ -1 & \text{if } z < 0 \end{cases}
+    \end{equation}
+
+
+> Geometric Interpretation
+The perceptron partitions the input space into two half-spaces using a **decision hyperplane** $\mathcal{H}$ defined by:
+$$\mathcal{H} = \{ \mathbf{x} \in \mathbb{R}^n \mid \mathbf{w}^T \mathbf{x} + b = 0 \}$$
+The normal vector $\mathbf{w}$ defines the orientation of this hyperplane, while the bias $b$ determines the offset from the origin.
+
+> Learning Rule
+The algorithm updates parameters iteratively to minimize the classification error for a training set $\{(\mathbf{x}_i, y_i)\}$. For each misclassified sample, the weights and bias are adjusted:
+
+$$\mathbf{w}_{new} = \mathbf{w}_{old} + \eta(y - \hat{y})\mathbf{x}$$
+$$b_{new} = b_{old} + \eta(y - \hat{y})$$
+
+Where:
+*   $\eta \in (0, 1]$ is the learning rate.
+*   $(y - \hat{y})$ is the error term:
+    *   If correctly classified: error is $0$.
+    *   If $y=+1, \hat{y}=-1$: weights move toward $\mathbf{x}$.
+    *   If $y=-1, \hat{y}=+1$: weights move away from $\mathbf{x}$.
+
+**Convergence:** If the data is linearly separable, the Perceptron Convergence Theorem guarantees convergence to a separating hyperplane in finite iterations.
+
 
 
 <div class="row justify-content-center">
@@ -75,7 +117,6 @@ The path to modern Deep Learning involved several key milestones and significant
         {% include figure.liquid loading="eager" path="assets/img/DL_history.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
-
 
 
 ---

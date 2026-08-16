@@ -4,6 +4,8 @@ title: Machine Learning
 description: 
 img: assets/img/ML.jpg
 importance: 3
+toc:
+  sidebar: right
 ---
 
 Machine learning has evolved from a niche computational field into the primary engine of modern innovation, fundamentally reshaping how we analyze complex datasets and automate decision-making across all scientific and industrial domains.
@@ -132,9 +134,6 @@ Used for pattern discovery, compression, or exploratory analysis.
 | Unsupervised | Clustering | None | Find natural groups |
 | Unsupervised | Dimensionality Reduction | None | Compress/visualize/denoise |
 
----
-
-
 
 <div class="row justify-content-center">
     <div class="col-sm mt-3 mt-md-0 text-center">
@@ -146,9 +145,11 @@ Used for pattern discovery, compression, or exploratory analysis.
        Types of Machine Learning—This diagram depicts the three main categories: supervised, unsupervised, and reinforcement learning.
     </div>
 </div>
+---
 
-<p style="text-align: justify;">
 ## 6. Real-World Applications
+
+<p style="text-align: justify"; markdown="1">
 
 Machine learning is deeply integrated into modern society:
 *   **Healthcare:** Predicting patient outcomes, discovering new pharmaceutical drugs, and diagnosing diseases from medical imagery (like X-rays and MRIs).
@@ -157,7 +158,7 @@ Machine learning is deeply integrated into modern society:
 
 ### Applications in Solid Mechanics Research
 
-<p style="text-align: justify;">
+<p style="text-align: justify"; markdown="1">
 In recent years, ML has revolutionized computational mechanics, materials science, and solid mechanics research by accelerating simulations and discovering new physics:
 
 *   **Data-Driven Constitutive Modeling:** Traditionally, material behavior is described by empirical constitutive equations (e.g., Hooke's Law: $\boldsymbol{\sigma} = \mathbb{C} : \boldsymbol{\epsilon}$, where $\boldsymbol{\sigma}$ is stress and $\boldsymbol{\epsilon}$ is strain). ML models can replace these empirical laws by learning complex, non-linear stress-strain relationships directly from experimental or micro-scale simulation data, capturing behaviors that are too complex for traditional math formulations.

@@ -108,10 +108,30 @@ In short, literature analysis is not just about collecting papers—it is about 
 
 ---
 
-### 📖 Journal Metrics
+### 📖 A Guide to Journal Metrics
+
+In academia, quantitative metrics are used to evaluate the influence and visibility of scholarly journals. While often used as proxies for quality, it is important to understand that each metric measures a different dimension of impact.
+
+### Comparison of Major Metrics
+
+| Metric | Provider | Calculation Window | Core Philosophy | Best Used For... |
+| :--- | :--- | :--- | :--- | :--- |
+| **JIF** *(Journal Impact Factor)* | Clarivate | 2 Years | Average citations per paper in the preceding two years. | Standardizing prestige for tenure and hiring. |
+| **CiteScore** | Elsevier | 4 Years | Total citations received over 4 years divided by documents published. | Assessing long-term visibility and broader document types. |
+| **SJR** *(SCImago Journal Rank)* | Scopus | 3 Years | A "prestige-weighted" metric (similar to PageRank). | Comparing journals where citation quality matters more than quantity. |
+| **SNIP** *(Source Normalized Impact)* | CWTS | 3 Years | Normalizes citation counts based on the specific field's citation habits. | Comparing journals across different disciplines (e.g., Math vs. Biology). |
 
 
+#### 1. The Importance of Context (SNIP)
+Standard metrics can be misleading when comparing fields. For example, a highly cited paper in **Solid Mechanics** might have a lower Impact Factor than a paper in **Molecular Biology** simply because biology has a higher "citation density." **SNIP** corrects for this, making it a fairer tool for interdisciplinary comparison.
 
+#### 2. Prestige vs. Volume (SJR)
+Not all citations are created equal. The **SJR** recognizes that a citation from a top-tier journal like *Nature* carries more weight than a citation from a local or predatory journal. This makes it a powerful metric for assessing the "academic authority" of a publication.
+
+#### 3. The Limitations of JIF
+While the **Journal Impact Factor** remains the "gold standard" for many institutional rankings, it is a short-term metric. It can be heavily influenced by a single "breakthrough" paper, which may not accurately reflect the consistent quality of the journal’s entire catalog.
+
+> **Pro-Tip:** When deciding where to submit your research, do not look at the Impact Factor in isolation. Check the journal's **indexing status** (Scopus/Web of Science), its **reputation** within your specific sub-field, and its **open-access policies**.
 
 
 ---

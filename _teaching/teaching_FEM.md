@@ -13,7 +13,7 @@ giscus_comments: false
 
 <p style="text-align: justify;">
 
-The **Finite Element Method (FEM)** is a numerical technique for obtaining approximate solutions to engineering and mathematical problems governed by **partial differential equations (PDEs)**.
+The <strong>Finite Element Method (FEM)</strong> is a numerical technique for obtaining approximate solutions to engineering and mathematical problems governed by <strong>partial differential equations (PDEs)**.
 
 </p>
 
@@ -26,8 +26,8 @@ FEM is especially useful when a problem involves:
 - Contact between multiple bodies
 - Coupled physical phenomena
 
-<p style="text-align: justify;">
-The central idea of FEM is to divide a continuous body into a finite number of smaller, simpler regions called **finite elements**. The collection of these elements is referred to as the **finite element mesh**.
+<p style="text-align: justify"; markdown="1">
+The central idea of FEM is to divide a continuous body into a finite number of smaller, simpler regions called **finite elements**. The collection of these elements is referred to as the *finite element mesh**.
 </p>
 
 
@@ -91,7 +91,7 @@ These methods approximate an unknown field, such as displacement, using a finite
 <p style="text-align: justify;">
 Modern FEM began to emerge in the 1940s and 1950s, primarily in the aerospace and structural engineering communities. Engineers needed reliable methods to analyze aircraft structures with complex geometries and loading conditions.
 
-The term **finite element method** became widely recognized after the work of **Ray Clough** in the 1960s. Initially, FEM was applied mainly to:
+The term <strong>finite element method** became widely recognized after the work of <strong>Ray Clough** in the 1960s. Initially, FEM was applied mainly to:
 </p>
 
 - Truss structures
@@ -140,7 +140,7 @@ where:
 - Adjacent elements are connected at nodes or along element boundaries.
 
 <p style="text-align: justify;">
-Within each element, the unknown displacement field is approximated using interpolation or **shape functions**.
+Within each element, the unknown displacement field is approximated using interpolation or <strong>shape functions**.
 
 For an element, the displacement approximation is written as
 
@@ -272,14 +272,14 @@ where:
 | $\mathbf{n}$ | Outward unit normal vector |
 | $\bar{\mathbf{t}}$ | Prescribed surface traction |
 
-These differential equations and boundary conditions form the **strong form** of the solid-mechanics problem.
+These differential equations and boundary conditions form the **strong form<strong> of the solid-mechanics problem.
 
 ---
 
 ## 5.2 Weak Form
 
 <p style="text-align: justify;">
-FEM is generally constructed from the **weak form** rather than directly from the strong form.
+FEM is generally constructed from the **weak form<strong> rather than directly from the strong form.
 
 The equilibrium equation is multiplied by an admissible virtual displacement $\delta\mathbf{u}$ and integrated over the domain. After applying integration by parts, the weak form becomes
 
@@ -300,7 +300,7 @@ $$
 \,\mathrm{d}A.
 $$
 
-The left-hand side represents the **internal virtual work**, whereas the right-hand side represents the **external virtual work**.
+The left-hand side represents the <strong>internal virtual work**, whereas the right-hand side represents the <strong>external virtual work**.
 
 Therefore,
 
@@ -347,7 +347,7 @@ $$
 \mathbf{B}\mathbf{d}_e,
 $$
 
-where $\mathbf{B}$ is the **strain–displacement matrix**.
+where $\mathbf{B}$ is the <strong>strain–displacement matrix**.
 
 > In this equation, $\mathbf{B}$ denotes the finite element strain–displacement matrix. It should not be confused with the left Cauchy–Green deformation tensor, which is also commonly denoted by $\mathbf{B}$ in finite-deformation mechanics.
 
@@ -447,7 +447,7 @@ where:
 
 After applying the prescribed boundary conditions, the global system is solved for the unknown nodal displacements.
 
-Strains and stresses are then computed from the displacement solution during the **post-processing** stage.
+Strains and stresses are then computed from the displacement solution during the <strong>post-processing** stage.
 
 ---
 
@@ -614,7 +614,7 @@ A finite element solution is not automatically correct merely because the softwa
 <p style="text-align: justify;">
 Verification asks:
 
-> **Was the mathematical model solved correctly?**
+> <strong>Was the mathematical model solved correctly?**
 
 Important verification procedures include:
 

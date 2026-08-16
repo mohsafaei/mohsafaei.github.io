@@ -9,7 +9,7 @@ toc:
   sidebar: right
 ---
 
-<p style="text-align: justify;">
+<p style="text-align: justify"; markdown="1">
 
 **Reinforcement Learning (RL)** is a branch of machine learning where an agent learns to make decisions by interacting with an environment. Through trial and error, the agent refines its strategies by receiving rewards for good actions and penalties for undesirable ones. The objective is to maximize cumulative rewards over time, leading to intelligent and adaptive behavior. RL has numerous applications, including robotics, game playing, autonomous systems, and optimization problems, making it a powerful tool for developing self-learning models.
 </p>
@@ -24,7 +24,7 @@ toc:
 
 ## 1. RL Approach and Advantages
 
-<p style="text-align: justify;">
+<p style="text-align: justify"; markdown="1">
 Reinforcement learning differs from supervised and unsupervised learning in its approach to training models. Instead of relying on labeled datasets, RL enables agents to learn by direct interaction with the environment, improving decision-making capabilities autonomously.
 
 The diagram below illustrates the core RL framework, where an **agent** interacts with its **environment** by taking **actions** in different **states**, receiving **rewards** as feedback. Through repeated interactions, the agent refines its strategy to maximize cumulative rewards.
