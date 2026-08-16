@@ -121,7 +121,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-deep-learning",
           title: 'Deep Learning',
-          description: "The Core of Modern AI",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_DL/";
             },},{id: "projects-constitutive-modeling",
