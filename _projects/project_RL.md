@@ -110,9 +110,9 @@ Q-Learning is an off-policy RL algorithm that iteratively updates Q-values to le
 - It efficiently finds optimal policies even in complex environments.
 - Unlike Monte Carlo methods, Q-learning updates values at each step, making it more sample-efficient.
 
+--- 
 
-
-## Further reading
+## Further Reading
 
 **[First Reinforcement Learning Program](https://opendilab.github.io/DI-engine/01_quickstart/first_rl_program.html)**
 **[Visual Imitation with Reinforcement Learning](https://www-labs.iro.umontreal.ca/~gberseth/visual-imitation-with-reinforcement-learning-using-recurrent-siamese-networks.html)**

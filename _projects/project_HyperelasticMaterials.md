@@ -13,7 +13,9 @@ toc:
 # Continuum Mechanics and Constitutive Modeling of Hyperelastic Materials
 
 <p style="text-align: justify;">
+
 To model the mechanical behavior of soft materials, such as liquid crystal elastomers (LCEs) and biological tissues, we utilize non-linear solid mechanics theories. Hyperelasticity is defined by a **strain energy density function** $W$, which accounts for the material's changing stiffness and near-total incompressibility during finite deformation.
+
 </p>
 
 ```mermaid
@@ -56,15 +58,18 @@ flowchart TD
 <p style="text-align: justify;">
 
 To demonstrate these concepts, we consider two classical deformation states:
+
 1.  **Equi-biaxial Deformation (Cartesian):** Under an in-plane stretch ratio $\lambda$, the deformation mapping is given by:
-    $$
+    \begin{equation}
     x_1 = \lambda X_1, \quad x_2 = \lambda X_2, \quad x_3 = \lambda_3 X_3.
-    $$
+    \end{equation}
+
     Enforcing incompressibility ($J = \lambda_1\lambda_2\lambda_3 = 1$) yields the out-of-plane stretch:
     
-    $$
+    \begin{equation}
     \lambda_3 = \frac{1}{\lambda^2}
-    $$
+    \end{equation}
+
 
 2.  **Combined Extension-Torsion of a Cylinder (Curvilinear):** For cylindrical LCE actuators, we map reference coordinates $(R, \Theta, Z)$ to current coordinates $(r, \theta, z)$ via:
     
@@ -85,11 +90,17 @@ The kinematic description maps material points from their reference configuratio
 
 Let the reference position be $\mathbf{X} = (X_1, X_2, X_3)$ and the current position be $\mathbf{x} = (x_1, x_2, x_3)$. The deformation mapping is expressed as:
 
-$$\mathbf{x} = \boldsymbol{\chi}(\mathbf{X}, t)$$
+
+\begin{equation}
+\mathbf{x} = \boldsymbol{\chi}(\mathbf{X}, t)
+\end{equation}
 
 The **deformation gradient** $\mathbf{F}$ is the spatial gradient of the mapping:
 
-$$\mathbf{F} = \frac{\partial \boldsymbol{\chi}}{\partial \mathbf{X}}$$
+\begin{equation}
+\mathbf{F} = \frac{\partial \boldsymbol{\chi}}{\partial \mathbf{X}}
+\end{equation}
+
 
 For the cylindrical combined extension-torsion case, expressing $\mathbf{F}$ in local orthonormal bases yields:
 
@@ -208,8 +219,8 @@ By coupling kinematics, constitutive laws, and momentum balance, a **semi-analyt
 
 ### SymPy Implementation
 Below is a complete, educational Python script using **SymPy** to automate the symbolic derivation of Cauchy stress under uniaxial tension for an incompressible Neo-Hookean material.
-</p>
 
+</p>
 
 ```python
 import sympy as sp
