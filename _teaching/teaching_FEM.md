@@ -11,7 +11,7 @@ giscus_comments: false
 
 ## 1. Introduction
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 The <strong>Finite Element Method (FEM)</strong> is a numerical technique for obtaining approximate solutions to engineering and mathematical problems governed by <strong>partial differential equations (PDEs)**.
 
@@ -26,21 +26,16 @@ FEM is especially useful when a problem involves:
 - Contact between multiple bodies
 - Coupled physical phenomena
 
-<p style="text-align: justify"; markdown="1">
-The central idea of FEM is to divide a continuous body into a finite number of smaller, simpler regions called **finite elements**. The collection of these elements is referred to as the *finite element mesh**.
+<p style="text-align: justify;" markdown="1">
+
+The central idea of FEM is to divide a continuous body into a finite number of smaller, simpler regions called **finite elements**. The collection of these elements is referred to as the *finite element 
+mesh**.
+
 </p>
 
 
 ---
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-6">
-        {% include figure.liquid loading="eager" path="assets/img/Elmer-pump.png" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-sm mt-3 mt-md-6">
-        {% include figure.liquid loading="eager" path="assets/img/FEM_beam.png" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-4">
@@ -62,18 +57,20 @@ The central idea of FEM is to divide a continuous body into a finite number of s
 
 ## 2. Historical Origin of FEM 📜
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 The development of FEM originated from the need to analyze complex structural systems that could not be solved conveniently using classical analytical methods.
+
 </p>
 
 ### 2.1 Early Mathematical Foundations
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 The mathematical foundations of FEM can be traced to variational and approximation methods developed during the nineteenth and early twentieth centuries.
 
 Important early contributions include:
+
 </p>
 
 - The **Rayleigh method**
@@ -82,16 +79,20 @@ Important early contributions include:
 - Variational principles in elasticity
 - Piecewise polynomial approximation
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 These methods approximate an unknown field, such as displacement, using a finite number of parameters.
+
 </p>
 
 ### 2.2 Emergence in Structural Engineering
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 Modern FEM began to emerge in the 1940s and 1950s, primarily in the aerospace and structural engineering communities. Engineers needed reliable methods to analyze aircraft structures with complex geometries and loading conditions.
 
 The term <strong>finite element method** became widely recognized after the work of <strong>Ray Clough** in the 1960s. Initially, FEM was applied mainly to:
+
 </p>
 
 - Truss structures
@@ -99,8 +100,10 @@ The term <strong>finite element method** became widely recognized after the work
 - Aircraft wings
 - Thin plates and shells
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 With the development of digital computers, FEM rapidly expanded into continuum mechanics, heat transfer, fluid mechanics, electromagnetism, biomechanics, and multiphysics simulations.
+
 </p>
 
 ### 2.3 Major Stages of Development
@@ -119,47 +122,52 @@ With the development of digital computers, FEM rapidly expanded into continuum m
 
 ## 3. Fundamental Concept of FEM
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 Consider a continuous solid occupying the domain
 
-$$
+\begin{equation}
 \Omega \subset \mathbb{R}^{3}.
-$$
+\end{equation}
+
 
 Instead of solving the governing differential equations directly over the entire domain, FEM divides the body into smaller subdomains:
 
-$$
+\begin{equation}
 \Omega \approx \bigcup_{e=1}^{N_e}\Omega_e,
-$$
+\end{equation}
 
 where:
+
 </p>
 
 - $\Omega_e$ is the domain of element $e$.
 - $N_e$ is the total number of elements.
 - Adjacent elements are connected at nodes or along element boundaries.
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 Within each element, the unknown displacement field is approximated using interpolation or <strong>shape functions**.
 
 For an element, the displacement approximation is written as
 
-$$
+\begin{equation}
 \mathbf{u}^{h}(\mathbf{X})
 =
 \sum_{a=1}^{n_e}
 N_a(\mathbf{X})\mathbf{d}_a,
-$$
+\end{equation}
 
 or, in matrix notation,
 
-$$
+\begin{equation}
 \mathbf{u}^{h}
 =
 \mathbf{N}\mathbf{d}_e,
-$$
+\end{equation}
 
 where:
+
 </p>
 
 | Symbol | Meaning |
@@ -171,16 +179,19 @@ where:
 | $\mathbf{d}_e$ | Element nodal displacement vector |
 | $n_e$ | Number of nodes in the element |
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 The superscript $h$ indicates that the solution is associated with a discretized domain characterized by a representative element size $h$.
+
 </p>
 
 ---
 
 ## 4. Why FEM Is Necessary
-<p style="text-align: justify;">
+
+<p style="text-align: justify;" markdown="1">
+
 Analytical solutions are available only for relatively simple problems. For example, closed-form solutions generally require:
-</p>
 
 - Simple geometry
 - Homogeneous materials
@@ -188,10 +199,14 @@ Analytical solutions are available only for relatively simple problems. For exam
 - Linear constitutive behavior
 - Simple boundary conditions
 
-<p style="text-align: justify;">
+</p>
+
+<p style="text-align: justify;" markdown="1">
+
 Real engineering structures rarely satisfy all these conditions.
 
 FEM provides an approximate solution by converting a continuous boundary-value problem into a finite system of algebraic equations.
+
 </p>
 
 ### Analytical and Finite Element Approaches
@@ -212,10 +227,11 @@ FEM provides an approximate solution by converting a continuous boundary-value p
 
 ## 5.1 Strong Form
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 For a solid body under quasi-static conditions, the balance of linear momentum is
 
-$$
+\begin{equation}
 \nabla\cdot\boldsymbol{\sigma}
 +
 \mathbf{b}
@@ -223,7 +239,8 @@ $$
 \mathbf{0}
 \qquad
 \text{in } \Omega,
-$$
+\end{equation}
+
 
 where:
 
@@ -233,35 +250,35 @@ where:
 
 The boundary is commonly divided into a displacement boundary and a traction boundary:
 
-$$
+\begin{equation}
 \partial\Omega = \Gamma_u \cup \Gamma_t,
-$$
+\end{equation}
 
 with
 
-$$
+\begin{equation}
 \Gamma_u \cap \Gamma_t = \varnothing.
-$$
+\end{equation}
 
 The corresponding boundary conditions are
 
-$$
+\begin{equation}
 \mathbf{u}
 =
 \bar{\mathbf{u}}
 \qquad
 \text{on } \Gamma_u,
-$$
+\end{equation}
 
 and
 
-$$
+\begin{equation}
 \boldsymbol{\sigma}\mathbf{n}
 =
 \bar{\mathbf{t}}
 \qquad
 \text{on } \Gamma_t,
-$$
+\end{equation}
 
 where:
 
@@ -279,12 +296,13 @@ These differential equations and boundary conditions form the **strong form<stro
 ## 5.2 Weak Form
 
 <p style="text-align: justify;">
+
 FEM is generally constructed from the **weak form<strong> rather than directly from the strong form.
 
 The equilibrium equation is multiplied by an admissible virtual displacement $\delta\mathbf{u}$ and integrated over the domain. After applying integration by parts, the weak form becomes
 
 
-$$
+\begin{equation}
 \int_{\Omega}
 \boldsymbol{\sigma}
 :
@@ -298,25 +316,26 @@ $$
 \int_{\Gamma_t}
 \bar{\mathbf{t}}\cdot\delta\mathbf{u}
 \,\mathrm{d}A.
-$$
+\end{equation}
 
-The left-hand side represents the <strong>internal virtual work**, whereas the right-hand side represents the <strong>external virtual work**.
+The left-hand side represents the **internal virtual work**, whereas the right-hand side represents the external **virtual work**.
 
 Therefore,
 
-$$
+\begin{equation}
 \delta W_{\mathrm{int}}
 =
 \delta W_{\mathrm{ext}}.
-$$
+\end{equation}
 
 The weak form is advantageous because it:
-</p>
 
 1. Reduces the differentiability requirements of the unknown field.
 2. Naturally includes traction boundary conditions.
 3. provides a systematic foundation for spatial discretization.
 4. Can be extended to nonlinear and multiphysics problems.
+
+</p>
 
 ---
 
@@ -324,11 +343,11 @@ The weak form is advantageous because it:
 
 ## 6.1 Strain–Displacement Relation
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 For infinitesimal deformations, the strain tensor is
 
-$$
+\begin{equation}
 \boldsymbol{\varepsilon}
 =
 \frac{1}{2}
@@ -337,7 +356,7 @@ $$
 +
 \nabla\mathbf{u}^{\mathrm{T}}
 \right).
-$$
+\end{equation}
 
 After introducing the finite element approximation, the strain field can be expressed in matrix form as
 

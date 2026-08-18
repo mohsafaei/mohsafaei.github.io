@@ -12,7 +12,7 @@ toc:
 
 # Continuum Mechanics and Constitutive Modeling of Hyperelastic Materials
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 To model the mechanical behavior of soft materials, such as liquid crystal elastomers (LCEs) and biological tissues, we utilize non-linear solid mechanics theories. Hyperelasticity is defined by a **strain energy density function** $W$, which accounts for the material's changing stiffness and near-total incompressibility during finite deformation.
 
@@ -55,11 +55,12 @@ flowchart TD
 ## 2. Step-by-Step Explanation
 ### 2.1. Define the Problem and Geometry
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 To demonstrate these concepts, we consider two classical deformation states:
 
 1.  **Equi-biaxial Deformation (Cartesian):** Under an in-plane stretch ratio $\lambda$, the deformation mapping is given by:
+    
     \begin{equation}
     x_1 = \lambda X_1, \quad x_2 = \lambda X_2, \quad x_3 = \lambda_3 X_3.
     \end{equation}
@@ -84,12 +85,19 @@ To demonstrate these concepts, we consider two classical deformation states:
 
 ### 2.2. Kinematic Description
 
+<p style="text-align: justify;" markdown="1">
+
 The kinematic description maps material points from their reference configuration $\mathbf{X}$ to their current configuration $\mathbf{x}$.
+
+</p>
 
 #### 2.2.1. Deformation Mapping and Gradient
 
+<p style="text-align: justify;" markdown="1">
+
 Let the reference position be $\mathbf{X} = (X_1, X_2, X_3)$ and the current position be $\mathbf{x} = (x_1, x_2, x_3)$. The deformation mapping is expressed as:
 
+</p>
 
 \begin{equation}
 \mathbf{x} = \boldsymbol{\chi}(\mathbf{X}, t)
@@ -120,7 +128,6 @@ $$\mathbf{C} = \mathbf{F}^\mathrm{T} \mathbf{F}$$
 For isotropic materials, the strain energy density is formulated using the three principal invariants of $\mathbf{C}$:
 
 \begin{equation}
-
 I_1 = \text{tr}\,\mathbf{C}, \quad I_2 = \frac{1}{2}\left[ (\text{tr}\,\mathbf{C})^2 - \text{tr}(\mathbf{C}^2) \right], \quad I_3 = \det \mathbf{C}.
 \end{equation}
 
@@ -131,7 +138,13 @@ I_1 = \text{tr}\,\mathbf{C}, \quad I_2 = \frac{1}{2}\left[ (\text{tr}\,\mathbf{C
 ---
 
 ### 2.3. Choose the Constitutive Model (Strain-Energy Function)
+
+<p style="text-align: justify;" markdown="1">
+
 A hyperelastic material is characterized by a strain-energy function $W = W(I_1, I_2)$ per unit reference volume. We compare three widely used models:
+
+</p>
+
 **Neo-Hookean Model:**
 
 \begin{equation}
@@ -205,19 +218,27 @@ Under quasi-static conditions, the Cauchy stress must satisfy the **local balanc
 \frac{d\sigma_{rr}}{dr} + \frac{\sigma_{rr} - \sigma_{\theta\theta}}{r} = 0.
 \end{equation}
 
-
+<p style="text-align: justify;" markdown="1">
 
 **Boundary Conditions:** These equations are completed by prescribing traction boundary conditions (such as inner pressure $P_i$ on $r = r_i$ and zero outer pressure on $r = r_o$), or kinematic constraints at the boundaries.
 
+</p>
 ---
 
 ### 2.6. Obtain Governing Equations (Semi-Analytical Framework)
 
+<p style="text-align: justify;" markdown="1">
+
 By coupling kinematics, constitutive laws, and momentum balance, a **semi-analytical framework** is established. This allows one to express invariants and stresses analytically, reducing the complex non-linear boundary-value problem to a set of algebraic or ordinary differential equations. These equations are then solved numerically via Finite Element Analysis for specific loading commditions.
+
+</p>
 
 ---
 
 ### SymPy Implementation
+
+<p style="text-align: justify;" markdown="1">
+
 Below is a complete, educational Python script using **SymPy** to automate the symbolic derivation of Cauchy stress under uniaxial tension for an incompressible Neo-Hookean material.
 
 </p>
