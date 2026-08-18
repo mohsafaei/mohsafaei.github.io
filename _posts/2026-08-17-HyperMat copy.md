@@ -1,0 +1,311 @@
+---
+layout: post
+title: Polyconvexity in strain energy functions
+date: 2026-08-18 15:00:00
+description: 
+tags: formatting images
+categories: sample-posts
+thumbnail: assets/img/Hyperelastic_Materials.png
+images:
+  spotlight: true
+toc:
+beginning: true
+---
+
+## Convexity of strain energy functions
+
+In continuum mechanics, the strain energy density function \(W\) maps a deformation measure to stored elastic energy. Convexity refers to the shape of this function: loosely, if ($W$) is convex, then any linear interpolation between two strain states does not produce energy above the interpolation of their energies.
+
+For a scalar variable ($x$), convexity means
+
+\begin{equation}
+W(\theta x_1 + (1-\theta)x_2) \le \theta W(x_1) + (1-\theta)W(x_2),
+\qquad 0\le \theta \le 1.
+\end{equation}
+
+For multivariable constitutive models, this generalizes through the Hessian being positive semidefinite.
+
+---
+
+## Why convexity matters
+
+### 1. Material stability
+A convex energy tends to prevent nonphysical material instabilities. If the energy is non-convex, the material may admit multiple local minima, which can correspond to localization, phase-like switching, or mathematically unstable responses.
+
+### 2. Well-posedness of boundary value problems
+Convexity helps ensure existence and uniqueness of solutions in elasticity problems. Without it, equilibrium problems may become ill-posed or admit multiple solutions.
+
+### 3. Numerical robustness
+In finite element simulations, convex strain energy functions are generally more stable and easier to solve. Non-convexity often causes convergence issues, mesh sensitivity, or pathological bifurcations.
+
+### 4. Physical admissibility
+A constitutive law should give positive energy growth under increasing deformation and avoid unphysical softening unless such behavior is intentionally modeled.
+
+---
+
+## Important nuance: full convexity is often too strong
+
+For finite elasticity, **ordinary convexity in the deformation gradient \(F\)** is usually stronger than needed and may exclude realistic nonlinear behavior. Instead, weaker notions are often used:
+
+- **Rank-one convexity**
+- **Quasiconvexity**
+- **Polyconvexity**
+
+These are especially important in hyperelasticity.
+
+### Hierarchy
+
+\begin{equation}
+\text{Convexity} \implies \text{Polyconvexity} \implies \text{Quasiconvexity} \implies \text{Rank-one convexity}
+\end{equation}
+
+The reverse implications generally do not hold.
+
+---
+
+## Common convexity notions in hyperelasticity
+
+### 1. Convexity in \(F\)
+\(W(F)\) is convex if
+
+\begin{equation}
+W(\theta F_1 + (1-\theta)F_2) \le \theta W(F_1) + (1-\theta)W(F_2).
+\end{equation}
+
+This is mathematically convenient but often too restrictive for real materials.
+
+### 2. Rank-one convexity
+A weaker condition tied to ellipticity:
+
+\begin{equation}
+W(F + t\, a\otimes n)
+\end{equation}
+
+must be convex in \(t\) for all vectors \(a,n\). This is related to the Legendre–Hadamard condition and wave propagation/stability.
+
+### 3. Polyconvexity
+A very useful practical condition. \(W(F)\) is polyconvex if it can be written as a convex function of \(F\), \(\operatorname{cof}F\), and \(\det F\):
+
+\begin{equation}
+W(F)=\hat W(F,\operatorname{cof}F,\det F)
+\end{equation}
+
+with \(\hat W\) convex in its arguments.
+
+This is widely used because it allows realistic constitutive modeling while still supporting existence theorems.
+
+---
+
+## How we can develop a convex strain energy function
+
+### 1. Choose appropriate strain variables
+Sometimes the energy is not convex in one measure but becomes convex in another.
+
+Examples:
+- logarithmic strain
+- principal stretches \(\lambda_i\)
+- invariants \(I_1, I_2, I_3\)
+- \((F,\operatorname{cof}F,\det F)\) for polyconvexity
+
+A smart choice of variables can make convexity easier to enforce.
+
+---
+
+### 2. Build the energy as a sum of convex terms
+If \(W_1, W_2,\dots\) are convex, then
+
+\begin{equation}
+W = \sum_i \alpha_i W_i, \qquad \alpha_i \ge 0
+\end{equation}
+
+is also convex.
+
+For example,
+
+\begin{equation}
+W(F)=a\|F\|^2 + b\|\operatorname{cof}F\|^2 + c\,\phi(\det F)
+\end{equation}
+
+can be polyconvex if \(a,b,c \ge 0\) and \(\phi\) is convex on \((0,\infty)\).
+
+A common volumetric choice is
+
+\begin{equation}
+\phi(J)=J-\ln J
+\quad \text{or} \quad
+\phi(J)=(J-1)^2,
+\qquad J=\det F.
+\end{equation}
+
+---
+
+### 3. Enforce positive-definite Hessian
+For energies written in terms of a strain vector \(\varepsilon\), compute
+
+\begin{equation}
+H = \frac{\partial^2 W}{\partial \varepsilon^2}.
+\end{equation}
+
+If \(H\) is positive semidefinite over the admissible strain range, then \(W\) is convex in that variable.
+
+This is the direct route for small-strain elasticity, where
+
+\begin{equation}
+W(\varepsilon)=\frac12 \varepsilon : \mathbb{C} : \varepsilon
+\end{equation}
+
+is convex if the elasticity tensor \(\mathbb{C}\) is positive definite on symmetric strains.
+
+---
+
+### 4. Use polyconvex templates
+For finite-strain hyperelasticity, one of the safest approaches is to start with known polyconvex forms.
+
+Typical structure:
+
+\begin{equation}
+W(F)=W_{\text{iso}}(F) + W_{\text{vol}}(J)
+\end{equation}
+
+or better,
+
+\begin{equation}
+W(F)=\hat W(F,\operatorname{cof}F,J).
+\end{equation}
+
+Examples of polyconvex ingredients:
+- \(\|F\|^p\), \(p\ge 1\)
+- \(\|\operatorname{cof}F\|^q\), \(q\ge 1\)
+- convex penalties in \(J\)
+
+This is more reliable than fitting arbitrary invariant-based polynomials.
+
+---
+
+### 5. Restrict parameters during calibration
+Even if the form is theoretically capable of convexity, fitted parameters may destroy it.
+
+So when calibrating, impose constraints such as:
+- shear modulus \(>0\)
+- bulk modulus \(>0\)
+- coefficients of convex terms \(\ge 0\)
+- Hessian positivity over the strain domain of interest
+- ellipticity constraints
+
+This is especially important in data-driven constitutive identification.
+
+---
+
+### 6. Use input-convex neural networks or constrained surrogates
+For ML-based constitutive models, convexity can be embedded architecturally.
+
+Examples:
+- **Input Convex Neural Networks (ICNNs)** enforce convexity with respect to selected inputs
+- constrained spline or basis expansions with nonnegative coefficients
+- energy models with automatic differentiation and Hessian regularization
+
+For mechanics, one may define
+
+\begin{equation}
+W = W(\text{invariants})
+\end{equation}
+
+and constrain the network so that \(W\) is convex in those invariants or polyconvex through special parameterization.
+
+This is particularly useful for hyperelastic surrogate modeling and constitutive discovery.
+
+---
+
+## Example: small-strain linear elasticity
+
+\begin{equation}
+W(\varepsilon)=\frac{\lambda}{2}(\operatorname{tr}\varepsilon)^2 + \mu\, \varepsilon:\varepsilon
+\end{equation}
+
+Convexity requires the stiffness to be positive definite, which implies
+
+\begin{equation}
+\mu > 0, \qquad 3\lambda + 2\mu > 0
+\end{equation}
+
+in 3D isotropic elasticity.
+
+These are the familiar stability restrictions.
+
+---
+
+## Example: a polyconvex finite-strain form
+
+A simple candidate:
+
+\begin{equation}
+W(F)=a\|F\|^2 + b\|\operatorname{cof}F\|^2 + c(J-1)^2 - d\ln J
+\end{equation}
+
+with \(J=\det F\), and suitable positive constants. More carefully, one often uses volumetric terms that blow up as \(J\to 0^+\), such as
+
+\begin{equation}
+W_{\text{vol}}(J)=\frac{\kappa}{2}(J-1)^2 - \kappa \ln J
+\end{equation}
+
+or related convex-in-\(J\) penalties over \(J>0\).
+
+This helps ensure resistance to interpenetration and compression collapse.
+
+---
+
+## Practical caution
+
+Convexity is not always desirable globally in the strictest sense.
+
+Why?
+
+- Some real materials exhibit buckling, softening, phase transitions, or instability.
+- LCEs, hydrogels, and other smart materials may have non-convex free energies due to microstructural reorientation or multiphysics coupling.
+- In such cases, non-convexity may be physically meaningful.
+
+So the right goal is often not “make everything fully convex,” but rather:
+
+- ensure **local stability** in the operating regime,
+- preserve **ellipticity** where needed,
+- use **polyconvexity** or constrained forms for numerical robustness,
+- allow controlled non-convexity only when it represents real physics.
+
+---
+
+## Summary
+
+### Convexity means
+The strain energy has nonnegative curvature in its argument space.
+
+### Why it is important
+- stability
+- existence/uniqueness
+- numerical convergence
+- physical admissibility
+
+### How to develop a convex function
+- choose suitable variables
+- sum convex building blocks
+- enforce positive Hessian
+- use polyconvex formulations
+- constrain parameters during fitting
+- use convex ML architectures for learned energies
+
+---
+
+If you want, I can also give you:
+
+1. a **continuum-mechanics-oriented note distinguishing convexity, polyconvexity, and ellipticity**, or  
+2. a **practical checklist for testing convexity of a hyperelastic model in Abaqus/Python**.
+
+
+
+{% assign jupyter_path = "assets/jupyter/Constitutive_Modelling2.ipynb" | relative_url %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/Constitutive_Modelling2.ipynb %}{% endcapture %}
+{% if notebook_exists == "true" %}
+{% jupyter_notebook jupyter_path %}
+{% else %}
+<p>Sorry, the notebook you are looking for does not exist.</p>
+{% endif %}
+
