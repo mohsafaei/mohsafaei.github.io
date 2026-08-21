@@ -124,8 +124,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_DL/";
-            },},{id: "projects-constitutive-modeling",
-          title: 'Constitutive Modeling',
+            },},{id: "projects-constitutive-modeling-hyperelastic-materials",
+          title: 'Constitutive Modeling - Hyperelastic Materials',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_HyperelasticMaterials/";
