@@ -14,7 +14,7 @@ toc:
 
 <p style="text-align: justify;" markdown="1">
 
-To model the mechanical behavior of soft materials, such as liquid crystal elastomers (LCEs) and biological tissues, we utilize non-linear solid mechanics theories. Hyperelasticity is defined by a **strain energy density function** $W$, which accounts for the material's changing stiffness and near-total incompressibility during finite deformation.
+To model the mechanical behavior of soft materials, such as liquid crystal elastomers (LCEs) and biological tissues, we utilize non-linear solid mechanics theories. Hyperelasticity is defined by a **strain energy density function**, $W$, which accounts for the material's changing stiffness and near-total incompressibility during finite deformation.
 
 </p>
 
@@ -32,16 +32,6 @@ flowchart TD
 ```
 
 
-<div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        {% include figure.liquid loading="eager" path="assets/img/Hyperelastic_Materials2.png" title="Soft materials in biomedical applications" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="text-center">
-        <div class="caption">
-            Soft materials in biomedical applications.
-        </div>
-</div>
 
 **Legend:**
 
@@ -55,7 +45,6 @@ flowchart TD
 ## 2. Step-by-Step Explanation
 ### 2.1. Define the Problem and Geometry
 
-<p style="text-align: justify;" markdown="1">
 
 To demonstrate these concepts, we consider two classical deformation states:
 

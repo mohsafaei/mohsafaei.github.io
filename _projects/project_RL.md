@@ -15,14 +15,6 @@ toc:
 
 </p>
 
-<div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        {% include figure.liquid loading="eager" path="assets/img/taxi.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-
-
-
 ## 1. RL Approach and Advantages
 
 <p style="text-align: justify;" markdown="1">
@@ -48,7 +40,6 @@ The diagram below illustrates the core RL framework, where an **agent** interact
 
 ## 2. Key Advantages of RL Over Other Learning Methods
 
-<p style="text-align: justify;" markdown="1">
 
 - **Exploration and Exploitation Balance:** RL effectively balances learning from known strategies (exploitation) while discovering new strategies (exploration).
 - **No Need for Labeled Data:** Unlike supervised learning, RL does not require manually labeled datasets, reducing the cost and effort of data annotation.
@@ -56,12 +47,9 @@ The diagram below illustrates the core RL framework, where an **agent** interact
 - **Long-Term Reward Optimization:** RL focuses on long-term gains rather than immediate results, ensuring better decision-making in sequential tasks.
 - **Model-Free Learning:** Many RL algorithms, such as Q-learning, do not require prior knowledge of the environment, making them flexible for different applications.
 
-</p>
-
 
 ## Example: Taxi Problem
 
-<p style="text-align: justify;" markdown="1">
 
 The Taxi Problem is a well-known example of reinforcement learning, designed to illustrate how an RL agent learns to navigate and optimize decision-making in a grid-based environment. The goal is to train a taxi agent to:
 
@@ -73,7 +61,6 @@ The Taxi Problem is a well-known example of reinforcement learning, designed to 
 At each step, the agent receives rewards for successful pickups and drop-offs and penalties for illegal moves or inefficient navigation. Over multiple episodes, the agent learns an optimal policy for completing the task efficiently. 
 In order to implementing Taxi problem, you can work with `gymnasium` python library.
 
-</p>
 
 ---
 
