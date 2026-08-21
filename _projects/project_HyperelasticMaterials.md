@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Constitutive Modeling
+title: Constitutive Modeling - Hyperelastic Materials
 description: 
 img: /assets/img/Hyperelastic_Materials.png
 importance: 1
@@ -9,8 +9,6 @@ toc:
   sidebar: right
 ---
 
-
-# Continuum Mechanics and Constitutive Modeling of Hyperelastic Materials
 
 <p style="text-align: justify;" markdown="1">
 
@@ -42,37 +40,7 @@ flowchart TD
 
 ---
 
-## 2. Step-by-Step Explanation
-### 2.1. Define the Problem and Geometry
-
-
-To demonstrate these concepts, we consider two classical deformation states:
-
-1.  **Equi-biaxial Deformation (Cartesian):** Under an in-plane stretch ratio $\lambda$, the deformation mapping is given by:
-    
-    \begin{equation}
-    x_1 = \lambda X_1, \quad x_2 = \lambda X_2, \quad x_3 = \lambda_3 X_3.
-    \end{equation}
-
-    Enforcing incompressibility ($J = \lambda_1\lambda_2\lambda_3 = 1$) yields the out-of-plane stretch:
-    
-    \begin{equation}
-    \lambda_3 = \frac{1}{\lambda^2}
-    \end{equation}
-
-
-2.  **Combined Extension-Torsion of a Cylinder (Curvilinear):** For cylindrical LCE actuators, we map reference coordinates $(R, \Theta, Z)$ to current coordinates $(r, \theta, z)$ via:
-    
-    \begin{equation}
-    R \to r(R), \quad \Theta \to \theta = \Theta + \phi Z, \quad Z \to z = \lambda_z Z 
-    \end{equation}
-
-
-    where $\lambda_z$ represents the axial stretch and $\phi$ is the twist per unit reference length.
-
----
-
-### 2.2. Kinematic Description
+## 1. Kinematic Description
 
 <p style="text-align: justify;" markdown="1">
 
@@ -80,7 +48,7 @@ The kinematic description maps material points from their reference configuratio
 
 </p>
 
-#### 2.2.1. Deformation Mapping and Gradient
+### 1.1. Deformation Mapping and Gradient
 
 <p style="text-align: justify;" markdown="1">
 
@@ -108,7 +76,7 @@ For the cylindrical combined extension-torsion case, expressing $\mathbf{F}$ in 
 
 Here, $\mathbf{F}$ simultaneously captures axial stretch, circumferential expansion, and shear strain due to torsion, serving as the kinematic foundation.
 
-#### 2.2.2. Invariants and Strain Measures
+### 1.2. Invariants and Strain Measures
 
 To construct frame-indifferent constitutive equations, we introduce the symmetric **Right Cauchy–Green deformation tensor** $\mathbf{C}$:
 
@@ -125,8 +93,9 @@ I_1 = \text{tr}\,\mathbf{C}, \quad I_2 = \frac{1}{2}\left[ (\text{tr}\,\mathbf{C
 *   **Incompressibility:** Enforced by setting the volume ratio $J = \det \mathbf{F} = 1$, which simplifies the third invariant to $I_3 = \det \mathbf{C} = 1$.
 
 ---
+## 2. Kinetics Relations
 
-### 2.3. Choose the Constitutive Model (Strain-Energy Function)
+### 2.1. Constitutive Model (Strain-Energy Function)
 
 <p style="text-align: justify;" markdown="1">
 
@@ -163,7 +132,7 @@ W = \sum_{i=1}^{3} C_i (I_1 - 3)^i.
 
 ---
 
-### 2.4. Derive Stress from the Strain-Energy Function
+### 2.2. Derive Stress from the Strain-Energy Function
 
 Assuming incompressibility with a Lagrange multiplier $p$ (representing hydrostatic pressure), the **Second Piola–Kirchhoff stress tensor** $\mathbf{S}$ is:
 
@@ -193,28 +162,165 @@ where:
 These stress expressions allow us to calculate axial force, torque, and membrane stresses, which are critical for characterizing soft actuators and balloons.
 
 ---
+| Stress measure | Symbol | Configuration / area used | Definition | Relation to Cauchy stress \(\boldsymbol{\sigma}\) |
+|:---|:---:|:---:|:---:|:---:|
+| **Cauchy (true) stress** | \(\boldsymbol{\sigma}\) | Current (deformed) configuration | \(\displaystyle \boldsymbol{\sigma}=\frac{\mathrm{d}\mathbf{f}}{\mathrm{d}a}\) | — |
+| **First Piola–Kirchhoff stress** | \(\mathbf{P}\) | Force in current configuration / area in reference configuration | $(\displaystyle \mathbf{P}=J\boldsymbol{\sigma}\mathbf{F}^{-T})$ | $(\displaystyle \mathbf{P}=J\boldsymbol{\sigma}\mathbf{F}^{-T})$ |
+| **Second Piola–Kirchhoff stress** | $(\mathbf{S})$ | Entirely referred to reference configuration | $(\displaystyle \mathbf{S}=\mathbf{F}^{-1}\mathbf{P})$ | \(\displaystyle \mathbf{S}=J\mathbf{F}^{-1}\boldsymbol{\sigma}\mathbf{F}^{-T}\) | 
+| **Kirchhoff stress** | $(\boldsymbol{\tau})$ | Current configuration, volume-scaled | $(\displaystyle \boldsymbol{\tau}=J\boldsymbol{\sigma})$ | $(\displaystyle \boldsymbol{\tau}=J\boldsymbol{\sigma})$ |
+| **Mandel stress** | $(\mathbf{M})$ | Mixed/material configuration | $(\displaystyle \mathbf{M}=\mathbf{C}\mathbf{S}=\mathbf{F}^{T}\mathbf{P})$ | $(\displaystyle \mathbf{M}=J\mathbf{F}^{T}\boldsymbol{\sigma}\mathbf{F}^{-T})$ | 
+| **Biot stress** | $(\mathbf{T}_B)$ | Reference configuration | Defined through work conjugacy with Biot strain | Depends on the constitutive formulation |
+| **Engineering (nominal) stress** | $(\boldsymbol{\sigma}_{\text{eng}})$ | Original cross-sectional area | $(\displaystyle \sigma_{\text{eng}}=\frac{F}{A_0})$ in uniaxial loading | In uniaxial loading: $(\displaystyle P_{11}=\sigma_{\text{eng}})$ |
 
-### 2.5. Apply Balance Laws and Boundary Conditions
-Under quasi-static conditions, the Cauchy stress must satisfy the **local balance of linear momentum**:
+
+
+
+## 3. Governing Equations
 
 \begin{equation}
-\nabla \cdot \boldsymbol{\sigma} = \mathbf{0}
+\nabla\cdot\boldsymbol{\sigma}+\rho\mathbf{b}
+=
+\rho\mathbf{a},
 \end{equation}
 
-**Cylindrical Equilibrium:** For a pressurized cylindrical tube, the radial component of the equilibrium equation simplifies to:
 
-\begin{equation}
-\frac{d\sigma_{rr}}{dr} + \frac{\sigma_{rr} - \sigma_{\theta\theta}}{r} = 0.
-\end{equation}
+where $(\boldsymbol{\sigma})$ is the Cauchy stress tensor, $(\rho)$ is density, $(\mathbf{b})$ is body force per unit mass, and $(\mathbf{a})$ is acceleration.
 
-<p style="text-align: justify;" markdown="1">
-
-**Boundary Conditions:** These equations are completed by prescribing traction boundary conditions (such as inner pressure $P_i$ on $r = r_i$ and zero outer pressure on $r = r_o$), or kinematic constraints at the boundaries.
-
-</p>
 ---
 
-### 2.6. Obtain Governing Equations (Semi-Analytical Framework)
+ - 1. Cartesian coordinates $((x,y,z))$
+
+\begin{equation}
+\mathbf{x}=x\,\mathbf{e}_x+y\,\mathbf{e}_y+z\,\mathbf{e}_z
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\frac{\partial \sigma_{xx}}{\partial x}
++\frac{\partial \sigma_{xy}}{\partial y}
++\frac{\partial \sigma_{xz}}{\partial z}
++\rho b_x
+&=\rho a_x,\\[6pt]
+\frac{\partial \sigma_{yx}}{\partial x}
++\frac{\partial \sigma_{yy}}{\partial y}
++\frac{\partial \sigma_{yz}}{\partial z}
++\rho b_y
+&=\rho a_y,\\[6pt]
+\frac{\partial \sigma_{zx}}{\partial x}
++\frac{\partial \sigma_{zy}}{\partial y}
++\frac{\partial \sigma_{zz}}{\partial z}
++\rho b_z
+&=\rho a_z.
+\end{aligned}
+\end{equation}
+
+For a classical continuum without body couples,
+
+\begin{equation}
+\sigma_{ij}=\sigma_{ji}.
+\end{equation}
+
+
+---
+
+- 2. Cylindrical coordinates $((r,\theta,z))$
+
+\begin{equation}
+\mathbf{x}=r\,\mathbf{e}_r+z\,\mathbf{e}_z.
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\frac{\partial \sigma_{rr}}{\partial r}
++\frac{1}{r}\frac{\partial \sigma_{r\theta}}{\partial \theta}
++\frac{\partial \sigma_{rz}}{\partial z}
++\frac{\sigma_{rr}-\sigma_{\theta\theta}}{r}
++\rho b_r
+&=\rho a_r,\\[6pt]
+\frac{\partial \sigma_{r\theta}}{\partial r}
++\frac{1}{r}\frac{\partial \sigma_{\theta\theta}}{\partial \theta}
++\frac{\partial \sigma_{\theta z}}{\partial z}
++\frac{2\sigma_{r\theta}}{r}
++\rho b_\theta
+&=\rho a_\theta,\\[6pt]
+\frac{\partial \sigma_{rz}}{\partial r}
++\frac{1}{r}\frac{\partial \sigma_{\theta z}}{\partial \theta}
++\frac{\partial \sigma_{zz}}{\partial z}
++\frac{\sigma_{rz}}{r}
++\rho b_z
+&=\rho a_z.
+\end{aligned}
+\end{equation}
+
+
+---
+
+- 3. Spherical coordinates \((r,\theta,\phi)\)
+
+Here, $(\theta)$ is the polar angle measured from the positive $(z$)-axis, and $(\phi)$ is the azimuthal angle in the $(x)-\(y)$ plane.
+
+\begin{equation}
+\mathbf{x}=r\,\mathbf{e}_r.
+\end{equation}
+
+### Radial direction
+
+\begin{equation}
+\begin{aligned}
+\frac{\partial \sigma_{rr}}{\partial r}
++\frac{1}{r}\frac{\partial \sigma_{r\theta}}{\partial \theta}
++\frac{1}{r\sin\theta}\frac{\partial \sigma_{r\phi}}{\partial \phi}
++\frac{2\sigma_{rr}-\sigma_{\theta\theta}-\sigma_{\phi\phi}}{r}
++\frac{\sigma_{r\theta}\cot\theta}{r}
++\rho b_r
+=
+\rho a_r.
+\end{aligned}
+\end{equation}
+
+### Polar (\(\theta\)) direction
+
+\begin{equation}
+\begin{aligned}
+\frac{\partial \sigma_{r\theta}}{\partial r}
++\frac{1}{r}\frac{\partial \sigma_{\theta\theta}}{\partial \theta}
++\frac{1}{r\sin\theta}\frac{\partial \sigma_{\theta\phi}}{\partial \phi}
++\frac{3\sigma_{r\theta}}{r}
++\frac{(\sigma_{\theta\theta}-\sigma_{\phi\phi})\cot\theta}{r}
++\rho b_\theta
+=
+\rho a_\theta.
+\end{aligned}
+\end{equation}
+
+### Azimuthal (\(\phi\)) direction
+
+\begin{equation}
+\begin{aligned}
+\frac{\partial \sigma_{r\phi}}{\partial r}
++\frac{1}{r}\frac{\partial \sigma_{\theta\phi}}{\partial \theta}
++\frac{1}{r\sin\theta}\frac{\partial \sigma_{\phi\phi}}{\partial \phi}
++\frac{3\sigma_{r\phi}}{r}
++\frac{2\sigma_{\theta\phi}\cot\theta}{r}
++\rho b_\phi
+=
+\rho a_\phi.
+\end{aligned}
+\end{equation}
+
+
+---
+
+
+so far, mechanical part of the problem is modeled. to include other physics in the problem you can use one of the following options:
+
+| Coupling | Governing balance | Constitutive relations | Flux/field relations |
+|---|---|---|---|
+| **Electro-mechanical loading** | **Gauss’s law:**<br>$[\operatorname{Div}\mathbf{D}_0=\rho_{f0}]$ | $[\mathbf{P}=\frac{\partial H(\mathbf{F},\mathbf{E}_0)}{\partial \mathbf{F}}\]$<br>$[\mathbf{D}_0=-\frac{\partial H(\mathbf{F},\mathbf{E}_0)}{\partial \mathbf{E}_0}\]$ | $[\mathbf{E}_0=-\nabla_X\phi\]$ |
+| **Chemo-mechanical loading** | **Species balance:**<br>$[\dot{c}+\operatorname{Div}\mathbf{J}=s]$ | $[\mathbf{P}=\frac{\partial \Psi(\mathbf{F},c)}{\partial \mathbf{F}}\]$<br>$[\mu=\frac{\partial \Psi(\mathbf{F},c)}{\partial c}]$ | **Diffusive flux:**<br>$[\mathbf{J}=-M\nabla_X\mu\]$ |
+| **Thermo-mechanical loading** | **Energy balance:**<br>$[\rho_0c\,\dot{T}=-\operatorname{Div}\mathbf{Q}+R+Q_{\mathrm{mech}}+Q_{\mathrm{coupling}}]$ | $[\mathbf{P}=\frac{\partial \Psi(\mathbf{F},T)}{\partial \mathbf{F}}]$<br>$[\eta=-\frac{\partial \Psi(\mathbf{F},T)}{\partial T}]$ | **Heat flux:**<br>$[\mathbf{Q}=-K\nabla_XT]$ |
+
+Here, $(\mathbf{P})$ is the first Piola–Kirchhoff stress, $(\mathbf{F})$ is the deformation gradient, $(\mathbf{D}_0)$ and $(\mathbf{E}_0)$ are referential electric displacement and electric field, $(c)$ is concentration, \$(\mu)$ is chemical potential, $(\mathbf{J})$ is mass/species flux, $(\eta)$ is entropy, and $(\mathbf{Q})$ is heat flux.
 
 <p style="text-align: justify;" markdown="1">
 
@@ -224,7 +330,7 @@ By coupling kinematics, constitutive laws, and momentum balance, a **semi-analyt
 
 ---
 
-### SymPy Implementation
+### Example: SymPy 
 
 <p style="text-align: justify;" markdown="1">
 
