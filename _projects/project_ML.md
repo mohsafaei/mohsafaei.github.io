@@ -41,6 +41,8 @@ In mathematical terms, if we have a set of inputs $X$ and desired outputs $Y$, t
 
 The concept of machines learning from data dates back to the mid-20th century. 
 
+</p>
+
 *   **The 1950s:** Arthur Samuel, an IBM researcher, coined the term "machine learning" in 1959 while developing a program to play checkers that could learn from its past games. Around the same time, Frank 
 Rosenblatt invented the "Perceptron," an early artificial neural network modeled after the human brain.
 
@@ -48,11 +50,9 @@ Rosenblatt invented the "Perceptron," an early artificial neural network modeled
 
 *   **The 2010s to Present:** The explosion of available data ("Big Data") and exponential growth in computational power (GPUs) led to the deep learning revolution, allowing neural networks with many layers to achieve unprecedented accuracy.
 
-</p>
 
 ## 3. Advantages of Machine Learning
 
-<p style="text-align: justify;" markdown="1">
 
 *   **Automation of Complex Tasks:** ML models can automate decision-making processes in environments too complex for traditional rule-based algorithms.
 
@@ -62,7 +62,7 @@ Rosenblatt invented the "Perceptron," an early artificial neural network modeled
 
 *   **Adaptability:** Models can adapt to changing environments without needing a complete rewrite of their underlying code.
 
-</p>
+
 
 ---
 

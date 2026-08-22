@@ -134,6 +134,13 @@ W = \sum_{i=1}^{3} C_i (I_1 - 3)^i.
 
 ### 2.2. Derive Stress from the Strain-Energy Function
 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-12">
+        {% include figure.liquid loading="eager" path="assets/img/stress1.png" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
 Assuming incompressibility with a Lagrange multiplier $p$ (representing hydrostatic pressure), the **Second Piola–Kirchhoff stress tensor** $\mathbf{S}$ is:
 
 \begin{equation}

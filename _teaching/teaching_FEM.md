@@ -2,7 +2,7 @@
 layout: page
 title: Finite Element Method (FEM)
 description: Fundamentals and Applications 🧩
-img: assets/img/FEM.jpg
+img: assets/img/FEM3.png
 importance: 2
 category: 
 giscus_comments: false
@@ -13,7 +13,7 @@ giscus_comments: false
 
 <p style="text-align: justify;" markdown="1">
 
-The <strong>Finite Element Method (FEM)</strong> is a numerical technique for obtaining approximate solutions to engineering and mathematical problems governed by <strong>partial differential equations (PDEs)**.
+The **Finite Element Method (FEM)** is a numerical technique for obtaining approximate solutions to engineering and mathematical problems governed by **partial differential equations (PDEs)**.
 
 </p>
 
@@ -91,7 +91,7 @@ These methods approximate an unknown field, such as displacement, using a finite
 
 Modern FEM began to emerge in the 1940s and 1950s, primarily in the aerospace and structural engineering communities. Engineers needed reliable methods to analyze aircraft structures with complex geometries and loading conditions.
 
-The term <strong>finite element method** became widely recognized after the work of <strong>Ray Clough** in the 1960s. Initially, FEM was applied mainly to:
+The term finite element method** became widely recognized after the work of Ray Clough** in the 1960s. Initially, FEM was applied mainly to:
 
 </p>
 
