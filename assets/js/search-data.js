@@ -124,8 +124,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_DL/";
-            },},{id: "projects-constitutive-modeling-hyperelastic-materials",
-          title: 'Constitutive Modeling - Hyperelastic Materials',
+            },},{id: "projects-hyperelastic-materials-modeling",
+          title: 'Hyperelastic Materials Modeling',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project_HyperelasticMaterials/";
@@ -144,11 +144,6 @@ ninja.data = [{
           description: "Fundamentals and Applications 🧩",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/teaching_FEM/";
-            },},{id: "teaching-non-linear-solid-mechanics",
-          title: 'Non-linear Solid Mechanics',
-          description: "Advanced Mechanics for Real-world Problems 🌟",
-          section: "Teaching",handler: () => {
-              window.location.href = "/teaching/teaching_NLSM/";
             },},{id: "teaching-research-methodology",
           title: 'Research Methodology',
           description: "",
