@@ -5,11 +5,11 @@ date: 2026-08-24 15:00:00
 description: 
 tags: formatting images
 categories: sample-posts
-thumbnail: assets/img/convex.png
+thumbnail: assets/img/non-l.png
 images:
   spotlight: true
 toc:
-beginning: true
+  beginning: true
 ---
 
 ***
