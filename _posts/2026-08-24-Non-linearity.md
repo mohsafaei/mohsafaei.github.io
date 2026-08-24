@@ -127,11 +127,6 @@ These quantities are commonly used in nonlinear finite element formulations for 
 ---
 
 
-
-### ✅ **3.2 Material Non-linearity**
-
-Here is an expanded and technically refined version:
-
 ### ✅ **3.2 Material Nonlinearity**
 
 <p style="text-align: justify;" markdown="1">
@@ -145,21 +140,28 @@ Common examples include:
 </p>
 
 - **Plasticity:** irreversible deformation after yielding
+
 - **Hyperelasticity:** nonlinear but recoverable elastic deformation, typically at finite strains
+
 - **Viscoelasticity:** time- and rate-dependent behavior with stress relaxation and creep
+
 - **Creep:** progressive deformation under a sustained load
+
 - **Damage:** gradual degradation of stiffness and load-carrying capacity
+
 - **Fracture:** initiation and propagation of cracks or material separation
+
 - **Mullins effect:** stress-softening caused by prior loading, commonly observed in rubbers
+
 - **Pseudoelasticity:** recoverable hysteretic behavior associated with phase transformations
+
 - **Elastoplasticity with hardening or softening:** evolution of the yield surface during deformation
+
 - **Thermomechanical coupling:** dependence of the constitutive response on temperature and thermal history
 
-<p style="text-align: justify;" markdown="1">
 
 A general constitutive relation may be expressed as
 
-</p>
 
 $$
 \boldsymbol{\sigma}(t)
@@ -264,6 +266,8 @@ Consequently, defining a material model requires more than fitting a single stre
 
 </p>
 
+---
+
 ### ✅ **3.3 Boundary Non-linearity**
 
 
@@ -312,9 +316,6 @@ Contact is encountered in:
 
 ---
 
-
-***
-
 ### ✅ **3.4 Instability & Bifurcation**
 
 *   **Phenomenon:** Multiple equilibrium states → sudden configuration changes.
@@ -361,15 +362,26 @@ Contact is encountered in:
 
 ## 🌐 **5. Applications**
 
-*   Biomechanics 🧬
-*   Structural Engineering 🏗
-*   Energy Systems ⚡
 
+<p style="text-align: justify;" markdown="1">
 
-***
-
+- **Biomechanics 🧬:** Nonlinear solid mechanics is used to model the large deformation and complex, time-dependent behavior of biological tissues such as skin, arteries, muscles, and cartilage. It also supports the design of implants, prostheses, and medical devices by predicting tissue–device interactions under realistic physiological loading.
 
 </p>
+
+<p style="text-align: justify;" markdown="1">
+
+- **Structural Engineering 🏗:** It enables the analysis of structures experiencing material nonlinearity, large deformation, contact, buckling, damage, and failure. These models are essential for evaluating the safety and performance of buildings, bridges, shells, and composite structures under extreme loads such as earthquakes, impacts, and blasts.
+
+</p>
+
+<p style="text-align: justify;" markdown="1">
+
+- **Energy Systems ⚡:** Nonlinear mechanics helps predict deformation, fracture, fatigue, and degradation in energy-related components, including batteries, wind turbines, pressure vessels, pipelines, and nuclear systems. It is especially important for analyzing coupled effects such as mechanical–thermal loading, electrode swelling, and cyclic damage, thereby improving efficiency, durability, and safety.
+
+</p>
+
+***
 
 ## Further Reading
 
