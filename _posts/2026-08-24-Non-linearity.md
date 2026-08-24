@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Origins of Non-linearity
-date: 2026-08-18 15:00:00
+date: 2026-08-24 15:00:00
 description: 
 tags: formatting images
 categories: sample-posts
