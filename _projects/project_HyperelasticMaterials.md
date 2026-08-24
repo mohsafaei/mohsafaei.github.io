@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Constitutive Modeling - Hyperelastic Materials
+title: Hyperelastic Materials Modeling
 description: 
 img: /assets/img/Hyperelastic_Materials.png
 importance: 1
@@ -15,6 +15,21 @@ toc:
 To model the mechanical behavior of soft materials, such as liquid crystal elastomers (LCEs) and biological tissues, we utilize non-linear solid mechanics theories. Hyperelasticity is defined by a **strain energy density function**, $W$, which accounts for the material's changing stiffness and near-total incompressibility during finite deformation.
 
 </p>
+
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/rubber-compression.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="text-center">
+    <div class="caption">
+        <a href="https://www.goengineer.com/blog/understanding-abaqus-material-behavior">
+          Hyperelastic rubber material upon compression.
+        </a>  
+    </div>
+</div>
+
 
 ```mermaid
 flowchart TD
@@ -66,15 +81,6 @@ The **deformation gradient** $\mathbf{F}$ is the spatial gradient of the mapping
 \mathbf{F} = \frac{\partial \boldsymbol{\chi}}{\partial \mathbf{X}}
 \end{equation}
 
-
-For the cylindrical combined extension-torsion case, expressing $\mathbf{F}$ in local orthonormal bases yields:
-
-\begin{equation}
-\mathbf{F} = \begin{bmatrix} \frac{dr}{dR} & 0 & 0 \\ 0 & \frac{r}{R} & r \phi \\ 0 & 0 & \lambda_z \end{bmatrix}.
-\end{equation}
-
-
-Here, $\mathbf{F}$ simultaneously captures axial stretch, circumferential expansion, and shear strain due to torsion, serving as the kinematic foundation.
 
 ### 1.2. Invariants and Strain Measures
 

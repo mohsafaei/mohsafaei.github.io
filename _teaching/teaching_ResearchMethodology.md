@@ -10,11 +10,12 @@ category: work
 
 **Research is more than just collecting data—it's about discovering insights and sharing them with others.**
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
 
 So, it is not only about conducting a study; it's about solving a problem. Many things are involved in solving a problem, and you need essential tools and techniques to conduct an in-depth scientific investigation. These tools empower you to explore questions systematically, analyze data critically, and present your findings impactfully.
 
 All these skills are taught and reviewed in the **Research Methodology** course. Research Methodology is a foundational course that provides you with these skills — and I believe these skills are what distinguishes someone with an academic background from others.
+
 </p>
 
 
@@ -27,7 +28,7 @@ All these skills are taught and reviewed in the **Research Methodology** course.
 </div>
 
 ---
-<p style="text-align: justify;">
+
 
 #### 🎯 **Course Objectives**
 - **Understand Research Fundamentals**: Grasp the essence of research and its significance.
@@ -66,8 +67,10 @@ All these skills are taught and reviewed in the **Research Methodology** course.
 
 ### 📖 Literature Analysis
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 A crucial part of any research project is **literature analysis**—the process of reviewing, evaluating, and synthesizing existing studies related to your topic. It helps researchers understand what has already been done, identify gaps in knowledge, and position their own work within the broader academic conversation.
+
 </p>
 
 Literature analysis is important because it:
@@ -77,8 +80,10 @@ Literature analysis is important because it:
 - supports the **selection of suitable methods and models**,
 - and strengthens the **credibility and originality** of your study.
 
-<p style="text-align: justify;">
+<p style="text-align: justify;" markdown="1">
+
 To conduct literature analysis effectively, you can use academic databases and search tools such as **Scopus**, **Web of Science**, **Google Scholar**, and university library databases. These platforms allow you to search for peer-reviewed journal articles, conference papers, and review studies using keywords, author names, and citation tracking.
+
 </p>
 
 A good literature analysis usually involves:
@@ -110,7 +115,11 @@ In short, literature analysis is not just about collecting papers—it is about 
 
 ### 📖 A Guide to Journal Metrics
 
+<p style="text-align: justify;" markdown="1">
+
 In academia, quantitative metrics are used to evaluate the influence and visibility of scholarly journals. While often used as proxies for quality, it is important to understand that each metric measures a different dimension of impact.
+
+</p>
 
 ### Comparison of Major Metrics
 
@@ -123,13 +132,28 @@ In academia, quantitative metrics are used to evaluate the influence and visibil
 
 
 #### 1. The Importance of Context (SNIP)
+
+<p style="text-align: justify;" markdown="1">
+
 Standard metrics can be misleading when comparing fields. For example, a highly cited paper in **Solid Mechanics** might have a lower Impact Factor than a paper in **Molecular Biology** simply because biology has a higher "citation density." **SNIP** corrects for this, making it a fairer tool for interdisciplinary comparison.
 
+</p>
+
 #### 2. Prestige vs. Volume (SJR)
+
+<p style="text-align: justify;" markdown="1">
+
 Not all citations are created equal. The **SJR** recognizes that a citation from a top-tier journal like *Nature* carries more weight than a citation from a local or predatory journal. This makes it a powerful metric for assessing the "academic authority" of a publication.
 
+</p>
+
 #### 3. The Limitations of JIF
+
+<p style="text-align: justify;" markdown="1">
+
 While the **Journal Impact Factor** remains the "gold standard" for many institutional rankings, it is a short-term metric. It can be heavily influenced by a single "breakthrough" paper, which may not accurately reflect the consistent quality of the journal’s entire catalog.
+
+</p>
 
 > **Pro-Tip:** When deciding where to submit your research, do not look at the Impact Factor in isolation. Check the journal's **indexing status** (Scopus/Web of Science), its **reputation** within your specific sub-field, and its **open-access policies**.
 
@@ -150,7 +174,11 @@ By the end of this course, you will be able to:
 
 ### 🗣️ Communicating Your Research
 
+<p style="text-align: justify;" markdown="1">
+
 Conducting great research is only half the journey—presenting it well is equally important. An effective presentation helps you share insights, engage your audience, and contribute meaningfully to the academic and professional communities.
+
+</p>
 
 ---
 
@@ -206,5 +234,3 @@ Here’s how you can present visual aids or link to reference materials (like a 
     </div>
 </div>
 
-
-{% include repository/repo.liquid repository="mohsafaei/Literature-Analysis" %}
