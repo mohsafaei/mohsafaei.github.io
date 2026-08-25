@@ -6,7 +6,7 @@ img: /assets/img/Hyperelastic_Materials.png
 importance: 1
 related_publications: true
 toc:
-  sidebar: right
+  beginning: true
 ---
 
 
@@ -16,33 +16,12 @@ To model the mechanical behavior of soft materials, such as liquid crystal elast
 
 </p>
 
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/rubber-compression.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="text-center">
-    <div class="caption">
-        <a href="https://www.goengineer.com/blog/understanding-abaqus-material-behavior">
-          Hyperelastic rubber material upon compression.
-        </a>  
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/Hyperelastic_Materials.png" title="Continuum mechanics flowchart" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
-
-```mermaid
-flowchart TD
-    A[Define problem & geometry] --> B[Choose kinematic description]
-    B --> C[Compute deformation measures]
-    C --> D[Choose hyperelastic constitutive model]
-    D --> E[Define strain-energy function W]
-    E --> F[Derive stress tensors from W]
-    F --> G[Apply balance laws & boundary conditions]
-    G --> H[Obtain governing equations]
-    H --> I[Specialize to loading cases<br/>(extension–torsion, inflation, etc.)]
-    I --> J[Compute stress response & performance metrics]
-```
 
 
 
@@ -138,6 +117,19 @@ W = \sum_{i=1}^{3} C_i (I_1 - 3)^i.
 
 ---
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/rubber-compression.gif" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="text-center">
+    <div class="caption">
+        <a href="https://www.goengineer.com/blog/understanding-abaqus-material-behavior">
+          Hyperelastic rubber material upon compression.
+        </a>  
+    </div>
+</div>
+
 ### 2.2. Derive Stress from the Strain-Energy Function
 
 
@@ -175,10 +167,11 @@ where:
 These stress expressions allow us to calculate axial force, torque, and membrane stresses, which are critical for characterizing soft actuators and balloons.
 
 ---
+
 | Stress measure | Symbol | Configuration / area used | Definition | Relation to Cauchy stress \(\boldsymbol{\sigma}\) |
 |:---|:---:|:---:|:---:|:---:|
-| **Cauchy (true) stress** | \(\boldsymbol{\sigma}\) | Current (deformed) configuration | \(\displaystyle \boldsymbol{\sigma}=\frac{\mathrm{d}\mathbf{f}}{\mathrm{d}a}\) | — |
-| **First Piola–Kirchhoff stress** | \(\mathbf{P}\) | Force in current configuration / area in reference configuration | $(\displaystyle \mathbf{P}=J\boldsymbol{\sigma}\mathbf{F}^{-T})$ | $(\displaystyle \mathbf{P}=J\boldsymbol{\sigma}\mathbf{F}^{-T})$ |
+| **Cauchy (true) stress** | $(\boldsymbol{\sigma})$ | Current (deformed) configuration | $(\displaystyle \boldsymbol{\sigma}=\frac{\mathrm{d}\mathbf{f}}{\mathrm{d}a})$ | — |
+| **First Piola–Kirchhoff stress** | $(\mathbf{P})$ | Force in current configuration / area in reference configuration | $(\displaystyle \mathbf{P}=J\boldsymbol{\sigma}\mathbf{F}^{-T})$ | $(\displaystyle \mathbf{P}=J\boldsymbol{\sigma}\mathbf{F}^{-T})$ |
 | **Second Piola–Kirchhoff stress** | $(\mathbf{S})$ | Entirely referred to reference configuration | $(\displaystyle \mathbf{S}=\mathbf{F}^{-1}\mathbf{P})$ | \(\displaystyle \mathbf{S}=J\mathbf{F}^{-1}\boldsymbol{\sigma}\mathbf{F}^{-T}\) | 
 | **Kirchhoff stress** | $(\boldsymbol{\tau})$ | Current configuration, volume-scaled | $(\displaystyle \boldsymbol{\tau}=J\boldsymbol{\sigma})$ | $(\displaystyle \boldsymbol{\tau}=J\boldsymbol{\sigma})$ |
 | **Mandel stress** | $(\mathbf{M})$ | Mixed/material configuration | $(\displaystyle \mathbf{M}=\mathbf{C}\mathbf{S}=\mathbf{F}^{T}\mathbf{P})$ | $(\displaystyle \mathbf{M}=J\mathbf{F}^{T}\boldsymbol{\sigma}\mathbf{F}^{-T})$ | 
@@ -208,23 +201,23 @@ where $(\boldsymbol{\sigma})$ is the Cauchy stress tensor, $(\rho)$ is density, 
 \end{equation}
 
 \begin{equation}
-\begin{aligned}
 \frac{\partial \sigma_{xx}}{\partial x}
 +\frac{\partial \sigma_{xy}}{\partial y}
 +\frac{\partial \sigma_{xz}}{\partial z}
 +\rho b_x
-&=\rho a_x,\\[6pt]
+&=\rho a_x,\
+
 \frac{\partial \sigma_{yx}}{\partial x}
 +\frac{\partial \sigma_{yy}}{\partial y}
 +\frac{\partial \sigma_{yz}}{\partial z}
 +\rho b_y
-&=\rho a_y,\\[6pt]
+&=\rho a_y,\
+
 \frac{\partial \sigma_{zx}}{\partial x}
 +\frac{\partial \sigma_{zy}}{\partial y}
 +\frac{\partial \sigma_{zz}}{\partial z}
 +\rho b_z
 &=\rho a_z.
-\end{aligned}
 \end{equation}
 
 For a classical continuum without body couples,
@@ -249,13 +242,15 @@ For a classical continuum without body couples,
 +\frac{\partial \sigma_{rz}}{\partial z}
 +\frac{\sigma_{rr}-\sigma_{\theta\theta}}{r}
 +\rho b_r
-&=\rho a_r,\\[6pt]
+&=\rho a_r,\
+
 \frac{\partial \sigma_{r\theta}}{\partial r}
 +\frac{1}{r}\frac{\partial \sigma_{\theta\theta}}{\partial \theta}
 +\frac{\partial \sigma_{\theta z}}{\partial z}
 +\frac{2\sigma_{r\theta}}{r}
 +\rho b_\theta
-&=\rho a_\theta,\\[6pt]
+&=\rho a_\theta,\
+
 \frac{\partial \sigma_{rz}}{\partial r}
 +\frac{1}{r}\frac{\partial \sigma_{\theta z}}{\partial \theta}
 +\frac{\partial \sigma_{zz}}{\partial z}
@@ -291,7 +286,7 @@ Here, $(\theta)$ is the polar angle measured from the positive $(z$)-axis, and $
 \end{aligned}
 \end{equation}
 
-### Polar (\(\theta\)) direction
+### Polar ($(\theta)$) direction
 
 \begin{equation}
 \begin{aligned}
@@ -306,7 +301,7 @@ Here, $(\theta)$ is the polar angle measured from the positive $(z$)-axis, and $
 \end{aligned}
 \end{equation}
 
-### Azimuthal (\(\phi\)) direction
+### Azimuthal $(\phi)$ direction
 
 \begin{equation}
 \begin{aligned}
@@ -329,9 +324,10 @@ so far, mechanical part of the problem is modeled. to include other physics in t
 
 | Coupling | Governing balance | Constitutive relations | Flux/field relations |
 |---|---|---|---|
-| **Electro-mechanical loading** | **Gauss’s law:**<br>$[\operatorname{Div}\mathbf{D}_0=\rho_{f0}]$ | $[\mathbf{P}=\frac{\partial H(\mathbf{F},\mathbf{E}_0)}{\partial \mathbf{F}}\]$<br>$[\mathbf{D}_0=-\frac{\partial H(\mathbf{F},\mathbf{E}_0)}{\partial \mathbf{E}_0}\]$ | $[\mathbf{E}_0=-\nabla_X\phi\]$ |
+| **Electro-mechanical loading** | **Gauss’s law:** $\operatorname{Div}\mathbf{D}_0=\rho_{f0}$ | $[\mathbf{P}=\frac{\partial H(\mathbf{F},\mathbf{E}_0)}{\partial \mathbf{F}}\]$<br>$[\mathbf{D}_0=-\frac{\partial H(\mathbf{F},\mathbf{E}_0)}{\partial \mathbf{E}_0}\]$ | $[\mathbf{E}_0=-\nabla_X\phi\]$ |
 | **Chemo-mechanical loading** | **Species balance:**<br>$[\dot{c}+\operatorname{Div}\mathbf{J}=s]$ | $[\mathbf{P}=\frac{\partial \Psi(\mathbf{F},c)}{\partial \mathbf{F}}\]$<br>$[\mu=\frac{\partial \Psi(\mathbf{F},c)}{\partial c}]$ | **Diffusive flux:**<br>$[\mathbf{J}=-M\nabla_X\mu\]$ |
 | **Thermo-mechanical loading** | **Energy balance:**<br>$[\rho_0c\,\dot{T}=-\operatorname{Div}\mathbf{Q}+R+Q_{\mathrm{mech}}+Q_{\mathrm{coupling}}]$ | $[\mathbf{P}=\frac{\partial \Psi(\mathbf{F},T)}{\partial \mathbf{F}}]$<br>$[\eta=-\frac{\partial \Psi(\mathbf{F},T)}{\partial T}]$ | **Heat flux:**<br>$[\mathbf{Q}=-K\nabla_XT]$ |
+
 
 Here, $(\mathbf{P})$ is the first Piola–Kirchhoff stress, $(\mathbf{F})$ is the deformation gradient, $(\mathbf{D}_0)$ and $(\mathbf{E}_0)$ are referential electric displacement and electric field, $(c)$ is concentration, \$(\mu)$ is chemical potential, $(\mathbf{J})$ is mass/species flux, $(\eta)$ is entropy, and $(\mathbf{Q})$ is heat flux.
 
@@ -392,16 +388,6 @@ final_sigma = sp.simplify(sigma_uniaxial.subs(p, p_sol))
 print(f"Uniaxial Cauchy Stress (sigma): {final_sigma}")
 
 ```
-<div class="row justify-content-center">
-    <div class="col-sm mt-3 mt-md-0 text-center">
-        {% include figure.liquid loading="eager" path="assets/img/Hyperelastic_Materials.png" title="Continuum mechanics flowchart" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
-<div class="text-center">
-    <div class="caption">
-        Illustration of a continuum mechanics flowchart for soft materials.
-    </div>
-</div>
 
 ***
 
@@ -427,4 +413,3 @@ print(f"Uniaxial Cauchy Stress (sigma): {final_sigma}")
   </div>
 </div>
 
-{% include repository/repo.liquid repository="mohsafaei/Hyperelastic-Materials" %}
