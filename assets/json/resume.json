@@ -4,7 +4,6 @@
     "label": "Researcher",
     "image": "",
     "gmail": "mohammadsf1998@gmail.com",
-    "phone": "(++98) 919-4635081",
     "summary":  "A researcher with a strong academic background in Nonlinear Solid Mechanics and Finite Element Analysis(FEA).",
     "location": {
       "city": "Tehran",
@@ -19,15 +18,22 @@
       },
       {
         "network": "google Scholar",
-        "url": "www.linkedin.com/in/mohsafaei"
+        "url": "https://scholar.google.com/citations?user=jD_-4JcAAAAJ&hl"
       }
     ]
   },
   "work": [
     {
+      "name": "Faradars, Tehran , Iran",
+      "position": "Remote lecturer",
+      "url": "https://faradars.org",
+      "startDate": "2026-06-01",
+      "summary": "Delivering courses on smart materials and constitutiive modeling"
+    },
+    {
       "name": "Nogolearn Institute, Tehran , Iran",
       "position": "English teacher",
-      "url": "https://example.com",
+      "url": "https://nogolearn.com/",
       "startDate": "2025-06-01",
       "endDate": "2026-01-01",
       "summary": "Teaching to Advanvced/ Upper-intermediate English learners"
