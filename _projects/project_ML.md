@@ -94,6 +94,17 @@ Used when you have input data and a known target output.
   - Estimating life expectancy
   - Population growth prediction
 
+<div class="row justify-content-center">
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/KNN.png" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="text-center">
+    <div class="caption">
+        Classification of the 3-class Iris dataset using the k-Nearest Neighbors (k-NN) algorithm.
+    </div>
+</div>
+
 ---
 
 ### 2) Unsupervised Learning

@@ -13,6 +13,13 @@ toc:
 ---
 
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-12">
+        {% include figure.liquid loading="eager" path="assets/img/non-l.png" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+
 ## 📜 **1. Introduction**
 
 <p style="text-align: justify;" markdown="1">
@@ -26,7 +33,6 @@ Non-linear solid mechanics is a branch of **continuum mechanics** that deals wit
 *   **Complex boundary conditions** (contact, friction).
 
 ***
-
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-4">
