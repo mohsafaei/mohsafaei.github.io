@@ -119,7 +119,12 @@ ninja.data = [{
           section: "News",},{id: "news-a-preprint-of-my-latest-under-review-article-is-now-available-on-the-researchsquare-platform-check-it-here-link-i-ll-keep-you-updated-on-the-review-process",
           title: 'A preprint of my latest under‑review article is now available on the ResearchSquare...',
           description: "",
-          section: "News",},{id: "projects-deep-learning",
+          section: "News",},{id: "projects-autoencoders-and-variational-autoencoders",
+          title: 'Autoencoders and Variational Autoencoders',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/VAE/";
+            },},{id: "projects-deep-learning",
           title: 'Deep Learning',
           description: "",
           section: "Projects",handler: () => {
