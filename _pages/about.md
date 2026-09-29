@@ -5,7 +5,7 @@ permalink: /
 subtitle:
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
 
@@ -22,7 +22,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 4 # leave blank to include all the blog posts
 ---
 
 
