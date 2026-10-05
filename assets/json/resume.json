@@ -105,47 +105,53 @@
     {
       "name": "ICDL",
       "date": "2021-01-01",
-      "url": "https://example.com",
+      "url": "assets/pdf/Certificates/Comsol.pdf",
       "icon": "fa-solid fa-location-dot"
     },
     {
       "name": "Python: Fundamental & Advanced",
       "date": "2022-01-01",
       "issuer": "Maktabkhooneh",
-      "url": "https://example.com",
+      "url": "assets/pdf/Certificates/Comsol.pdf",
       "icon": "fa-solid fa-tag"
     },
     {
       "name": "COMSOL: Multiphysics",
       "date": "2021-01-01",
       "issuer": "Stanford University",
-      "url": "https://example.com",
+      "url": "assets/pdf/Certificates/Comsol.pdf",
       "icon": "fa-solid fa-envelope"
     },
     {
       "name": "ISO 9001:2015 Internal Auditor ",
       "date": "2017-01-01",
       "issuer": "Stanford University",
-      "url": "https://example.com",
+      "url": "assets/pdf/Certificates/Comsol.pdf",
       "icon": "fa-solid fa-hashtag"
     },
     {
       "name": "Pneumatic Technician",
       "date": "2019-01-01",
-      "url": "https://example.com",
+      "url": "assets/pdf/Certificates/Comsol.pdf",
       "icon": "fa-solid fa-calendar"
     },
     {
       "name": "MATLAB: fundamental",
       "date": "2019-01-01",
       "issuer": "Shahid Rajaei University",
-      "url": "https://example.com",
+      "url": "assets/pdf/Certificates/Comsol.pdf",
       "icon": "fa-solid fa-clipboard-check"
     },
     {
       "name": "Piping principles and design",
       "date": "2018-01-01",
-      "url": "https://example.com",
+      "url": "assets/pdf/Certificates/Piping.pdf",
+      "icon": "fa-solid fa-clipboard-check"
+    },
+    {
+      "name": "Git",
+      "date": "2018-01-01",
+      "url": "assets/pdf/Certificates/Git.pdf",
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
