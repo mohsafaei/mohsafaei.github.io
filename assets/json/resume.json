@@ -158,11 +158,23 @@
       "issuer": "Stanford University",
       "url": "https://drive.google.com/file/d/1s9hGSGfWasxtbNMiF_WvyauqHBlBvyQ-/view?usp=drive_link",
       "icon": "fa-solid fa-hashtag"
-    },
+    }
   ],
   "publications": [
     {
-      "name": "In Silico Actuation Performance Investigation of Dielectric Elastomers with TPMS Geometriesr",
+      "name": "Multiaxial Finite Strain Behavior of Polydomain Liquid Crystal Elastomers",
+      "publisher": "Research Square",
+      "releaseDate": "2026-10-14",
+      "url": "https://www.researchsquare.com/article/rs-9517724/v1"
+    },
+    {
+      "name": "Toward Responsive Polymer Actuators Based on Novel Composite Structures",
+      "publisher": "Smart Polymers for Sensing Technologies",
+      "releaseDate": "2026-11-14",
+      "url": "https://link.springer.com/book/9783032219763"
+    },
+    {
+      "name": "In Silico Actuation Performance Investigation of Dielectric Elastomers with TPMS Geometries",
       "publisher": "European Journal of Mechanics - A/Solids",
       "releaseDate": "2024-12-14",
       "url": "https://www.sciencedirect.com/science/article/pii/S0997753824003206"
