@@ -103,57 +103,62 @@
   ],
   "certificates": [
     {
-      "name": "ICDL",
-      "date": "2021-01-01",
-      "url": "assets/pdf/Certificates/Comsol.pdf",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Git",
+      "date": "2026-09-01",
+      "url": "https://faradars.org/verify/E3FB7040",
+      "icon": "fa-solid fa-clipboard-check"
     },
     {
       "name": "Python: Fundamental & Advanced",
       "date": "2022-01-01",
-      "issuer": "Maktabkhooneh",
-      "url": "assets/pdf/Certificates/Comsol.pdf",
+      "issuer": "Faradars",
+      "url": "https://faradars.org/verify/487590A8",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "SEM & TEM Characterization Methods",
+      "date": "2025-07-01",
+      "issuer": "Faradars",
+      "url": "https://drive.google.com/file/d/11gR2faNxzyfPxN_K7ThRYkpxuq4x5ov6/view?usp=sharing",
       "icon": "fa-solid fa-tag"
     },
     {
       "name": "COMSOL: Multiphysics",
-      "date": "2021-01-01",
+      "date": "2022-01-01",
       "issuer": "Stanford University",
-      "url": "assets/pdf/Certificates/Comsol.pdf",
+      "url": "https://drive.google.com/file/d/1wCARDA5V0zGWGoKLkw1MlGsI_qkM2t9a/view?usp=drive_link",
       "icon": "fa-solid fa-envelope"
     },
     {
-      "name": "ISO 9001:2015 Internal Auditor ",
-      "date": "2017-01-01",
-      "issuer": "Stanford University",
-      "url": "assets/pdf/Certificates/Comsol.pdf",
-      "icon": "fa-solid fa-hashtag"
+      "name": "EXCEL",
+      "date": "2021-10-01",
+      "url": "https://drive.google.com/file/d/1xme-ULRQjdEsncMVyfMLh0UubjjpxfJ0/view?usp=drive_link",
+      "icon": "fa-solid fa-location-dot"
     },
     {
       "name": "Pneumatic Technician",
       "date": "2019-01-01",
-      "url": "assets/pdf/Certificates/Comsol.pdf",
       "icon": "fa-solid fa-calendar"
     },
     {
       "name": "MATLAB: fundamental",
       "date": "2019-01-01",
       "issuer": "Shahid Rajaei University",
-      "url": "assets/pdf/Certificates/Comsol.pdf",
       "icon": "fa-solid fa-clipboard-check"
     },
     {
       "name": "Piping principles and design",
       "date": "2018-01-01",
-      "url": "assets/pdf/Certificates/Piping.pdf",
+      "url": "https://drive.google.com/file/d/185SfMHIpqzyeEoM06KrKnhEbZPiLaso_/view?usp=drive_link",
       "icon": "fa-solid fa-clipboard-check"
     },
     {
-      "name": "Git",
-      "date": "2018-01-01",
-      "url": "assets/pdf/Certificates/Git.pdf",
-      "icon": "fa-solid fa-clipboard-check"
-    }
+      "name": "ISO 9001:2015 Internal Auditor ",
+      "date": "2017-01-01",
+      "issuer": "Stanford University",
+      "url": "https://drive.google.com/file/d/1s9hGSGfWasxtbNMiF_WvyauqHBlBvyQ-/view?usp=drive_link",
+      "icon": "fa-solid fa-hashtag"
+    },
   ],
   "publications": [
     {
