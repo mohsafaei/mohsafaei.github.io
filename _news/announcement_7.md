@@ -1,13 +1,14 @@
 ---
 layout: post
-date: 2026-05-07 15:59:00-0400
+date: 2026-10-20 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
+📣 Finally! After nearly two years of waiting, my first book chapter on **Responsive Polymer Composite Actuators** is now online and published by Springer Nature. 📚✨
+You can check it out here: [**Link**](https://link.springer.com/book/9783032219763)
 
-📣 Finally!! After almost two years of waiting, my first book chapter is going to be published in Springer Nature 📚✨ WHAT A RELIEF! 😌🚀
-Check it here: [**Toward Responsive Polymer Actuators Based on Novel Composite Structures**](https://link.springer.com/book/9783032219763)
+
 
 
 
