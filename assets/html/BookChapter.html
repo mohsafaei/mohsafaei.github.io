@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Polymer Actuators – LinkedIn Slides</title>
+<style>
+/* ==========================================================
+   SMART POLYMER ACTUATORS – CAROUSEL STYLES
+   Canvas: 1080 × 1080 px (1:1, LinkedIn square)
+   ========================================================== */
+
+:root {
+  --bg: #f5f4f2;
+  --surface: #ffffff;
+  --surface2: #f0eeeb;
+  --border: #e2ddd8;
+  --accent: oklch(52% 0.18 248);
+  --accent-light: oklch(94% 0.06 248);
+  --accent-dark: oklch(38% 0.18 248);
+  --text: oklch(18% 0.01 248);
+  --text-muted: oklch(42% 0.02 248);
+  --text-inv: oklch(98% 0 0);
+  --slide: 1080px;
+  --pad-x: 88px;
+  --pad-y: 80px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ── Slide shell ── */
+.slide {
+  position: relative;
+  width: var(--slide);
+  height: var(--slide);
+  background: var(--surface);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-shadow: 0 8px 32px oklch(18% 0.01 248 / 0.13);
+}
+
+.slide-num {
+  position: absolute;
+  top: 40px;
+  right: 56px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  z-index: 2;
+}
+
+/* ── Slide 1: hero ── */
+.slide-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+  padding: var(--pad-y) var(--pad-x);
+  background: linear-gradient(145deg, oklch(30% 0.18 248) 0%, oklch(22% 0.14 270) 100%);
+  color: var(--text-inv);
+}
+
+.slide-hero .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 26px;
+  border-radius: 100px;
+  background: oklch(100% 0 0 / 0.12);
+  border: 1px solid oklch(100% 0 0 / 0.22);
+}
+
+.slide-hero h1 {
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 1.12;
+  max-width: 900px;
+}
+.slide-hero h1 span { color: oklch(85% 0.12 60); }
+
+.slide-hero .subtitle {
+  font-size: 30px;
+  line-height: 1.45;
+  opacity: 0.85;
+  max-width: 880px;
+}
+
+.authors-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.author-chip {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 100px;
+  background: oklch(100% 0 0 / 0.12);
+  border: 1px solid oklch(100% 0 0 / 0.2);
+}
+.author-chip.highlight {
+  background: oklch(85% 0.12 60 / 0.25);
+  border-color: oklch(85% 0.12 60 / 0.5);
+  color: oklch(95% 0.08 60);
+}
+
+.publisher-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  font-size: 22px;
+  opacity: 0.75;
+}
+.pub-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ── Content slide header ── */
+.section-header {
+  padding: var(--pad-y) var(--pad-x) 0;
+}
+
+.section-number {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.section-sub {
+  font-size: 26px;
+  color: var(--text-muted);
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+/* ── Content slide body: one spacing rule for every block ── */
+.section-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+  padding: 44px var(--pad-x) 64px;
+  min-height: 0;
+}
+.section-body > * { margin: 0 !important; }
+
+/* ── Category pill ── */
+.cat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px 26px;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.cp-blue   { background: var(--accent-light); color: var(--accent-dark); }
+.cp-green  { background: oklch(92% 0.06 155); color: oklch(28% 0.14 155); }
+.cp-amber  { background: oklch(94% 0.07 60);  color: oklch(28% 0.14 60); }
+.cp-purple { background: oklch(94% 0.06 300); color: oklch(28% 0.14 300); }
+
+/* ── Stat cards ── */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.stat-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.stat-value {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+}
+.stat-label {
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+/* ── Bar chart ── */
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.bar-lbl {
+  width: 240px;
+  flex-shrink: 0;
+  text-align: right;
+  font-size: 24px;
+  color: var(--text-muted);
+}
+.bar-track {
+  flex: 1;
+  height: 28px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 100px;
+  background: var(--accent);
+}
+.bar-val {
+  width: 200px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ── Two-column cards ── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.info-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px 36px;
+}
+.info-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.info-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.info-card ul li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 23px;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+.info-card ul li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  top: -2px;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--accent);
+}
+
+/* ── Feature list ── */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.feature-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  flex-shrink: 0;
+}
+.fi-blue   { background: var(--accent-light); }
+.fi-green  { background: oklch(92% 0.06 155); }
+.fi-amber  { background: oklch(94% 0.07 60); }
+.fi-red    { background: oklch(94% 0.06 25); }
+.fi-purple { background: oklch(94% 0.06 300); }
+
+.feature-text strong {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.feature-text span {
+  font-size: 24px;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+/* ── Highlight box ── */
+.highlight-box {
+  padding: 28px 36px;
+  border-radius: 16px;
+  border: 1px solid oklch(82% 0.1 248);
+  border-left: 8px solid var(--accent);
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  font-size: 25px;
+  line-height: 1.5;
+}
+.highlight-box.green {
+  background: oklch(92% 0.05 155);
+  border-color: oklch(80% 0.08 155);
+  border-left-color: oklch(52% 0.15 155);
+  color: oklch(28% 0.13 155);
+}
+.highlight-box.amber {
+  background: oklch(95% 0.06 60);
+  border-color: oklch(82% 0.09 60);
+  border-left-color: oklch(62% 0.17 60);
+  color: oklch(30% 0.13 60);
+}
+
+/* ── Performance metrics ── */
+.perf-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.perf-item {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+}
+.perf-val {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.1;
+}
+.perf-lbl {
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 1.35;
+  color: var(--text-muted);
+}
+
+/* ── Tags ── */
+.tag-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.tag {
+  padding: 8px 22px;
+  border-radius: 100px;
+  font-size: 22px;
+  font-weight: 500;
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  border: 1px solid oklch(82% 0.1 248);
+}
+.tag.green  { background: oklch(92% 0.06 155); color: oklch(30% 0.14 155); border-color: oklch(80% 0.08 155); }
+.tag.amber  { background: oklch(94% 0.07 60);  color: oklch(32% 0.14 60);  border-color: oklch(80% 0.1 60); }
+.tag.purple { background: oklch(94% 0.06 300); color: oklch(32% 0.14 300); border-color: oklch(80% 0.08 300); }
+
+/* ── Step list (slide 7) ── */
+.step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  position: relative;
+}
+.step-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  position: relative;
+}
+.step-num {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--text-inv);
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step-content strong {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.step-content span {
+  font-size: 23px;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+/* ── Closing slide ── */
+.slide-close {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: var(--pad-y) var(--pad-x);
+  background: linear-gradient(145deg, oklch(18% 0.12 248) 0%, oklch(24% 0.1 270) 100%);
+  color: var(--text-inv);
+}
+.slide-close .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 26px;
+  border-radius: 100px;
+  background: oklch(100% 0 0 / 0.1);
+  border: 1px solid oklch(100% 0 0 / 0.2);
+}
+.close-heading {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.close-heading span { color: oklch(82% 0.12 60); }
+.slide-close > p {
+  font-size: 28px;
+  line-height: 1.5;
+  opacity: 0.8;
+  max-width: 880px;
+}
+.close-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  width: 100%;
+}
+.close-item {
+  background: oklch(100% 0 0 / 0.08);
+  border: 1px solid oklch(100% 0 0 / 0.15);
+  border-radius: 20px;
+  padding: 28px 30px;
+}
+.close-item strong {
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  color: oklch(85% 0.08 60);
+  margin-bottom: 8px;
+}
+.close-item span {
+  font-size: 22px;
+  line-height: 1.45;
+  opacity: 0.85;
+}
+.springer-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  opacity: 0.65;
+}
+
+/* On dark slides the slide number needs light text */
+.slide:has(.slide-hero) .slide-num,
+.slide:has(.slide-close) .slide-num { color: oklch(100% 0 0 / 0.6); }
+
+/* ==========================================================
+   PRINT / PDF
+   Each slide is exactly one 1080 × 1080 page.
+   ========================================================== */
+@page {
+  size: 1080px 1080px;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    background: none;
+    padding: 0;
+    gap: 0;
+    display: block;
+    width: 1080px;
+  }
+  .slide {
+    width: 1080px;
+    height: 1080px;
+    box-shadow: none;
+    break-after: page;
+    page-break-after: always;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .slide:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+/* ── Fit fix: tighter vertical rhythm so content stays inside 1080px ── */
+.section-header { padding: 64px var(--pad-x) 0; }
+.section-number { margin-bottom: 8px; }
+.section-title  { font-size: 50px; }
+.section-sub    { font-size: 24px; margin-top: 8px; }
+
+.section-body {
+  gap: 24px;
+  padding: 32px var(--pad-x) 48px;
+}
+
+.stat-card  { padding: 24px 22px; gap: 8px; }
+.stat-value { font-size: 48px; }
+.stat-label { font-size: 20px; }
+
+.bar-chart { gap: 12px; }
+.bar-row   { gap: 18px; }
+.bar-track { height: 22px; }
+.bar-lbl   { font-size: 22px; }
+.bar-val   { font-size: 22px; }
+
+.info-card { padding: 24px 28px; }
+.info-card ul { gap: 8px; }
+.info-card ul li { font-size: 21px; }
+
+.feature-list { gap: 20px; }
+.feature-text strong { font-size: 25px; }
+.feature-text span   { font-size: 21px; }
+
+.highlight-box { padding: 22px 28px; font-size: 22px; }
+
+.perf-item { padding: 22px 16px; }
+.perf-val  { font-size: 38px; }
+.perf-lbl  { font-size: 18px; }
+
+.step-list { gap: 18px; }
+.step-content strong { font-size: 25px; }
+.step-content span   { font-size: 21px; }
+
+.slide-dense .section-header { padding-top: 56px; }
+.slide-dense .section-title  { font-size: 46px; }
+.slide-dense .section-sub    { font-size: 22px; }
+.slide-dense .section-body   { gap: 20px; padding: 28px var(--pad-x) 44px; }
+
+.slide-dense .two-col   { gap: 20px; align-items: stretch; }
+.slide-dense .info-card { padding: 22px 24px; }
+.slide-dense .info-card h4 { font-size: 24px; margin-bottom: 12px; }
+.slide-dense .info-card ul { gap: 7px; }
+.slide-dense .info-card ul li { font-size: 19px; line-height: 1.35; padding-left: 24px; }
+
+.slide-dense .perf-grid { gap: 14px; }
+.slide-dense .perf-item { padding: 18px 12px; }
+.slide-dense .perf-val  { font-size: 34px; }
+.slide-dense .perf-lbl  { font-size: 17px; }
+
+.slide-dense .highlight-box { font-size: 20px; padding: 18px 24px; }
+
+sub { font-size: 0.65em; line-height: 0; }
+
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 1 — HERO / TITLE
+════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-hero">
+    <div class="badge">📄 Book Chapter · Springer 2026</div>
+    <h1>Toward Responsive Polymer Actuators Based on <span>Novel Composite Structures</span></h1>
+    <p class="subtitle">A comprehensive review of electroactive, thermo-responsive, and magneto-responsive polymer composites for smart actuation.</p>
+    <div class="authors-row">
+      <span class="author-chip highlight">M. A. Safaei</span>
+      <span class="author-chip">M. Baniassadi</span>
+      <span class="author-chip">M. Baghani</span>
+      <span class="author-chip">H. Shahsavari</span>
+    </div>
+    <div class="publisher-row">
+      <span class="pub-dot"></span>
+      <span>Smart Polymers for Sensing Technologies</span>
+      <span class="pub-dot"></span>
+      <span>SSMS Vol. 360, pp. 71–90</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 2 — MOTIVATION & BIBLIOMETRICS
+════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-num">02 / 08</div>
+  <div class="section-header">
+    <div class="section-number">Motivation</div>
+    <div class="section-title">Why Smart Polymer Actuators — and Why Now?</div>
+    <div class="section-sub">Bibliometric analysis of >20,000 Scopus articles (2020–2024)</div>
+  </div>
+  <div class="section-body">
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-value">20k+</div>
+        <div class="stat-label">Scopus articles reviewed (2020–2024)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">2×</div>
+        <div class="stat-label">Annual publication count growth (6k → 14k/yr)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">2×</div>
+        <div class="stat-label">Hydrogel articles growth (700 → 1,400/yr)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">3</div>
+        <div class="stat-label">Core stimuli-responsive categories reviewed</div>
+      </div>
+    </div>
+
+    <div class="bar-chart" style="margin-top: 28px;">
+      <div class="bar-row">
+        <div class="bar-lbl">Hydrogels</div>
+        <div class="bar-track"><div class="bar-fill" style="width:95%; background: var(--accent);"></div></div>
+        <div class="bar-val">Fastest</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-lbl">Soft Robotics</div>
+        <div class="bar-track"><div class="bar-fill" style="width:80%; background: oklch(52% 0.16 220);"></div></div>
+        <div class="bar-val">↑ High</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-lbl">Wearable Elec.</div>
+        <div class="bar-track"><div class="bar-fill" style="width:72%; background: oklch(52% 0.15 155);"></div></div>
+        <div class="bar-val">↑ High</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-lbl">Smart Textiles</div>
+        <div class="bar-track"><div class="bar-fill" style="width:58%; background: oklch(62% 0.17 60);"></div></div>
+        <div class="bar-val">↑ Mod.</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-lbl">Tissue Eng.</div>
+        <div class="bar-track"><div class="bar-fill" style="width:65%; background: oklch(55% 0.17 25);"></div></div>
+        <div class="bar-val">↑ Mod.</div>
+      </div>
+    </div>
+
+    <div class="highlight-box" style="margin-top: 24px;">
+      <strong>Key driver:</strong> Demand for flexible, biodegradable, multifunctional materials in biomedical devices, soft robotics, and wearable electronics is accelerating smart actuator research at an unprecedented rate.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 3 — ELECTROACTIVE: DEAs
+════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-num">03 / 08</div>
+  <div class="section-header">
+    <div class="section-number">Electroactive Polymers — Part I</div>
+    <div class="section-title">Dielectric Elastomer Actuators (DEAs)</div>
+    <div class="section-sub">Electronic EAPs: high force, fast response, high energy density</div>
+  </div>
+  <div class="section-body">
+    <div class="cat-pill cp-blue">⚡ Electronic EAPs</div>
+
+    <div class="two-col">
+      <div class="info-card">
+        <h4>⚙️ Working Principle</h4>
+        <ul>
+          <li>Elastomer film sandwiched between compliant electrodes</li>
+          <li>Electrostatic Maxwell stress drives in-plane expansion</li>
+          <li>Fast, silent, low-cost, high energy density</li>
+          <li>Challenge: high driving voltage + electromechanical instability</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h4>🔬 Filler Strategies</h4>
+        <ul>
+          <li>Carbon & MWCNT conductive fillers (4 vol% NPs, sub-percolative)</li>
+          <li>Ceramic fillers: TiO₂, CCTO (↑ dielectric permittivity)</li>
+          <li>IPNs (acrylic IPN): <strong>314% strain achieved</strong></li>
+          <li>Self-healing DEA composites</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="perf-grid" style="margin-top: 16px;">
+      <div class="perf-item">
+        <div class="perf-val">314%</div>
+        <div class="perf-lbl">Strain in acrylic IPN DEAs</div>
+      </div>
+      <div class="perf-item">
+        <div class="perf-val">3D</div>
+        <div class="perf-lbl">Inkjet / direct ink writing fabrication</div>
+      </div>
+      <div class="perf-item">
+        <div class="perf-val">TPMS</div>
+        <div class="perf-lbl">Meta-structure DEA geometries</div>
+      </div>
+      <div class="perf-item">
+        <div class="perf-val">4D</div>
+        <div class="perf-lbl">Shape-morphing multilayer structures</div>
+      </div>
+    </div>
+
+    <div class="tag-cluster">
+      <span class="tag">Conical morphing</span>
+      <span class="tag">Fast response</span>
+      <span class="tag">Multicore-shell 3D printing</span>
+      <span class="tag">Stability analysis</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 4 — ELECTROACTIVE: HYDROGELS & IPMCs
+════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-num">04 / 08</div>
+  <div class="section-header">
+    <div class="section-number">Electroactive Polymers — Part II</div>
+    <div class="section-title">Ionic Hydrogels & IPMCs</div>
+    <div class="section-sub">Ionic EAPs: large deformation at low voltage, ion-transport driven</div>
+  </div>
+  <div class="section-body">
+    <div class="two-col">
+      <div>
+        <div class="cat-pill cp-purple">💧 Ionic Hydrogels</div>
+        <div class="feature-list" style="margin-top: 0;">
+          <div class="feature-item">
+            <div class="feature-icon fi-purple">🦞</div>
+            <div class="feature-text">
+              <strong>Bioinspired nanofibrous gel</strong>
+              <span>Lobster-underbelly design: 8.4 MPa strength, 770 J/m² fatigue threshold, 70 kJ/kg impact resistance</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon fi-purple">⚡</div>
+            <div class="feature-text">
+              <strong>Ag-flake composite hydrogel</strong>
+              <span>>300 S/cm conductivity, <10 kPa modulus, 2.5× stretch — ideal for wearable sensors</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon fi-purple">🧬</div>
+            <div class="feature-text">
+              <strong>CNT-PVA hydrogel</strong>
+              <span>20,000 fatigue cycles, EMG recording in mice demonstrated</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="cat-pill cp-blue">🔋 IPMCs</div>
+        <div class="info-card" style="margin-top: 0;">
+          <h4>Ionic Polymer–Metal Composites</h4>
+          <ul>
+            <li>Nafion/Flemion membrane + Pt/Au electrodes</li>
+            <li>Bending via hydrated cation migration to cathode</li>
+            <li>Electroless Pt/Cu/Au plating: 250,000-cycle stability</li>
+            <li>CNT-chitosan hot pressing: 19 ms response, 244 W/kg power density</li>
+            <li>5.9 mm bending, 224 mm/s tip speed (IPA-assisted)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="highlight-box">
+      Gelatin/silver microflake electronics achieve <strong>470% stretch</strong> with conductivity of <strong>3.1×10³ S/cm</strong> — enabling next-generation stretchable bioelectronics.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 5 — THERMO-RESPONSIVE: SMPs
+════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-num">05 / 08</div>
+  <div class="section-header">
+    <div class="section-number">Thermo-Responsive Polymers — Part I</div>
+    <div class="section-title">Shape Memory Polymers (SMPs)</div>
+    <div class="section-sub">Lightweight, programmable, cost-effective alternatives to shape memory alloys</div>
+  </div>
+  <div class="section-body">
+    <div class="cat-pill cp-amber">🌡️ Thermo-Responsive</div>
+
+    <div class="two-col">
+      <div class="info-card">
+        <h4>🖨️ 4D Printing Highlights</h4>
+        <ul>
+          <li>PLA-TPU (30:70) FDM: fixity 58–100%, recovery 53–91%</li>
+          <li>Infill density = most influential parameter</li>
+          <li>Origami honeycomb sandwich: deploys in ~1 min</li>
+          <li>Kirigami thick-walled honeycombs</li>
+          <li>TPMS Schwarz-P at 40% vol fraction = optimal</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h4>🔌 Electroactive SMPs</h4>
+        <ul>
+          <li>SWCNT/MWCNT fillers for Joule heating actuation</li>
+          <li>Trade-off: Joule heating vs. shape recovery rate</li>
+          <li>Fractal circuit composites for uniform heating</li>
+          <li>Self-healing PCL SMPs for stents & scaffolds</li>
+          <li>Magnetic + conductive PLA for multi-stimulus 4D printing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="perf-grid">
+      <div class="perf-item">
+        <div class="perf-val">~1 min</div>
+        <div class="perf-lbl">Origami honeycomb deployment time</div>
+      </div>
+      <div class="perf-item">
+        <div class="perf-val">100%</div>
+        <div class="perf-lbl">Max shape fixity (PLA-TPU FDM)</div>
+      </div>
+      <div class="perf-item">
+        <div class="perf-val">91%</div>
+        <div class="perf-lbl">Max shape recovery ratio</div>
+      </div>
+      <div class="perf-item">
+        <div class="perf-val">40%</div>
+        <div class="perf-lbl">Optimal vol. fraction (TPMS Schwarz-P)</div>
+      </div>
+    </div>
+    <div class="highlight-box amber">
+      Activation mechanism: glass transition temperature (Tg) governs shape switching. SMPs outperform SMAs in cost, weight, and elastic deformability.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 6 — THERMO-RESPONSIVE: HYDROGELS
+════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-num">06 / 08</div>
+  <div class="section-header">
+    <div class="section-number">Thermo-Responsive Polymers — Part II</div>
+    <div class="section-title">Thermo-Responsive Hydrogels</div>
+    <div class="section-sub">LCST behavior unlocking drug delivery, tissue engineering & soft robotics</div>
+  </div>
+  <div class="section-body">
+    <div class="cat-pill cp-green">🧫 Smart Hydrogels</div>
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="feature-icon fi-green">🌡️</div>
+        <div class="feature-text">
+          <strong>PNIPAM — the benchmark thermoresponsive polymer</strong>
+          <span>LCST near body temperature (~32–37°C); widely used in drug delivery, tissue scaffolds, and soft robotics</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon fi-green">👁️</div>
+        <div class="feature-text">
+          <strong>PVA/nanocellulose contact lenses</strong>
+          <span>Water content >90%; designed for ophthalmic wearable applications</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon fi-green">🩹</div>
+        <div class="feature-text">
+          <strong>Chitosan wound-healing bioscaffolds</strong>
+          <span>3D-printed CNF hydrogels with stiffness tunable from 3–8 kPa</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon fi-green">💪</div>
+        <div class="feature-text">
+          <strong>Al-alginate/PNIPAM IPN</strong>
+          <span>6.3 MPa compressive strength, 9.95× stretch ratio — record-breaking for thermoresponsive hydrogels</span>
+        </div>
+      </div>
+    </div>
+    <div class="highlight-box green">
+      <strong>Theory frontier:</strong> Coupled multiphysics frameworks (strain energy + mixing energy terms) now model LCST transition, enabling predictive design of thermo-ionic hydrogel actuators for mesoscale and diffusion-driven applications.
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 7 — MAGNETO-RESPONSIVE
+════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-num">07 / 08</div>
+  <div class="section-header">
+    <div class="section-number">Magneto-Responsive Polymers</div>
+    <div class="section-title">Magnetic SMPs, MREs & Magnetic Hydrogels</div>
+    <div class="section-sub">Remote, wireless actuation penetrating opaque media — ideal for confined environments</div>
+  </div>
+  <div class="section-body">
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <strong>Magnetic SMPs — Fe₃O₄ dominant filler</strong>
+          <span>c-PCL/Fe₃O₄: +70% shape recovery; dual activation (hot water OR AC magnetic field). 4D-printed PMMA-TPU/Fe₃O₄ via induction heating; PLA-PBAT/Fe₃O₄ (10–20 wt%) also demonstrated.</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <strong>Magnetorheological Elastomers (MREs)</strong>
+          <span>Printing path geometry is critical: circular printing paths significantly enhance the magnetorheological (MR) effect vs. linear paths — a key fabrication insight for programmable stiffness.</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <strong>Magnetic Hydrogels — untethered microrobots</strong>
+          <span>Star-shaped pNIPAM-AAc microgrippers (Fe₂O₃): magnetically guided cancer cell grasping. Fe₃O₄-alginate/polyacrylamide hybrid-crosslink gels for steerable catheters.</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <strong>Multifunctional magnetic devices</strong>
+          <span>Magnetic photonic nanochain cilia (pH sensing + adaptive pumping). PVA helical hydrogel motors for targeted drug delivery and immune-cell guidance.</span>
+        </div>
+      </div>
+    </div>
+    <div class="tag-cluster" style="margin-top: 4px;">
+      <span class="tag purple">Untethered microrobots</span>
+      <span class="tag purple">Wireless actuation</span>
+      <span class="tag purple">Induction heating</span>
+      <span class="tag purple">Drug delivery</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 8 — CONCLUSIONS & OUTLOOK
+════════════════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-num">08 / 08</div>
+  <div class="slide-close">
+    <div class="badge" style="background: oklch(100% 0 0 / 0.1); border-color: oklch(100% 0 0 / 0.2); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; padding: 6px 14px; border-radius: 100px; display: inline-flex; gap: 8px; width: fit-content;">🔭 Conclusions & Outlook</div>
+    <div class="close-heading">Smart Actuators Are <span>Reshaping Materials Science</span></div>
+    <p style="opacity: 0.75; font-size: 0.92rem; max-width: 580px; line-height: 1.6;">Polymer composites unlock programmable, multistimuli-responsive behavior — bridging soft robotics, biomedical devices, and advanced manufacturing.</p>
+    <div class="close-grid">
+      <div class="close-item">
+        <strong>⚡ Electroactive</strong>
+        <span>DEAs, ionic hydrogels & IPMCs now achieve extreme stretchability (314% strain, 470% stretch) with unprecedented conductivity and fatigue life.</span>
+      </div>
+      <div class="close-item">
+        <strong>🌡️ Thermo-Responsive</strong>
+        <span>4D-printed SMPs and LCST hydrogels enable deployable structures, self-healing implants, and bio-inspired soft robots.</span>
+      </div>
+      <div class="close-item">
+        <strong>🧲 Magneto-Responsive</strong>
+        <span>Fe₃O₄-filled composites and hydrogel microrobots push wireless, untethered actuation into clinical and nano-scale domains.</span>
+      </div>
+      <div class="close-item">
+        <strong>📐 Theory Gaps</strong>
+        <span>Coupled multiphysics (electro-chemo-thermo-mechanical) models & GFEM frameworks are now essential for predictive composite design.</span>
+      </div>
+    </div>
+    <div class="springer-tag">
+      <span>📚 Springer Series in Materials Science, Vo
