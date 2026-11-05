@@ -26,7 +26,7 @@ latest_posts:
 ---
 
 
-I’m a researcher with a strong academic background in **_constitutive modeling_**, **Finite Element Analysis**, and **_Artificial Intelligence_**. I completed my **M.Sc. at the University of Tehran**, and my research interests include the multiphysics modeling of smart materials and cardiac tissues 📚💡.  
+I’m a researcher with an academic background in **_constitutive modeling_**, **Finite Element Analysis**, and **_Artificial Intelligence_**. I completed my **M.Sc. at the University of Tehran**, and my research interests include the multiphysics modeling of smart materials and cardiac tissues 📚💡.  
 
 
 Oh, and beyond the lab—I love camping, canyoning, and reading too 🌊📖.  
