@@ -22,10 +22,13 @@ Their defining characteristic is the ability to exhibit dramatic responses to en
 In collaboration with [**FaraDars**](https://faradars.org/), I have prepared an introductory course designed to familiarize you with these materials, their key characteristics, and their growing applications. This tutorial serves as a useful and practical starting point for students, researchers, and anyone passionate about advanced and smart materials.
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-12">
-        {% include figure.liquid loading="eager" path="assets/img/OnlineCourse.png" title="Watch Course" class="img-fluid rounded z-depth-3" href="https://faradars.org/videos/smart-materials-fvmec613" %}
+    <div class="col-sm mt-3 mt-md-4">
+        <a href="https://faradars.org/videos/smart-materials-fvmec613">
+            {% include figure.liquid loading="eager" path="assets/img/OnlineCourse.png" title="Watch Course" class="img-fluid rounded z-depth-1" %}
+        </a>
     </div>
 </div>
+
 
 ---
 
@@ -38,9 +41,9 @@ In collaboration with [**FaraDars**](https://faradars.org/), I have prepared an 
 
 * **Advanced Material Classes:**
   * Hydrogels
-  * Dielectric Elastomer Actuators ($\text{DEAs}$)
-  * Liquid Crystal Elastomers ($\text{LCEs}$)
-  * Shape Memory Polymers ($\text{SMPs}$)
+  * Dielectric Elastomer Actuators (DEAs)
+  * Liquid Crystal Elastomers (LCEs)
+  * Shape Memory Polymers (SMPs)
 
 * **Applications:**
   * Soft Robotics
