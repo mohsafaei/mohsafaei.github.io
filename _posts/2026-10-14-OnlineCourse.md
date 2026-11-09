@@ -3,9 +3,9 @@ layout: post
 title: My free course on "Smart Materials"
 date: 2026-10-13 18:00:00
 description: 
-tags: formatting images
-categories: sample-posts
-thumbnail: assets/img/OnlineCource.png
+tags:
+categories: 
+thumbnail: assets/img/OnlineCourse.png
 images:
   spotlight: true
 toc:
@@ -23,11 +23,12 @@ In collaboration with [**FaraDars**](https://faradars.org/), I have prepared an 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-4">
-        <a href="https://faradars.org/videos/smart-materials-fvmec613">
-            {% include figure.liquid loading="eager" path="assets/img/OnlineCourse.png" title="Watch Course" class="img-fluid rounded z-depth-1" %}
+        <a href="https://faradars.org/videos/smart-materials-fvmec613" target="_blank" rel="noopener noreferrer">
+          {% include figure.liquid loading="eager" path="assets/img/OnlineCourse.png" title="Watch Course" class="img-fluid rounded z-depth-1" zoomable=false %}
         </a>
     </div>
 </div>
+
 
 
 ---
