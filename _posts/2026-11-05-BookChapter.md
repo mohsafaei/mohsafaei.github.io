@@ -29,7 +29,7 @@ The chapter reviews three major categories of stimuli-responsive polymer actuato
 
 A key takeaway is the growing importance of coupled electro-chemo-thermo-mechanical models for the predictive design of responsive polymer composites.
 
-🔗 **Read the chapter:** [insert Springer or DOI link]
+🔗 **Read the chapter:** [https://doi.org/10.1007/978-3-032-21977-0_3]
 
 I am grateful to my co-authors, **Majid Baniassadi, Mostafa Baghani, and Hamid Shahsavari**, for their collaboration.
 
